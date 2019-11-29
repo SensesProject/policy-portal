@@ -1,102 +1,38 @@
 <template>
   <div id="app">
+    <section></section>
     <section>
-      <h1>headline blalallalal</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-    </section>
-    <section id="scrolly">
-      <figure style="height: 234.5px;top: 167.25px;">
-        <p>1</p>
+      <figure>
+        <Slide1 />
       </figure>
+    </section>
+    <intersect @ratio="onratio">
+      <section>
+        <figure>
+          <slot name="slide">
+            <Slide2 :ratio="ratio" />
+          </slot>
+        </figure>
 
-      <article>
-        <div
-          class="step"
-          data-step="1"
-          data-scrollama-index="0"
-          style="height: 351px;"
-        >
-          <p>STEP 1</p>
-        </div>
-        <div
-          class="step"
-          data-step="2"
-          data-scrollama-index="1"
-          style="height: 351px;"
-        >
-          <p>STEP 2</p>
-        </div>
-      </article>
+        <article></article>
+      </section>
+    </intersect>
+
+    <section>
+      <!-- <intersect @start="start" @leave="leave"> -->
+      <figure>
+        <Slide1 />
+      </figure>
+      <!-- </intersect> -->
+      <article></article>
     </section>
     <section>
-      <h1>headline blalallalal</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-    </section>
-    <section id="scrolly">
-      <figure style="height: 234.5px;top: 167.25px;">
-        <p>1</p>
+      <!-- <intersect @start="start" @leave="leave"> -->
+      <figure>
+        <Slide2 />
       </figure>
-
-      <article>
-        <div
-          class="step"
-          data-step="1"
-          data-scrollama-index="0"
-          style="height: 351px;"
-        >
-          <p>STEP 1</p>
-        </div>
-        <div
-          class="step"
-          data-step="2"
-          data-scrollama-index="1"
-          style="height: 351px;"
-        >
-          <p>STEP 2</p>
-        </div>
-      </article>
+      <!-- </intersect> -->
+      <article></article>
     </section>
     <section>
       <h1>headline blalallalal</h1>
@@ -127,46 +63,78 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import Slide1 from "./components/Slide1.vue";
+import Slide2 from "./components/Slide2.vue";
+
+import Intersect from "./components/Intersect";
 
 export default {
   name: "app",
-  components: {}
+  components: { Intersect, Slide1, Slide2 },
+  data: function() {
+    return {
+      ratio: 0
+    };
+  },
+  methods: {
+    start: function(e) {
+      // console.log("start", e);
+    },
+    leave: function(e) {
+      // console.log("leave", e);
+    },
+    onratio: function(e) {
+      this.ratio = e;
+    }
+  },
+  mounted: function() {
+    //this.createObserver();
+  },
+  beforeDestroy: function() {
+    //this.observer.disconnect();
+  }
 };
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 #app {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-#scrolly {
+.intersecter {
   position: relative;
-  background-color: #f3f3f3;
-  padding: 1rem;
 }
 
 figure {
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   width: 100%;
   margin: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background-color: #8a8a8a;
+  /*background-color: #8a8a8a;*/
   z-index: 0;
+  height: 90vh;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article {
   position: relative;
   padding: 0;
-  max-width: 20rem;
+  width: 10px;
+  height: 200vh;
   margin: 0 auto;
+  top: -90vh;
+  background: #7fffd43d;
+  pointer-events: none;
 }
 
 .step {
