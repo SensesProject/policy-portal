@@ -1,35 +1,21 @@
 <template>
-  <div id="app">
-    <section></section>
-    <section>
-      <figure>
-        <Slide1 />
-      </figure>
-    </section>
-    <section ref="slide">
-      <figure>
-        <Slide2 :ratio="ratio" />
-      </figure>
-
-      <article></article>
-    </section>
-    <section>
-      <!-- <intersect @start="start" @leave="leave"> -->
-      <figure>
-        <Slide1 />
-      </figure>
-      <!-- </intersect> -->
-      <article></article>
-    </section>
-    <section>
-      <!-- <intersect @start="start" @leave="leave"> -->
-      <figure>
-        <Slide2 />
-      </figure>
-      <!-- </intersect> -->
-      <article></article>
-    </section>
-    <section>
+  <div id="app" ref="app">
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template slot="figure" scope="props">
+        <Slide1 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template slot="figure" scope="props">
+        <Slide2 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template slot="figure" scope="props">
+        <Slide1 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <!-- <Item>
       <h1>headline blalallalal</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -53,22 +39,25 @@
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-    </section>
+    </Item>-->
   </div>
 </template>
 
 <script>
+import Item from "./components/Item.vue";
 import Slide1 from "./components/Slide1.vue";
 import Slide2 from "./components/Slide2.vue";
-let scrollY = 0;
+
 let ticking = false;
 
 export default {
   name: "app",
-  components: { Slide1, Slide2 },
+  components: { Item, Slide1, Slide2 },
   data: function() {
     return {
-      ratio: 0
+      ratio: 0,
+      screenHeight: screen.height,
+      scrollY: 0
     };
   },
   methods: {
@@ -76,21 +65,12 @@ export default {
       // console.log("start", e);
     },
     throttledScroll: function(scrollY) {
-      const { height, y } = this.$refs.slide.getBoundingClientRect();
-      const screenHeight = screen.height;
-      const ratio =
-        Math.min(Math.max(-1 * y, 0), height - screenHeight) /
-        (height - screenHeight);
-
-      console.log("throttledScroll", ratio);
-      this.ratio = ratio;
+      this.scrollY = window.scrollY;
     },
     onScroll: function(e) {
-      scrollY = window.scrollY;
-
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          this.throttledScroll(scrollY);
+          this.throttledScroll();
           ticking = false;
         });
         ticking = true;
@@ -101,6 +81,11 @@ export default {
     //this.createObserver();
     // window.addEventListener("scroll", this.onScroll);
     window.addEventListener("scroll", this.onScroll);
+
+    // const observingElems = Array.from(this.$refs.app.children).filter(c =>
+    //   c.hasAttribute("observe")
+    // );
+    // console.log(observingElems);
   },
   beforeDestroy: function() {
     window.removeEventListener("scroll", this.onScroll);
@@ -117,41 +102,5 @@ export default {
 
 #app {
   font-family: "IBM Plex Sans", sans-serif;
-}
-
-.intersecter {
-  position: relative;
-}
-
-figure {
-  position: sticky;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  transform: translate3d(0, 0, 0);
-  /*background-color: #8a8a8a;*/
-  z-index: 0;
-  height: 90vh;
-  top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-article {
-  position: relative;
-  padding: 0;
-  width: 10px;
-  height: 200vh;
-  margin: 0 auto;
-  top: -90vh;
-  background: #7fffd43d;
-  pointer-events: none;
-}
-
-.step {
-  margin: 0 auto 2rem auto;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 </style>
