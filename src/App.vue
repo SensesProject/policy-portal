@@ -1,11 +1,31 @@
 <template>
   <div id="app" ref="app">
     <Item :scrollY="scrollY" :screenHeight="screenHeight">
-      <template slot="figure" scope="props">
+      <template v-slot:figure="props">
         <Slide1 :ratio="props.ratio" />
       </template>
     </Item>
     <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template v-slot:figure="props">
+        <Slide2 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template v-slot:figure="props">
+        <Slide1 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template v-slot:figure="props">
+        <Slide2 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <Item :scrollY="scrollY" :screenHeight="screenHeight">
+      <template v-slot:figure="props">
+        <Slide1 :ratio="props.ratio" />
+      </template>
+    </Item>
+    <!-- <Item :scrollY="scrollY" :screenHeight="screenHeight">
       <template slot="figure" scope="props">
         <Slide2 :ratio="props.ratio" />
       </template>
@@ -14,7 +34,7 @@
       <template slot="figure" scope="props">
         <Slide1 :ratio="props.ratio" />
       </template>
-    </Item>
+    </Item>-->
     <!-- <Item>
       <h1>headline blalallalal</h1>
       <p>

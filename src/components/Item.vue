@@ -15,14 +15,13 @@ export default {
   },
   computed: {
     ratio: function() {
-      const ratio =
+      return (
         Math.min(
           Math.max(this.scrollY - this.offsetTop, 0),
           this.height - this.screenHeight
         ) /
-        (this.height - this.screenHeight);
-
-      return ratio;
+        (this.height - this.screenHeight)
+      );
     }
   },
   props: ["scrollY", "screenHeight"],
