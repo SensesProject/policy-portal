@@ -181,7 +181,6 @@ export default {
   //   },
   watch: {
     ratio: function(ratio) {
-      console.log(ratio);
       this.vivus.setFrameProgress(ratio);
       this.vivus.stop();
     }
