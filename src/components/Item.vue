@@ -33,9 +33,9 @@ export default {
       return (
         Math.min(
           Math.max(this.scrollY - this.offsetTop, 0),
-          this.height - this.screenHeight
+          this.height - this.screenHeight * 1.2
         ) /
-        (this.height - this.screenHeight)
+        (this.height - this.screenHeight * 1.2)
       );
     },
     ...mapState(["scrollY", "screenHeight"])
