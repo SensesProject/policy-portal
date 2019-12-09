@@ -1,4 +1,4 @@
-<template scope="props">
+<template>
   <div>
     <figure>
       <slot name="figure" :ratio="ratio"></slot>
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "item",
   data() {
@@ -22,9 +23,9 @@ export default {
         ) /
         (this.height - this.screenHeight)
       );
-    }
+    },
+    ...mapState(["scrollY", "screenHeight"])
   },
-  props: ["scrollY", "screenHeight"],
   mounted() {
     this.offsetTop = this.$el.offsetTop;
     this.height = this.$el.getBoundingClientRect().height;
