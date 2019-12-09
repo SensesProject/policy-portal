@@ -3,7 +3,7 @@
     <svg width="934px" height="432px" viewBox="0 0 934 432">
       <circle
         id="Oval-13-Copy-7"
-        fill="#99F0E9"
+        fill="#E6FFFE"
         style="mix-blend-mode: screen;"
         cx="467"
         cy="230"

@@ -2,17 +2,12 @@
   <div id="app" ref="app">
     <Item>
       <template v-slot:figure="props">
-        <Slide1 :ratio="props.ratio" />
-      </template>
-    </Item>
-    <Item>
-      <template v-slot:figure="props">
         <Slide2 :ratio="props.ratio" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <Slide1 :ratio="props.ratio" />
+        <Slide3 :ratio="props.ratio" />
       </template>
     </Item>
     <Item>
@@ -67,12 +62,12 @@
 import Item from "./components/Item.vue";
 import Slide1 from "./components/Slide1.vue";
 import Slide2 from "./components/Slide2.vue";
-
+import Slide3 from "./components/Slide3.vue";
 let ticking = false;
 
 export default {
   name: "app",
-  components: { Item, Slide1, Slide2 },
+  components: { Item, Slide1, Slide2, Slide3 },
   methods: {
     start: function(e) {
       // console.log("start", e);
