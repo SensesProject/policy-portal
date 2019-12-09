@@ -6,18 +6,13 @@
         <Slide1 />
       </figure>
     </section>
-    <intersect @ratio="onratio">
-      <section>
-        <figure>
-          <slot name="slide">
-            <Slide2 :ratio="ratio" />
-          </slot>
-        </figure>
+    <section ref="slide">
+      <figure>
+        <Slide2 :ratio="ratio" />
+      </figure>
 
-        <article></article>
-      </section>
-    </intersect>
-
+      <article></article>
+    </section>
     <section>
       <!-- <intersect @start="start" @leave="leave"> -->
       <figure>
@@ -65,12 +60,12 @@
 <script>
 import Slide1 from "./components/Slide1.vue";
 import Slide2 from "./components/Slide2.vue";
-
-import Intersect from "./components/Intersect";
+let scrollY = 0;
+let ticking = false;
 
 export default {
   name: "app",
-  components: { Intersect, Slide1, Slide2 },
+  components: { Slide1, Slide2 },
   data: function() {
     return {
       ratio: 0
@@ -80,23 +75,40 @@ export default {
     start: function(e) {
       // console.log("start", e);
     },
-    leave: function(e) {
-      // console.log("leave", e);
+    throttledScroll: function(scrollY) {
+      const { height, y } = this.$refs.slide.getBoundingClientRect();
+      const screenHeight = screen.height;
+      const ratio =
+        Math.min(Math.max(-1 * y, 0), height - screenHeight) /
+        (height - screenHeight);
+
+      console.log("throttledScroll", ratio);
+      this.ratio = ratio;
     },
-    onratio: function(e) {
-      this.ratio = e;
+    onScroll: function(e) {
+      scrollY = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          this.throttledScroll(scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
     }
   },
   mounted: function() {
     //this.createObserver();
+    // window.addEventListener("scroll", this.onScroll);
+    window.addEventListener("scroll", this.onScroll);
   },
   beforeDestroy: function() {
-    //this.observer.disconnect();
+    window.removeEventListener("scroll", this.onScroll);
   }
 };
 </script>
 
-<style scoped>
+<style>
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap");
 
 * {
