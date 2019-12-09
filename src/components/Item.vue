@@ -1,6 +1,20 @@
 <template>
   <div>
     <figure>
+      <div class="info">
+        <div class="credits">
+          <div class="icon"></div>
+          <span>PARNOW J., BERTHRAM C.</span>
+        </div>
+        <div class="read">
+          <div class="icon"></div>
+          <span>15 MINS.</span>
+        </div>
+        <div class="tags">
+          <div class="icon"></div>
+          <span>sdjapsid asdasd</span>
+        </div>
+      </div>
       <slot name="figure" :ratio="ratio"></slot>
     </figure>
     <article></article>
@@ -33,7 +47,37 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+.info {
+    position: absolute;
+    left: 52%;
+    font-size: 12px;
+    top: 100px;
+
+  > div {
+      clear both
+      float: left;
+      border-radius 10px
+      background #9be8c7
+      margin 5px 0 0 0
+      span {
+        padding 0 10px 0 10px
+        float: left;
+      }
+    }
+  .icon {
+    border-radius 10px
+    border: 1px solid #3bccb7;
+    width 15px
+    height 15px
+    float: left;
+  }
+  .credits {
+
+  }
+}
+
+
 figure {
   position: sticky;
   left: 0;
@@ -56,7 +100,7 @@ article {
   height: 200vh;
   margin: 0 auto;
   top: -90vh;
-  background: #7fffd43d;
+  // background: #7fffd43d;
   pointer-events: none;
 }
 
