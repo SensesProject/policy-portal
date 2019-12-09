@@ -187,7 +187,10 @@ export default {
   },
   props: ["ratio"],
   mounted: function() {
-    this.vivus = new vivus(this.$refs.svg);
+    this.vivus = new vivus(this.$refs.svg, {
+      type: "oneByOne",
+      start: "manual"
+    });
     this.vivus.stop();
   }
 };
