@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="320px" height="350px" viewBox="0 0 320 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>stocktake-2</title>
+    <title>stocktake-2-MOB</title>
     <desc>Created with Sketch.</desc>
-    <g id="stocktake-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-24" transform="translate(512.000000, 63.000000)">
-            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" stroke-width="2" x="37" y="141" width="12" height="191"></rect>
-            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" stroke-width="2" x="72" y="79" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" stroke-width="2" x="108" y="228" width="12" height="84"></rect>
-            <path d="M143,259 L143,375 L155,375 L155,259 L143,259 Z" id="Rectangle-11-Copy-4" stroke="#368161" stroke-width="2"></path>
-            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" stroke-width="2" x="179" y="291" width="12" height="53"></rect>
-            <rect id="Rectangle-11-Copy-6" stroke="#31D28D" stroke-width="2" x="214" y="104" width="12" height="213"></rect>
-            <path d="M250,211 L250,375 L262,375 L262,211 L250,211 Z" id="Rectangle-11-Copy-7" stroke="#427660" stroke-width="2"></path>
-            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" stroke-width="2" x="320" y="138" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-10" stroke="#63B290" stroke-width="2" x="355" y="86" width="12" height="219"></rect>
-            <path d="M285,105 L285,269 L297,269 L297,105 L285,105 Z" id="Rectangle-11-Copy-8" stroke="#427660" stroke-width="2"></path>
-            <rect id="Rectangle-11" stroke="#00BF6D" stroke-width="2" x="1" y="5" width="12" height="280"></rect>
-            <polyline id="Path-4" stroke="#0BBFB0" points="7 4 42.9411765 141.169118 78 78 113.882353 227.636029 147 201 186 291 221 104 256 212"></polyline>
-            <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="7" cy="4" r="4"></circle>
-            <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="146" cy="202" r="4"></circle>
-            <circle id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="43" cy="141" r="4"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="114" cy="227" r="4"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="185" cy="290" r="4"></circle>
+    <g id="stocktake-2-MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-24" transform="translate(51.000000, 64.000000)">
+            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" x="23.1382979" y="83.5" width="7" height="113"></rect>
+            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" x="43.1382979" y="46.5" width="7" height="124"></rect>
+            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" x="65.1382979" y="134.5" width="7" height="50"></rect>
+            <path d="M85.1382979,152.5 L85.1382979,221.5 L92.1382979,221.5 L92.1382979,152.5 L85.1382979,152.5 Z" id="Rectangle-11-Copy-4" stroke="#368161"></path>
+            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" x="107.138298" y="171.5" width="7" height="31"></rect>
+            <rect id="Rectangle-11-Copy-6" stroke="#31D28D" x="127.138298" y="61.5" width="7" height="126"></rect>
+            <path d="M149.138298,124.5 L149.138298,221.5 L156.138298,221.5 L156.138298,124.5 L149.138298,124.5 Z" id="Rectangle-11-Copy-7" stroke="#427660"></path>
+            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" x="190.138298" y="81.5" width="7" height="124"></rect>
+            <rect id="Rectangle-11-Copy-10" stroke="#63B290" x="211.138298" y="50.5" width="7" height="129"></rect>
+            <path d="M169.138298,61.5 L169.138298,158.5 L176.138298,158.5 L176.138298,61.5 L169.138298,61.5 Z" id="Rectangle-11-Copy-8" stroke="#427660"></path>
+            <rect id="Rectangle-11" stroke="#00BF6D" x="1.13829787" y="2.5" width="7" height="166"></rect>
+            <polyline id="Path-4" stroke="#0BBFB0" points="5.63829787 3 26.8565828 83.7720588 47.5539605 46.5749129 68.7375183 134.688115 88.2889003 119.003484 111.312997 172 131.975647 61.8850174 152.638298 125.480836"></polyline>
+            <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="5.13829787" cy="2.5" r="2.5"></circle>
+            <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="87.1382979" cy="119.5" r="2.5"></circle>
+            <circle id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="26.1382979" cy="83.5" r="2.5"></circle>
+            <circle id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="68.1382979" cy="134.5" r="2.5"></circle>
+            <circle id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="110.138298" cy="171.5" r="2.5"></circle>
         </g>
-        <line x1="535" y1="130" x2="593.5" y2="89.5" id="line1" stroke="#524DFF" stroke-width="0.5"></line>
-        <line x1="807" y1="468" x2="775" y2="436" id="line2" stroke="#524DFF" stroke-width="0.5"></line>
-        <text id="Global-Tremd" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
-            <tspan x="587.165181" y="78">Global Tremd</tspan>
-        </text>
-        <text id="Current-Co2-budget" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
-            <tspan x="814.497771" y="471">Current Co2 budget</tspan>
-        </text>
     </g>
 </svg>

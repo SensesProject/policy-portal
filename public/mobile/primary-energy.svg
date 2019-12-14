@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="254px" viewBox="0 0 1024 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="320px" height="175px" viewBox="0 0 320 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>primary-energy</title>
+    <title>primary-energy-MOB</title>
     <desc>Created with Sketch.</desc>
-    <g id="primary-energy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval-6" stroke="#066840" cx="120" cy="77" r="51"></circle>
-        <circle id="Oval-6-Copy" stroke="#066840" cx="204.5" cy="77.5" r="32.5"></circle>
-        <circle id="Oval-6" stroke="#066840" cx="146" cy="77" r="25"></circle>
-        <circle id="Oval-6-Copy" stroke="#066840" cx="198" cy="78" r="26"></circle>
-        <line x1="138.5" y1="200.5" x2="125.5" y2="89.5" id="line1" stroke="#524DFF" stroke-width="0.5"></line>
-        <text id="Change-in-primary-en" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
-            <tspan x="72.8303616" y="225">Change in primary energy</tspan>
-        </text>
+    <g id="primary-energy-MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-6" stroke="#066840" cx="91" cy="88" r="51"></circle>
+        <circle id="Oval-6-Copy" stroke="#066840" cx="175.5" cy="88.5" r="32.5"></circle>
+        <circle id="Oval-6" stroke="#066840" cx="117" cy="88" r="25"></circle>
+        <circle id="Oval-6-Copy" stroke="#066840" cx="169" cy="89" r="26"></circle>
     </g>
 </svg>
