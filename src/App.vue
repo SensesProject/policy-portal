@@ -5,36 +5,36 @@
         <AnimatedSvg :ratio="props.ratio" svg="stocktake-1.svg" />
       </template>
     </Item>
-    <!-- <Item>
+    <Item :data="modulesData['stocktake-2']">
       <template v-slot:figure="props">
         <AnimatedSvg :ratio="props.ratio" svg="stocktake-2.svg" />
       </template>
     </Item>
-    <Item>
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="land-transitions.svg" />
-      </template>
-    </Item>
-    <Item>
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="extreme-events.svg" />
-      </template>
-    </Item>
-    <Item>
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="primary-energy.svg" />
-      </template>
-    </Item>
-    <Item>
+    <Item :data="modulesData['transition-path-1']">
       <template v-slot:figure="props">
         <AnimatedSvg :ratio="props.ratio" svg="transition-path-1.svg" />
       </template>
     </Item>
-    <Item>
+    <Item :data="modulesData['transition-path-2']">
       <template v-slot:figure="props">
         <AnimatedSvg :ratio="props.ratio" svg="transition-path-2.svg" />
       </template>
-    </Item>-->
+    </Item>
+    <Item :data="modulesData['primary-energy']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" svg="primary-energy.svg" />
+      </template>
+    </Item>
+    <Item :data="modulesData['land-transitions']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" svg="land-transitions.svg" />
+      </template>
+    </Item>
+    <Item :data="modulesData['land-affected']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" svg="land-affected.svg" />
+      </template>
+    </Item>
   </div>
 </template>
 
