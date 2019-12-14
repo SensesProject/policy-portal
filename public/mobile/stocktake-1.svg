@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>stocktake-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="stocktake-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="45" y1="376" x2="979" y2="376" id="base" stroke="#0BBFB0" stroke-width="2"></line>
+        <polyline id="emissions" stroke="#0BBFB0" stroke-width="2" points="47 199 84 187 123 172 134 162 163 124 198 92 211 85"></polyline>
+        <polyline id="scenario1" stroke="#9BE8C7" stroke-width="2" points="130 165 215.501992 112.65283 259.414343 98 359.215139 261.845283 473.653386 361.750943 593.414343 424.358491 705.191235 441.675472 801 451"></polyline>
+        <polyline id="scenario2" stroke="#99F0E9" stroke-width="2" points="130 165 217.830645 119.308271 255.08871 106 332.266129 160.56391 460.008065 362.849624 510.572581 401.443609 585.08871 441.368421 672.91129 460 794 460"></polyline>
+        <polyline id="scenario3" stroke="#005F57" stroke-width="2" points="145 147 250.954825 98.6373239 321.367556 92 358.566735 149.080986 413.036961 297.757042 447.579055 366.785211 514.00616 423.866197 579.104723 455.725352 654.831622 469 754.472279 469 793 469"></polyline>
+        <line x1="864.5" y1="419.5" x2="764.5" y2="446.5" id="line1" stroke="#524DFF" stroke-width="0.5"></line>
+        <line x1="144" y1="64" x2="183" y2="106" id="line2" stroke="#524DFF" stroke-width="0.5"></line>
+        <line x1="123" y1="377" x2="72.5" y2="429.5" id="line3" stroke="#524DFF" stroke-width="0.5"></line>
+        <text id="Scenarios" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+            <tspan x="870.498886" y="414">Scenarios</tspan>
+        </text>
+        <text id="Current-CO2-Emission" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+            <tspan x="84.1640664" y="54">Current CO2 Emissions</tspan>
+        </text>
+        <text id="Net-Zero" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+            <tspan x="47.2767872" y="446">Net Zero</tspan>
+        </text>
+    </g>
+</svg>
