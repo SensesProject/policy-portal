@@ -1,27 +1,30 @@
 <template>
   <div>
     <figure>
-      <div class="info">
-        <div class="credits">
-          <div class="icon"></div>
-          <div class="content">{{ data.authors.join(" / ")}}</div>
+      <div class="inner">
+        <div class="info">
+          <div class="credits">
+            <div class="icon"></div>
+            <div class="content">{{ data.authors.join(" / ")}}</div>
+          </div>
+          <div class="read">
+            <div class="icon"></div>
+            <div class="content">{{ data.readingTime }}</div>
+          </div>
+          <div class="tags">
+            <div class="icon"></div>
+            <div class="content">{{ data.tags.join(", ")}}</div>
+          </div>
         </div>
-        <div class="read">
-          <div class="icon"></div>
-          <div class="content">{{ data.readingTime }}</div>
+        <div class="text">
+          <h2>{{ data.title }}</h2>
+          <div class="description" v-if="ratio > 0.3">{{ data.description }}</div>
+          <div class="readbutton" v-if="ratio > 0.4">READ</div>
         </div>
-        <div class="tags">
-          <div class="icon"></div>
-          <div class="content">{{ data.tags.join(", ")}}</div>
-        </div>
-      </div>
-      <div class="text">
-        <h2>{{ data.title }}</h2>
-        <div class="description" v-if="ratio > 0.3">{{ data.description }}</div>
-      </div>
-      <div class="circle"></div>
+        <div class="circle"></div>
 
-      <slot name="figure" :ratio="ratio"></slot>
+        <slot name="figure" :ratio="ratio"></slot>
+      </div>
     </figure>
     <article></article>
   </div>
@@ -64,8 +67,12 @@ export default {
   mix-blend-mode: multiply;
   border: 2px solid #E6FFFE;
   transition: background 1s;
+  pointer-events: none;
+  left: calc(50% - 150px);
+  top: 34%;
+  cursor: pointer;
 
-  figure:hover & {
+  .inner:hover & {
     background: #E6FFFE;
   }
 }
@@ -75,6 +82,7 @@ export default {
   width: 350px;
   left: 52%;
   top: 33%;
+  cursor: pointer;
 
   h2 {
     font-size: 40px;
@@ -82,7 +90,7 @@ export default {
     line-height: 1.1em;
     width: 300px;
 
-    figure:hover & {
+    .inner:hover & {
       font-style: italic;
       font-weigh: 700;
     }
@@ -91,6 +99,17 @@ export default {
   .description {
     font-size: 14px;
     line-height: 1.2em;
+  }
+
+  .readbutton {
+    font-family: IBM Plex Mono;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.555803px;
+    color: #1A1A1A;
+    margin-top: 40px;
   }
 }
 
