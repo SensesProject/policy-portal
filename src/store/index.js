@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     scrollY: 0,
-    screenHeight: screen.height
+    screenHeight: screen.height,
+    isMobile: false
   },
   mutations: {},
   actions: {},

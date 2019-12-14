@@ -4,17 +4,22 @@
       <div class="info">
         <div class="credits">
           <div class="icon"></div>
-          <span>PARNOW J., BERTHRAM C.</span>
+          <div class="content">{{ data.authors.join(" / ")}}</div>
         </div>
         <div class="read">
           <div class="icon"></div>
-          <span>15 MINS.</span>
+          <div class="content">{{ data.readingTime }}</div>
         </div>
         <div class="tags">
           <div class="icon"></div>
-          <span>sdjapsid asdasd</span>
+          <div class="content">{{ data.tags.join(", ")}}</div>
         </div>
       </div>
+      <div class="text">
+        <h2>{{ data.title }}</h2>
+        <div class="description" v-if="ratio > 0.3">{{ data.description }}</div>
+      </div>
+
       <slot name="figure" :ratio="ratio"></slot>
     </figure>
     <article></article>
@@ -43,40 +48,67 @@ export default {
   mounted() {
     this.offsetTop = this.$el.offsetTop;
     this.height = this.$el.getBoundingClientRect().height;
-  }
+    console.log(this.data);
+  },
+  props: ["data"]
 };
 </script>
 
 <style lang="stylus" scoped>
-.info {
-    position: absolute;
-    left: 52%;
-    font-size: 12px;
-    top: 100px;
+.text {
+  position: absolute;
+  width: 350px;
+  left: 52%;
+  top: 33%;
 
-  > div {
-      clear both
-      float: left;
-      border-radius 10px
-      background #9be8c7
-      margin 5px 0 0 0
-      span {
-        padding 0 10px 0 10px
-        float: left;
-      }
+  h2 {
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', serif;
+    line-height: 1.1em;
+    width: 300px;
+
+    figure:hover & {
+      font-style: italic;
     }
-  .icon {
-    border-radius 10px
-    border: 1px solid #3bccb7;
-    width 15px
-    height 15px
-    float: left;
   }
-  .credits {
 
+  .description {
+    font-size: 14px;
+    line-height: 1.2em;
   }
 }
 
+.info {
+  position: absolute;
+  left: 52%;
+  font-size: 12px;
+  text-transform: uppercase;
+  top: 100px;
+
+  > div {
+    clear: both;
+    float: left;
+    border-radius: 10px;
+    background: #9be8c7;
+    margin: 5px 0 0 0;
+
+    .content {
+      padding: 0 10px 0 10px;
+      float: left;
+    }
+  }
+
+  .icon {
+    border-radius: 10px;
+    border: 1px solid #3bccb7;
+    width: 15px;
+    height: 15px;
+    float: left;
+  }
+
+  .credits {
+  }
+}
 
 figure {
   position: sticky;
@@ -84,7 +116,7 @@ figure {
   width: 100%;
   margin: 0;
   transform: translate3d(0, 0, 0);
-  /*background-color: #8a8a8a;*/
+  /* background-color: #8a8a8a; */
   z-index: 0;
   height: 90vh;
   top: 10px;

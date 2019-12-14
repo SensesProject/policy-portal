@@ -4,6 +4,7 @@
 
 <script>
 import vivus from "vivus";
+import { mapState } from "vuex";
 
 export default {
   watch: {
@@ -12,13 +13,16 @@ export default {
       this.vivus.stop();
     }
   },
+  computed: {
+    ...mapState(["isMobile"])
+  },
   props: ["ratio", "svg"],
   mounted: function() {
-    console.log(this.svg);
+    const path = this.isMobile ? "mobile/" : "desktop/";
     this.vivus = new vivus(this.$refs.svg, {
       type: "oneByOne",
       start: "manual",
-      file: this.svg
+      file: path + this.svg
     });
     this.vivus.stop();
   }

@@ -1,52 +1,58 @@
 <template>
   <div id="app" ref="app">
-    <Item>
+    <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/global-stocktake-1.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="stocktake-1.svg" />
+      </template>
+    </Item>
+    <!-- <Item>
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" svg="stocktake-2.svg" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/global-stocktake-2.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="land-transitions.svg" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/land-transitions.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="extreme-events.svg" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/extreme-events.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="primary-energy.svg" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/primary-energy.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="transition-path-1.svg" />
       </template>
     </Item>
     <Item>
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/sector-transition-1.svg" />
+        <AnimatedSvg :ratio="props.ratio" svg="transition-path-2.svg" />
       </template>
-    </Item>
-    <Item>
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="final-svg-portal/sector-transitions2.svg" />
-      </template>
-    </Item>
+    </Item>-->
   </div>
 </template>
 
 <script>
 import Item from "./components/Item.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
+import moduleData from "./assets/modules.json";
 
 let ticking = false;
 
 export default {
   name: "app",
   components: { Item, AnimatedSvg },
+  computed: {
+    modulesData: function() {
+      return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
+    }
+  },
   methods: {
     start: function(e) {
       // console.log("start", e);
@@ -63,6 +69,7 @@ export default {
   },
   mounted: function() {
     window.addEventListener("scroll", this.onScroll);
+    console.log(this.modulesData);
   },
   beforeDestroy: function() {
     window.removeEventListener("scroll", this.onScroll);
