@@ -19,6 +19,7 @@
         <h2>{{ data.title }}</h2>
         <div class="description" v-if="ratio > 0.3">{{ data.description }}</div>
       </div>
+      <div class="circle"></div>
 
       <slot name="figure" :ratio="ratio"></slot>
     </figure>
@@ -55,6 +56,20 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.circle {
+  position: absolute;
+  border-radius: 500px;
+  width: 300px;
+  height: 300px;
+  mix-blend-mode: multiply;
+  border: 2px solid #E6FFFE;
+  transition: background 1s;
+
+  figure:hover & {
+    background: #E6FFFE;
+  }
+}
+
 .text {
   position: absolute;
   width: 350px;
@@ -69,6 +84,7 @@ export default {
 
     figure:hover & {
       font-style: italic;
+      font-weigh: 700;
     }
   }
 
