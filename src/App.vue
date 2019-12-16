@@ -1,5 +1,6 @@
 <template>
   <div id="app" ref="app">
+    <SensesMenu />
     <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
         <Layout :data="props.data" />
@@ -51,6 +52,7 @@
 </template>
 
 <script>
+import SensesMenu from "library/src/components/SensesMenu.vue";
 import Item from "./components/Item.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import Layout from "./components/Layout.vue";
@@ -62,7 +64,7 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Item, AnimatedSvg, Layout, Earth },
+  components: { Item, AnimatedSvg, Layout, Earth, SensesMenu },
   computed: {
     modulesData: function() {
       return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
@@ -94,8 +96,9 @@ export default {
 };
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700i|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap");
+<style lang="scss">
+// @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700i|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap");
+@import "library/src/style/base.scss";
 
 * {
   box-sizing: border-box;
