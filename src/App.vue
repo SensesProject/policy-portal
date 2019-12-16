@@ -4,43 +4,43 @@
     <Home />
     <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['stocktake-2']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['land-affected']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['transition-path-1']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['transition-path-2']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['primary-energy']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['land-transitions']">
       <template v-slot:figure="props">
-        <Layout :data="props.data" />
+        <Layout :data="props.data" :ratio="props.ratio" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>

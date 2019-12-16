@@ -3,7 +3,7 @@
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
-        <div class="content">{{ data.authors.join(" / ")}}</div>
+        <div class="content">{{ data.authors.join(" / ") }}</div>
       </div>
       <div class="read">
         <div class="icon"></div>
@@ -11,13 +11,19 @@
       </div>
       <div class="tags">
         <div class="icon"></div>
-        <div class="content">{{ data.tags.join(", ")}}</div>
+        <div class="content">{{ data.tags.join(", ") }}</div>
       </div>
     </div>
     <div class="text">
-      <h2>{{ data.title }}</h2>
-      <div class="description" v-if="ratio > 0.3">{{ data.description }}</div>
-      <div class="readbutton" v-if="ratio > 0.4">READ</div>
+      <h2 :style="{ left: ratio * 20 + 'px' }">{{ data.title }}</h2>
+      <div
+        class="description"
+        :style="{ left: ratio * 7 + 'px' }"
+        v-show="ratio > 0.3"
+      >
+        {{ data.description }}
+      </div>
+      <div class="readbutton" v-show="ratio > 0.5">READ</div>
     </div>
     <div class="circle"></div>
   </div>
@@ -60,6 +66,7 @@ export default {
     font-family: 'IBM Plex Mono', serif;
     line-height: 1.1em;
     width: 300px;
+    position: relative;
 
     .inner:hover & {
       font-style: italic;
@@ -70,6 +77,8 @@ export default {
   .description {
     font-size: 14px;
     line-height: 1.2em;
+    position: relative;
+    margin-top: 20px;
   }
 
   .readbutton {
@@ -95,7 +104,7 @@ export default {
     clear: both;
     float: left;
     border-radius: 10px;
-    background: #9be8c7;
+    // background: #9be8c7;
     margin: 5px 0 0 0;
 
     .content {
