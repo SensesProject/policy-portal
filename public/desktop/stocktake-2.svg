@@ -5,16 +5,16 @@
     <desc>Created with Sketch.</desc>
     <g id="stocktake-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-24" transform="translate(512.000000, 63.000000)">
-            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" stroke-width="2" x="37" y="141" width="12" height="191"></rect>
-            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" stroke-width="2" x="72" y="79" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" stroke-width="2" x="108" y="228" width="12" height="84"></rect>
-            <path d="M143,259 L143,375 L155,375 L155,259 L143,259 Z" id="Rectangle-11-Copy-4" stroke="#368161" stroke-width="2"></path>
-            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" stroke-width="2" x="179" y="291" width="12" height="53"></rect>
-            <rect id="Rectangle-11-Copy-6" stroke="#31D28D" stroke-width="2" x="214" y="104" width="12" height="213"></rect>
-            <path d="M250,211 L250,375 L262,375 L262,211 L250,211 Z" id="Rectangle-11-Copy-7" stroke="#427660" stroke-width="2"></path>
-            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" stroke-width="2" x="320" y="138" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-10" stroke="#63B290" stroke-width="2" x="355" y="86" width="12" height="219"></rect>
-            <path d="M285,105 L285,269 L297,269 L297,105 L285,105 Z" id="Rectangle-11-Copy-8" stroke="#427660" stroke-width="2"></path>
+            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" stroke-width="1" x="37" y="141" width="12" height="191"></rect>
+            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" stroke-width="1" x="72" y="79" width="12" height="210"></rect>
+            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" stroke-width="1" x="108" y="228" width="12" height="84"></rect>
+            <path d="M143,259 L143,375 L155,375 L155,259 L143,259 Z" id="Rectangle-11-Copy-4" stroke="#368161" stroke-width="1"></path>
+            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" stroke-width="1" x="179" y="291" width="12" height="53"></rect>
+            <rect id="Rectangle-11-Copy-6" stroke="#31D28D" stroke-width="1" x="214" y="104" width="12" height="213"></rect>
+            <path d="M250,211 L250,375 L262,375 L262,211 L250,211 Z" id="Rectangle-11-Copy-7" stroke="#427660" stroke-width="1"></path>
+            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" stroke-width="1" x="320" y="138" width="12" height="210"></rect>
+            <rect id="Rectangle-11-Copy-10" stroke="#63B290" stroke-width="1" x="355" y="86" width="12" height="219"></rect>
+            <path d="M285,105 L285,269 L297,269 L297,105 L285,105 Z" id="Rectangle-11-Copy-8" stroke="#427660" stroke-width="1"></path>
             <rect id="Rectangle-11" stroke="#00BF6D" stroke-width="2" x="1" y="5" width="12" height="280"></rect>
             <polyline id="Path-4" stroke="#0BBFB0" points="7 4 42.9411765 141.169118 78 78 113.882353 227.636029 147 201 186 291 221 104 256 212"></polyline>
             <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="7" cy="4" r="4"></circle>
