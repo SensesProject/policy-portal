@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div :class="[data.path]">
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 .circle {
   position: absolute;
   border-radius: 500px;
@@ -52,6 +53,14 @@ export default {
   .inner:hover & {
     background: #E6FFFE;
   }
+
+  .stocktake-2 & {
+    left: 55%;
+  }
+
+  .transition-path-2 & {
+    left: 40%;
+  }
 }
 
 .text {
@@ -60,6 +69,26 @@ export default {
   left: 52%;
   top: 33%;
   cursor: pointer;
+
+  .stocktake-2 & {
+    left: 20%;
+  }
+
+  .transition-path-2 & {
+    left: 15%;
+
+    h2 {
+      width: 500px;
+    }
+  }
+
+  .land-transitions & {
+    left: 20%;
+    top: 50%;
+    h2 {
+      width: 600px;
+    }
+  }
 
   h2 {
     font-size: 40px;
