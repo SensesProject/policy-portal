@@ -23,6 +23,8 @@
 <path d="M365 124V219.366C365 229.86 356.493 238.366 346 238.366H169C158.507 238.366 150 246.873 150 257.366V356" stroke="url(#paint2_linear)" stroke-dasharray="2"/>
 <path d="M529 165V248.407C529 257.244 536.163 264.407 545 264.407H683C691.837 264.407 699 271.571 699 280.407V385" stroke="url(#paint3_linear)" stroke-dasharray="2"/>
 </g>
+<path d="M406.75 308.5V377" stroke="#0BBFB0" stroke-width="3"/>
+<path d="M387 360L407 377L424 360" stroke="#0BBFB0" stroke-width="3"/>
 <defs>
 <linearGradient id="paint0_linear" x1="17.4001" y1="210.479" x2="110.278" y2="210.479" gradientUnits="userSpaceOnUse">
 <stop stop-color="#5263FF"/>

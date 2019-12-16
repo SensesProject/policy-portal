@@ -1,5 +1,8 @@
 <template>
   <div class="containter" :class="[data.path]">
+    <div class="header">
+      {{ data.mainTopic }}
+    </div>
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
@@ -36,6 +39,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
+.header {
+  top: 0px;
+  position absolute;
+  color: #0BBFB0;
+  border-bottom: 1px solid #0BBFB0;
+  width 100%;
+  left:0px;
+  padding-left 10px;
+}
 
 .circle {
   position: absolute;

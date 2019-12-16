@@ -3,7 +3,7 @@
     {
       "portal": ["Policy", "Finance"],
       "portalNum": 0,
-      "main-topic": "primer",
+      "mainTopic": "primer",
       "path": "primer",
       "title": "Primer to Climate Scenarios",
       "description": "This interactive primer explains what climate change scenarios are and how they are connected to socioeconomics, energy & land use, emissions, climate change and climate impacts.",
@@ -21,7 +21,7 @@
     {
       "portal": "Policy",
       "portalNum": 1,
-      "main-topic": "Budget",
+      "mainTopic": "Budget",
       "path": "stocktake-1",
       "title": "Global Stocktake I",
       "description": "This module explores how current decarbonization plans until 2030 relate to the long-term targets of the Paris Agreement.",
@@ -39,7 +39,7 @@
     {
       "portal": "Policy",
       "portalNum": 2,
-      "main-topic": "Budget",
+      "mainTopic": "Budget",
       "path": "stocktake-2",
       "title": "Global Stocktake II",
       "description": "Placeholder Text TODO",
@@ -57,7 +57,7 @@
     {
       "portal": "Policy",
       "portalNum": 3,
-      "main-topic": "Transitions",
+      "mainTopic": "Transitions",
       "path": "transition-path-1",
       "title": "National and sectoral transition paths",
       "description": "We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like. In this module you will be introduced to the concept of Electrification and to the broad strategy to go Carbon Neutral by reducing emissions.",
@@ -75,7 +75,7 @@
     {
       "portal": "Policy",
       "portalNum": 4,
-      "main-topic": "Transitions",
+      "mainTopic": "Transitions",
       "path": "transition-path-2",
       "title": "National and sectoral transition paths II",
       "description": "Placeholder Text TODO",
@@ -93,7 +93,7 @@
     {
       "portal": "Policy",
       "portalNum": null,
-      "main-topic": "Demand",
+      "mainTopic": "Demand",
       "path": "impact-demand",
       "title": "What is the potential impact of the demand side?",
       "description": "Placeholder Text TODO",
@@ -116,7 +116,7 @@
     {
       "portal": "Policy",
       "portalNum": 6,
-      "main-topic": "Transitions",
+      "mainTopic": "Transitions",
       "path": "land-transitions",
       "title": "Land transitions module",
       "description": "Placeholder Text TODO",
@@ -134,7 +134,7 @@
     {
       "portal": "Policy",
       "portalNum": 7,
-      "main-topic": "Transitions",
+      "mainTopic": "Transitions",
       "path": "land-affected",
       "title": "How much land area is affected by and how much population is exposed to extreme events under climate change?",
       "description": "The extent and impact of crop failures, river floods, tropical cyclones, heatwaves, wildfires, and droughts depend on the underlying meteorological, hydrological, or climatological events as well as on human factors such as land use, water and agricultural management, and population density. In this module you'll learn how climate change contributes to extreme events and who is most affected by those.",
@@ -152,7 +152,7 @@
     {
       "portal": "Finance",
       "portalNum": 1,
-      "main-topic": "Risks",
+      "mainTopic": "Risks",
       "path": "transition-risk",
       "title": "Transition risk",
       "description": "Discover finance risks related to transitions in a variety of sectors including: Fossil fuels, End User and Power",
@@ -170,7 +170,7 @@
     {
       "portal": "Finance",
       "portalNum": 2,
-      "main-topic": "Opportunities",
+      "mainTopic": "Opportunities",
       "path": "investment-opportunities",
       "title": "Investment Opportunities and Alignment: What are investment opportunities in a low carbon world?",
       "description": "Placeholder Text",
@@ -188,7 +188,7 @@
     {
       "portal": "Finance",
       "portalNum": 3,
-      "main-topic": "Risks",
+      "mainTopic": "Risks",
       "path": "physical-risks",
       "title": "Physical Risks",
       "description": "Placeholder Text TODO",
@@ -206,7 +206,7 @@
     {
       "portal": "Policy",
       "portalNum": 5,
-      "main-topic": "Transitions",
+      "mainTopic": "Transitions",
       "path": "primary-energy",
       "title": "Primary Energy Scenarios",
       "description": "Placeholder Text TODO",
@@ -224,7 +224,7 @@
     {
       "portal": null,
       "portalNum": null,
-      "main-topic": "finder",
+      "mainTopic": "finder",
       "path": "finder",
       "title": "Scenario Finder",
       "description": "Placeholder Text TODO",
@@ -242,10 +242,14 @@
     {
       "portal": "Policy",
       "portalNum": [8, 9, 10],
-      "main-topic": "Extreme Events",
+      "mainTopic": "Extreme Events",
       "path": "earth",
       "title": ["Crop Failure", "Wildfires", "River Floods"],
-      "description": ["Discover how different regions will be impacted by crop failures in the next 100 years.", "Discover how different regions will be impacted by wildfires in the next 100 years.", "Discover how different regions will be impacted by river floods in the next 100 years."],
+      "description": [
+        "Discover how different regions will be impacted by crop failures in the next 100 years.",
+        "Discover how different regions will be impacted by wildfires in the next 100 years.",
+        "Discover how different regions will be impacted by river floods in the next 100 years."
+      ],
       "authors": ["Fidel Thomet"],
       "readingTime": null,
       "gem": false,
@@ -260,7 +264,7 @@
     {
       "portal": null,
       "portalNum": null,
-      "main-topic": "IIASA Database",
+      "mainTopic": "IIASA Database",
       "path": "database",
       "title": "Link to IIASA Database",
       "description": "Placeholder Text TODO",
@@ -278,7 +282,7 @@
     {
       "portal": null,
       "portalNum": null,
-      "main-topic": "Budget",
+      "mainTopic": "Budget",
       "path": "film",
       "title": "CO2 Film",
       "description": "Placeholder Text TODO",

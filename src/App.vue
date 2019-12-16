@@ -1,6 +1,7 @@
 <template>
   <div id="app" ref="app">
     <SensesMenu />
+    <Navigation />
     <Home />
     <Item v-for="data in modulesData" v-bind:key="data.path" :data="data">
       <template v-slot:figure="props">
@@ -21,6 +22,7 @@
 import SensesMenu from "library/src/components/SensesMenu.vue";
 import Item from "./components/Item.vue";
 import Home from "./components/Home.vue";
+import Navigation from "./components/Navigation.vue";
 import End from "./components/End.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
@@ -32,7 +34,16 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Home, End, Item, AnimatedSvg, ModuleText, Earth, SensesMenu },
+  components: {
+    Home,
+    Navigation,
+    End,
+    Item,
+    AnimatedSvg,
+    ModuleText,
+    Earth,
+    SensesMenu
+  },
   computed: {
     modulesData: function() {
       return moduleData.modules.filter(

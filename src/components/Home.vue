@@ -9,8 +9,9 @@
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.
       </div>
-      <img src="desktop/home.svg" class="plan" />
     </div>
+    <img src="desktop/home.svg" class="plan" />
+    <img src="desktop/primer.svg" class="plan" />
   </div>
 </template>
 
@@ -24,6 +25,8 @@ export default {};
   align-items: center;
   display: flex;
   height: 100vh;
+  flex-flow: column;
+  margin-bottom: 100px;
 }
 .inner {
   width: 815px;
