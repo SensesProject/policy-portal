@@ -27,6 +27,9 @@ export default {
 <style scoped>
 .svg {
   /* position: absolute; */
-  max-width: 1200px;
+  max-width: 1000px;
+}
+svg text {
+  font-size: inherit;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div id="app" ref="app">
     <SensesMenu />
+    <Home />
     <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
         <Layout :data="props.data" />
@@ -54,6 +55,7 @@
 <script>
 import SensesMenu from "library/src/components/SensesMenu.vue";
 import Item from "./components/Item.vue";
+import Home from "./components/Home.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import Layout from "./components/Layout.vue";
 import Earth from "./components/Earth.vue";
@@ -64,7 +66,7 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Item, AnimatedSvg, Layout, Earth, SensesMenu },
+  components: { Home, Item, AnimatedSvg, Layout, Earth, SensesMenu },
   computed: {
     modulesData: function() {
       return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
