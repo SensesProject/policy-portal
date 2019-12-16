@@ -23,7 +23,7 @@
         </div>
         <div class="circle"></div>
 
-        <slot name="figure" :ratio="ratio"></slot>
+        <slot name="figure" :ratio="ratio" :data="data"></slot>
       </div>
     </figure>
     <article></article>
@@ -164,7 +164,7 @@ article {
   position: relative;
   padding: 0;
   width: 10px;
-  height: 400vh;
+  height: 300vh;
   margin: 0 auto;
   top: -90vh;
   // background: #7fffd43d;

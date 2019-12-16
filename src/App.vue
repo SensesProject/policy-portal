@@ -2,37 +2,37 @@
   <div id="app" ref="app">
     <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="stocktake-1.svg" />
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['stocktake-2']">
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="stocktake-2.svg" />
-      </template>
-    </Item>
-    <Item :data="modulesData['transition-path-1']">
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="transition-path-1.svg" />
-      </template>
-    </Item>
-    <Item :data="modulesData['transition-path-2']">
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="transition-path-2.svg" />
-      </template>
-    </Item>
-    <Item :data="modulesData['primary-energy']">
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="primary-energy.svg" />
-      </template>
-    </Item>
-    <Item :data="modulesData['land-transitions']">
-      <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="land-transitions.svg" />
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['land-affected']">
       <template v-slot:figure="props">
-        <AnimatedSvg :ratio="props.ratio" svg="land-affected.svg" />
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+      </template>
+    </Item>
+    <Item :data="modulesData['transition-path-1']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+      </template>
+    </Item>
+    <Item :data="modulesData['transition-path-2']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+      </template>
+    </Item>
+    <Item :data="modulesData['primary-energy']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+      </template>
+    </Item>
+    <Item :data="modulesData['land-transitions']">
+      <template v-slot:figure="props">
+        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
   </div>
@@ -42,6 +42,7 @@
 import Item from "./components/Item.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import moduleData from "./assets/modules.json";
+import { mapState } from "vuex";
 
 let ticking = false;
 
@@ -51,11 +52,13 @@ export default {
   computed: {
     modulesData: function() {
       return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
-    }
+    },
+    ...mapState(["isMobile"])
   },
   methods: {
-    start: function(e) {
-      // console.log("start", e);
+    getSvgPath: function(path) {
+      const p = this.isMobile ? "mobile/" : "desktop/";
+      return p + path + ".svg";
     },
     onScroll: function(e) {
       if (!ticking) {

@@ -1,10 +1,9 @@
 <template>
-  <div class="slide" ref="svg"></div>
+  <div class="svg" ref="svg"></div>
 </template>
 
 <script>
 import vivus from "vivus";
-import { mapState } from "vuex";
 
 export default {
   watch: {
@@ -13,16 +12,12 @@ export default {
       this.vivus.stop();
     }
   },
-  computed: {
-    ...mapState(["isMobile"])
-  },
   props: ["ratio", "svg"],
   mounted: function() {
-    const path = this.isMobile ? "mobile/" : "desktop/";
     this.vivus = new vivus(this.$refs.svg, {
       type: "oneByOne",
       start: "manual",
-      file: path + this.svg
+      file: this.svg
     });
     this.vivus.stop();
   }
@@ -30,11 +25,8 @@ export default {
 </script>
 
 <style scoped>
-.slide {
-  width: 934px;
-  height: 432px;
-}
-svg {
-  position: absolute;
+.svg {
+  /* position: absolute; */
+  max-width: 1200px;
 }
 </style>
