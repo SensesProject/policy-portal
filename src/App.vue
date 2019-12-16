@@ -42,6 +42,11 @@
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
+    <Item>
+      <template v-slot:figure="props">
+        <Earth :ratio="props.ratio"></Earth>
+      </template>
+    </Item>
   </div>
 </template>
 
@@ -49,6 +54,7 @@
 import Item from "./components/Item.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import Layout from "./components/Layout.vue";
+import Earth from "./components/Earth.vue";
 import moduleData from "./assets/modules.json";
 import { mapState } from "vuex";
 
@@ -56,7 +62,7 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Item, AnimatedSvg, Layout },
+  components: { Item, AnimatedSvg, Layout, Earth },
   computed: {
     modulesData: function() {
       return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
