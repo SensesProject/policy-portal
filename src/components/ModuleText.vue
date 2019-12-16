@@ -1,5 +1,5 @@
 <template>
-  <div :class="[data.path]">
+  <div class="containter" :class="[data.path]">
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
@@ -50,7 +50,7 @@ export default {
   top: 34%;
   cursor: pointer;
 
-  .inner:hover & {
+  .containter:hover & {
     background: #E6FFFE;
   }
 
@@ -97,7 +97,7 @@ export default {
     width: 300px;
     position: relative;
 
-    .inner:hover & {
+    .containter:hover & {
       font-style: italic;
       font-weigh: 700;
     }
