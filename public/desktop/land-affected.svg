@@ -6,41 +6,25 @@
     <g id="land-affected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="slices" transform="translate(168.000000, 136.000000)">
             <g id="slices1" transform="translate(0.000000, 40.000000)" fill-rule="nonzero">
-                <g id="Group" transform="translate(0.000000, 85.000000)">
                     <polygon id="Path-2" fill="#0BBFB0" points="2 0 2 71 0 71 0 0"></polygon>
                     <polygon id="Path-2" fill="#006F65" points="2 34 2 37 0 37 0 34"></polygon>
-                </g>
-                <g id="Group-3" transform="translate(16.000000, 35.000000)">
                     <polygon id="Path-2-Copy-2" fill="#0BBFB0" points="2 0 2 71 0 71 0 0"></polygon>
                     <polygon id="Path-2-Copy-2" fill="#0BBFB0" points="2 0 2 71 0 71 0 0"></polygon>
                     <polygon id="Path-2-Copy-2" fill="#006F65" points="2 35 2 37 0 37 0 35"></polygon>
-                </g>
-                <g id="Group-2" transform="translate(8.000000, 28.000000)">
                     <polygon id="Path-2-Copy" fill="#0BBFB0" points="2 0 2 71 0 71 0 0"></polygon>
                     <polygon id="Path-2-Copy" fill="#006F65" points="2 35 2 37 0 37 0 35"></polygon>
-                </g>
-                <g id="Group-4" transform="translate(24.000000, 0.000000)">
                     <polygon id="Path-2-Copy-3" fill="#0BBFB0" points="2 0 2 71 0 71 0 0"></polygon>
                     <polygon id="Path-2-Copy-3" fill="#006F65" points="2 35 2 37 0 37 0 35"></polygon>
-                </g>
             </g>
             <g id="slices2" transform="translate(132.000000, 0.000000)" fill-rule="nonzero">
-                <g id="Group-6" transform="translate(0.000000, 46.001171)">
                     <polygon id="Path-2-Copy-4" fill="#0BBFB0" points="1.99998889 -9.9475983e-14 2.49998889 150 0.5 150.006667 0 0.00666662963"></polygon>
                     <polygon id="Path-2-Copy-4" fill="#006F65" points="2.29999444 74.0033333 2.29999444 77.0033333 0.299994444 77.0033333 0.299994444 74.0033333"></polygon>
-                </g>
-                <g id="Group-8" transform="translate(16.000001, 10.000828)">
                     <polygon id="Path-2-Copy-5" fill="#0BBFB0" points="1.99998648 -5.68434189e-14 2.49998648 136 0.5 136.007353 0 0.00735289148"></polygon>
                     <polygon id="Path-2-Copy-5" fill="#006F65" points="2.29999324 67.0036764 2.29999324 70.0036764 0.299993242 70.0036764 0.299993242 67.0036764"></polygon>
-                </g>
-                <g id="Group-7" transform="translate(8.000003, 68.000472)">
                     <polygon id="Path-2-Copy-6" fill="#0BBFB0" points="0.5 -7.10542736e-14 2.49998374 0.00806445057 1.99998374 124.008064 0 124"></polygon>
                     <polygon id="Path-2-Copy-6" fill="#006F65" points="2.29999187 61.0040322 2.29999187 64.0040322 0.299991871 64.0040322 0.299991871 61.0040322"></polygon>
-                </g>
-                <g id="Group-9" transform="translate(24.000005, 0.000000)">
                     <polygon id="Path-2-Copy-7" fill="#0BBFB0" points="1.99997971 0 2.49997971 111 0.5 111.009009 0 0.00900891761"></polygon>
                     <polygon id="Path-2-Copy-7" fill="#006F65" points="2.29998985 54.0045045 2.29998985 57.0045045 0.299989855 57.0045045 0.299989855 54.0045045"></polygon>
-                </g>
             </g>
             <g id="slices3" transform="translate(265.000000, 139.000000)" stroke-width="2">
                 <line x1="1" y1="0" x2="1.5" y2="57" id="Path-2-Copy-8" stroke="#0BBFB0"></line>
@@ -63,41 +47,25 @@
                 <polygon id="Path-2-Copy-15" fill="#006F65" points="26.2999941 198.003425 26.2999941 203.003425 24.2999941 203.003425 24.2999941 198.003425"></polygon>
             </g>
             <g id="slices5" transform="translate(529.000000, 68.000000)" fill-rule="nonzero">
-                <g id="Group-12">
                     <polygon id="Path-2-Copy-16" fill="#0BBFB0" points="1.99997597 -1.42108547e-14 2.49997597 102 0.5 102.009804 0 0.00980380378"></polygon>
                     <polygon id="Path-2-Copy-16" fill="#006F65" points="2.29998799 49.0049019 2.29998799 54.0049019 0.299987986 54.0049019 0.299987986 49.0049019"></polygon>
-                </g>
-                <g id="Group-14" transform="translate(16.000002, 47.999526)">
                     <polygon id="Path-2-Copy-17" fill="#0BBFB0" points="1.9999711 -5.68434189e-14 2.4999711 93 0.5 93.0107525 0 0.0107525328"></polygon>
                     <polygon id="Path-2-Copy-17" fill="#006F65" points="2.29998555 44.0053763 2.29998555 49.0053763 0.299985548 49.0053763 0.299985548 44.0053763"></polygon>
-                </g>
-                <g id="Group-13" transform="translate(8.000006, 14.998878)">
                     <polygon id="Path-2-Copy-18" fill="#0BBFB0" points="0.5 -5.68434189e-14 2.49996371 0.0120479742 1.99996371 83.012048 0 83"></polygon>
                     <polygon id="Path-2-Copy-18" fill="#006F65" points="2.29998186 40.006024 2.29998186 44.006024 0.299981856 44.006024 0.299981856 40.006024"></polygon>
-                </g>
-                <g id="Group-15" transform="translate(24.000010, 101.998235)">
                     <polygon id="Path-2-Copy-19" fill="#0BBFB0" points="1.99995556 -5.68434189e-14 2.49995556 75 0.5 75.013333 0 0.013333037"></polygon>
                     <polygon id="Path-2-Copy-19" fill="#006F65" points="2.29997778 36.0066665 2.29997778 40.0066665 0.299977779 40.0066665 0.299977779 36.0066665"></polygon>
-                </g>
             </g>
             <g id="slices6" transform="translate(662.000000, 42.000000)" fill-rule="nonzero">
-                <g id="Group-17">
                     <polygon id="Path-2-Copy-20" fill="#0BBFB0" points="2 0 2 40 0 40 0 0"></polygon>
                     <polygon id="Path-2-Copy-20" fill="#006F65" points="2 18 2 22 0 22 0 18"></polygon>
-                </g>
-                <g id="Group-19" transform="translate(16.000000, 19.000000)">
                     <polygon id="Path-2-Copy-21" fill="#979797" points="2 0 2 36 0 36 0 0"></polygon>
                     <polygon id="Path-2-Copy-21" fill="#0BBFB0" points="2 0 2 36 0 36 0 0"></polygon>
                     <polygon id="Path-2-Copy-21" fill="#006F65" points="2 16 2 20 0 20 0 16"></polygon>
-                </g>
-                <g id="Group-20" transform="translate(24.500000, 40.000000)">
                     <polygon id="Path-2-Copy-23" fill="#0BBFB0" points="2 0 2 29 0 29 0 0"></polygon>
                     <polygon id="Path-2-Copy-23" fill="#006F65" points="2 13 2 17 0 17 0 13"></polygon>
-                </g>
-                <g id="Group-18" transform="translate(8.500000, 6.000000)">
                     <polygon id="Path-2-Copy-22" fill="#0BBFB0" points="2 0 2 35 0 35 0 0"></polygon>
                     <polygon id="Path-2-Copy-22" fill="#006F65" points="2 16 2 19 0 19 0 16"></polygon>
-                </g>
             </g>
         </g>
         <g id="axis" transform="translate(179.178856, 81.999273)" stroke="#0BBFB0">
