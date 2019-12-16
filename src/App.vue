@@ -2,36 +2,43 @@
   <div id="app" ref="app">
     <Item :data="modulesData['stocktake-1']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['stocktake-2']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['land-affected']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['transition-path-1']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['transition-path-2']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['primary-energy']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
     <Item :data="modulesData['land-transitions']">
       <template v-slot:figure="props">
+        <Layout :data="props.data" />
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
@@ -41,6 +48,7 @@
 <script>
 import Item from "./components/Item.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
+import Layout from "./components/Layout.vue";
 import moduleData from "./assets/modules.json";
 import { mapState } from "vuex";
 
@@ -48,7 +56,7 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Item, AnimatedSvg },
+  components: { Item, AnimatedSvg, Layout },
   computed: {
     modulesData: function() {
       return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
