@@ -42,7 +42,7 @@ export default {
   border-radius: 500px;
   width: 300px;
   height: 300px;
-  mix-blend-mode: multiply;
+  mix-blend-mode: overlay;
   border: 2px solid #E6FFFE;
   transition: background 1s;
   pointer-events: none;
