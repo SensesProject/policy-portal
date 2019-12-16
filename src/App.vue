@@ -13,6 +13,7 @@
         <Earth :ratio="props.ratio"></Earth>
       </template>
     </Item>
+    <End />
   </div>
 </template>
 
@@ -20,6 +21,7 @@
 import SensesMenu from "library/src/components/SensesMenu.vue";
 import Item from "./components/Item.vue";
 import Home from "./components/Home.vue";
+import End from "./components/End.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
 import Earth from "./components/Earth.vue";
@@ -30,7 +32,7 @@ let ticking = false;
 
 export default {
   name: "app",
-  components: { Home, Item, AnimatedSvg, ModuleText, Earth, SensesMenu },
+  components: { Home, End, Item, AnimatedSvg, ModuleText, Earth, SensesMenu },
   computed: {
     modulesData: function() {
       return moduleData.modules.filter(
