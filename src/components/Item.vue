@@ -26,6 +26,12 @@ export default {
     },
     ...mapState(["scrollY", "screenHeight"])
   },
+  watch: {
+    ratio: function(ratio) {
+      if (this.$store.state.active !== this.data.path)
+        this.$store.state.active = this.data.path;
+    }
+  },
   mounted() {
     this.offsetTop = this.$el.offsetTop;
     this.height = this.$el.getBoundingClientRect().height;

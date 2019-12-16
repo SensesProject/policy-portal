@@ -9,7 +9,7 @@
         <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
       </template>
     </Item>
-    <Item>
+    <Item :data="modulesData[6]">
       <template v-slot:figure="props">
         <Earth :ratio="props.ratio"></Earth>
       </template>

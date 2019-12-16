@@ -7,7 +7,8 @@ export default new Vuex.Store({
   state: {
     scrollY: 0,
     screenHeight: screen.height,
-    isMobile: false
+    isMobile: false,
+    active: null
   },
   mutations: {},
   actions: {},
