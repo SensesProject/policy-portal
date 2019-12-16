@@ -2,7 +2,7 @@
   "modules": [
     {
       "portal": ["Policy", "Finance"],
-      "portal-num": 0,
+      "portalNum": 0,
       "main-topic": "primer",
       "path": "primer",
       "title": "Primer to Climate Scenarios",
@@ -20,7 +20,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 1,
+      "portalNum": 1,
       "main-topic": "Budget",
       "path": "stocktake-1",
       "title": "Global Stocktake I",
@@ -38,7 +38,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 2,
+      "portalNum": 2,
       "main-topic": "Budget",
       "path": "stocktake-2",
       "title": "Global Stocktake II",
@@ -56,7 +56,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 3,
+      "portalNum": 3,
       "main-topic": "Transitions",
       "path": "transition-path-1",
       "title": "National and sectoral transition paths",
@@ -74,7 +74,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 4,
+      "portalNum": 4,
       "main-topic": "Transitions",
       "path": "transition-path-2",
       "title": "National and sectoral transition paths II",
@@ -92,7 +92,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": null,
+      "portalNum": null,
       "main-topic": "Demand",
       "path": "impact-demand",
       "title": "What is the potential impact of the demand side?",
@@ -115,7 +115,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 6,
+      "portalNum": 6,
       "main-topic": "Transitions",
       "path": "land-transitions",
       "title": "Land transitions module",
@@ -133,7 +133,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 7,
+      "portalNum": 7,
       "main-topic": "Transitions",
       "path": "land-affected",
       "title": "How much land area is affected by and how much population is exposed to extreme events under climate change?",
@@ -151,7 +151,7 @@
     },
     {
       "portal": "Finance",
-      "portal-num": 1,
+      "portalNum": 1,
       "main-topic": "Risks",
       "path": "transition-risk",
       "title": "Transition risk",
@@ -169,7 +169,7 @@
     },
     {
       "portal": "Finance",
-      "portal-num": 2,
+      "portalNum": 2,
       "main-topic": "Opportunities",
       "path": "investment-opportunities",
       "title": "Investment Opportunities and Alignment: What are investment opportunities in a low carbon world?",
@@ -187,7 +187,7 @@
     },
     {
       "portal": "Finance",
-      "portal-num": 3,
+      "portalNum": 3,
       "main-topic": "Risks",
       "path": "physical-risks",
       "title": "Physical Risks",
@@ -205,7 +205,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": 5,
+      "portalNum": 5,
       "main-topic": "Transitions",
       "path": "primary-energy",
       "title": "Primary Energy Scenarios",
@@ -223,7 +223,7 @@
     },
     {
       "portal": null,
-      "portal-num": null,
+      "portalNum": null,
       "main-topic": "finder",
       "path": "finder",
       "title": "Scenario Finder",
@@ -241,7 +241,7 @@
     },
     {
       "portal": "Policy",
-      "portal-num": [8, 9, 10],
+      "portalNum": [8, 9, 10],
       "main-topic": "Extreme Events",
       "path": "earth",
       "title": "Senses Earth",
@@ -259,7 +259,7 @@
     },
     {
       "portal": null,
-      "portal-num": null,
+      "portalNum": null,
       "main-topic": "IIASA Database",
       "path": "database",
       "title": "Link to IIASA Database",
@@ -277,7 +277,7 @@
     },
     {
       "portal": null,
-      "portal-num": null,
+      "portalNum": null,
       "main-topic": "Budget",
       "path": "film",
       "title": "CO2 Film",
