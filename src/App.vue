@@ -46,10 +46,9 @@ export default {
   },
   computed: {
     modulesData: function() {
-      return moduleData.modules.filter(
-        m => m.portal === "Policy" && Number.isInteger(m.portalNum)
-      );
-      // return moduleData.modules.reduce((a, b) => ((a[b.path] = b), a), {});
+      return moduleData.modules
+        .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
+        .sort((a, b) => a.portalNum - b.portalNum);
     },
     ...mapState(["isMobile"])
   },
