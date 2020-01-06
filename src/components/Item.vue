@@ -28,8 +28,8 @@ export default {
   },
   watch: {
     ratio: function(ratio) {
-      if (this.$store.state.active !== this.data.path)
-        this.$store.state.active = this.data.path;
+      if (this.$store.state.activePortalPath !== this.data.path)
+        this.$store.state.activePortalPath = this.data.path;
     }
   },
   mounted() {

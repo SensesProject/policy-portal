@@ -1,21 +1,33 @@
 <template>
-  <div class="container" :class="[active]">
-    <div class="title">mainTopic</div>
-    <div class="position">
-      <div class="portal">portal</div>
-      <div class="circle"></div>
+  <div
+    class="container"
+    @click="click"
+    :class="[{navigationOpen}, activePortal && activePortal.path]"
+  >
+    <div class="info">{{activePortal && activePortal.title}}</div>
+    <div class="content">
+      <div class="title">Policy Portal</div>
+      <div class="position">
+        <div class="portal">{{activePortal && activePortal.title}}</div>
+        <div class="circle"></div>
+      </div>
+      <img src="desktop/navigation.svg" class="naviImage" />
     </div>
-
-    <img src="desktop/navigation.svg" class="naviImage" />
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapGetters, mapState } from "vuex";
 
 export default {
   computed: {
-    ...mapState(["active"])
+    ...mapGetters(["activePortal"]),
+    ...mapState(["navigationOpen"])
+  },
+  methods: {
+    click: function() {
+      this.$store.state.navigationOpen = !this.navigationOpen;
+    }
   }
 };
 </script>
@@ -32,12 +44,34 @@ export default {
   color: #0bbfb0;
   text-transform: uppercase;
   font-size: 12px;
-  height: 380px;
+
   width: 200px;
   overflow: hidden;
   background: #fff;
   z-index: 100;
+  cursor: pointer;
+
+  &.navigationOpen {
+    height: 380px;
+  }
 }
+
+.content {
+  display: none;
+
+  .navigationOpen & {
+    display: block;
+  }
+}
+
+.info {
+  display: block;
+
+  .navigationOpen & {
+    display: none;
+  }
+}
+
 .naviImage {
   position: absolute;
   top: 60px;
@@ -73,10 +107,12 @@ export default {
     top: 170px;
     left: 94px;
   }
+
   .land-affected & {
     top: 190px;
     left: 74px;
   }
+
   .primary-energy & {
     top: 220px;
     left: 94px;

@@ -27,8 +27,7 @@ import End from "./components/End.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
 import Earth from "./components/Earth.vue";
-import moduleData from "./assets/modules.json";
-import { mapState } from "vuex";
+import { mapState, mapGetters } from "vuex";
 
 let ticking = false;
 
@@ -45,12 +44,8 @@ export default {
     SensesMenu
   },
   computed: {
-    modulesData: function() {
-      return moduleData.modules
-        .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
-        .sort((a, b) => a.portalNum - b.portalNum);
-    },
-    ...mapState(["isMobile"])
+    ...mapState(["isMobile", "activePortal"]),
+    ...mapGetters(["modulesData"])
   },
   methods: {
     getSvgPath: function(path) {
@@ -69,7 +64,6 @@ export default {
   },
   mounted: function() {
     window.addEventListener("scroll", this.onScroll);
-    console.log(this.modulesData);
   },
   beforeDestroy: function() {
     window.removeEventListener("scroll", this.onScroll);
