@@ -2,19 +2,17 @@
   <div id="app" ref="app">
     <SensesMenu />
     <Navigation />
-    <Home />
     <Item v-for="data in modulesData" v-bind:key="data.path" :data="data">
       <template v-slot:figure="props">
-        <ModuleText :data="props.data" :ratio="props.ratio" />
-        <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+        <Home v-if="props.data.path === 'intro'" />
+        <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" />
+        <End v-else-if="props.data.path === 'end'" />
+        <div v-else>
+          <ModuleText :data="props.data" :ratio="props.ratio" />
+          <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
+        </div>
       </template>
     </Item>
-    <Item :data="modulesData[6]">
-      <template v-slot:figure="props">
-        <Earth :ratio="props.ratio"></Earth>
-      </template>
-    </Item>
-    <End />
   </div>
 </template>
 
@@ -60,13 +58,21 @@ export default {
         });
         ticking = true;
       }
+    },
+    reflow: function() {
+      this.$store.state.reflowTime = Date.now();
     }
   },
   mounted: function() {
+    console.log(this.modulesData);
     window.addEventListener("scroll", this.onScroll);
+    window.addEventListener("load", this.reflow);
+    window.addEventListener("resize", this.reflow);
   },
   beforeDestroy: function() {
     window.removeEventListener("scroll", this.onScroll);
+    window.removeEventListener("load", this.reflow);
+    window.removeEventListener("resize", this.reflow);
   }
 };
 </script>

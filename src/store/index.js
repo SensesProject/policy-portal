@@ -2,20 +2,28 @@ import Vue from "vue";
 import Vuex from "vuex";
 import modulesJson from "../assets/modules.json";
 
+const additionalItems = [
+  { path: "intro", title: "Introduction", portalNum: -1, simple: true },
+  { path: "earth", title: "Earth", mainTopic: "Extreme Events", portalNum: 7 },
+  { path: "end", title: "Continue", portalNum: 100 }
+];
+
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     scrollY: 0,
-    screenHeight: screen.height,
+    screenHeight: window.innerHeight,
     isMobile: false,
-    activePortalPath: null,
-    navigationOpen: true
+    activePortalPath: "intro",
+    navigationOpen: false,
+    reflowTime: null
   },
   getters: {
     modulesData: () => {
       return modulesJson.modules
         .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
+        .concat(...additionalItems)
         .sort((a, b) => a.portalNum - b.portalNum);
     },
     activePortal: (state, getters) => {

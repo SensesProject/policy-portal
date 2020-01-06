@@ -24,7 +24,7 @@ export default {};
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   flex-flow: column;
   margin-bottom: 100px;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="item" :class="{scroller: !data.simple}">
     <figure>
       <slot name="figure" :ratio="ratio" :data="data"></slot>
     </figure>
@@ -17,59 +17,75 @@ export default {
   computed: {
     ratio: function() {
       return (
-        Math.min(
-          Math.max(this.scrollY - this.offsetTop, 0),
-          this.height - this.screenHeight * 1.2
-        ) /
-        (this.height - this.screenHeight * 1.2)
+        Math.min(Math.max(this.scrollY - this.offsetTop, 0), this.height) /
+        this.height
       );
     },
-    ...mapState(["scrollY", "screenHeight"])
+    ...mapState(["scrollY", "screenHeight", "reflowTime"])
+  },
+  methods: {
+    reflow: function() {
+      this.offsetTop = this.$el.offsetTop;
+      this.height = this.$el.getBoundingClientRect().height;
+    }
   },
   watch: {
     ratio: function(ratio) {
-      if (this.$store.state.activePortalPath !== this.data.path)
+      if (this.$store.state.activePortalPath !== this.data.path) {
         this.$store.state.activePortalPath = this.data.path;
+      }
+    },
+    reflowTime: function() {
+      this.reflow();
     }
   },
   mounted() {
-    this.offsetTop = this.$el.offsetTop;
-    this.height = this.$el.getBoundingClientRect().height;
+    setTimeout(this.reflow, 1);
   },
-  props: ["data"]
+  props: ["data", "simple"]
 };
 </script>
 
 <style lang="stylus" scoped>
-figure {
-  position: sticky;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  transform: translate3d(0, 0, 0);
-  /* background-color: #8a8a8a; */
-  z-index: 0;
-  height: 90vh;
-  top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.item {
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-article {
-  position: relative;
-  padding: 0;
-  width: 10px;
-  height: 300vh;
-  margin: 0 auto;
-  top: -90vh;
-  // background: #7fffd43d;
-  pointer-events: none;
-}
+.scroller {
+  figure {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+    /* background-color: #8a8a8a; */
+    z-index: 0;
+    height: 90vh;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.step {
-  margin: 0 auto 2rem auto;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.1);
+  article {
+    position: relative;
+    padding: 0;
+    width: 10px;
+    height: 300vh;
+    margin: 0 auto;
+    top: -90vh;
+    // background: #7fffd43d;
+    pointer-events: none;
+  }
+
+  .step {
+    margin: 0 auto 2rem auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 </style>
