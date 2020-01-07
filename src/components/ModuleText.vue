@@ -44,6 +44,9 @@ export default {
 
   &.primary-energy {
     background: #9be8c7;
+    height: 60vh;
+    left: 0;
+    top: 20vh;
   }
 }
 
