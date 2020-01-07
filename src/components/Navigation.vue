@@ -45,14 +45,14 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 
-  width: 200px;
+  width: 230px;
   overflow: hidden;
   background: #fff;
   z-index: 100;
   cursor: pointer;
 
   &.navigationOpen {
-    height: 380px;
+    height: 400px;
   }
 }
 
@@ -74,12 +74,12 @@ export default {
 
 .naviImage {
   position: absolute;
-  top: 60px;
+  top: 90px;
 }
 
 .position {
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 67px;
   transition: top 1s, left 1s;
 
@@ -123,6 +123,8 @@ export default {
   position: absolute;
   left: 45px;
   transform: rotate(-45deg);
+  width: 100px;
+  font-size: 0.7em;
 }
 
 .circle {
