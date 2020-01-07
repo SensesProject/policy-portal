@@ -29,12 +29,13 @@ export default {
   /* position: absolute; */
   position: absolute;
   width: 100%;
-  left: 0;
+  left: 20%;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  max-width: 1000px;
 }
 svg text {
   font-size: inherit;

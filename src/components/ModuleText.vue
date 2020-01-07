@@ -15,6 +15,7 @@
         <div class="content">{{ data.tags.join(", ") }}</div>
       </div>
     </div>
+    <div class="circle"></div>
     <div class="text">
       <h2 :style="{ left: ratio * 20 + 'px' }">{{ data.title }}</h2>
       <div
@@ -24,7 +25,6 @@
       >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio > 0.5">READ</div>
     </div>
-    <div class="circle"></div>
   </div>
 </template>
 
@@ -73,7 +73,7 @@ export default {
   .stocktake-1 &,
   .transition-path-1 & {
     color: #0bbfb0;
-    border-bottom: 1px solid #0bbfb0;
+    border-bottom: 1px dotted #0bbfb0;
     background: none;
   }
 }
@@ -81,8 +81,8 @@ export default {
 .circle {
   position: absolute;
   border-radius: 500px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   mix-blend-mode: soft-light;
   border: 2px solid #e6fffe;
   transition: background 1s;
@@ -134,7 +134,7 @@ export default {
   }
 
   .land-affected & {
-    left: 55%;
+    left: 10%;
     top: 50%;
 
     h2 {
@@ -181,7 +181,7 @@ export default {
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.555803px;
-    color: #1a1a1a;
+    color: #5263ff;
     margin-top: 40px;
   }
 }

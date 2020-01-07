@@ -3,10 +3,11 @@
     <div class="item" :class="{visible: true}">
       <img src="desktop/earth-1.svg" alt="Earth" class="earthsvg" />
       <div class="text">
-        <h2>Crop Failures</h2>
+        <h2>Crops</h2>
         <div
           class="description"
-        >The percentage of wildfires will increase of 50% in the next 30 years due to temperature increasing.</div>
+        >Discover how different regions will be impacted by <span class="dotted">
+          crop failures</span> in the next 100 years.</div>
         <div class="readbutton">GO TO HEART</div>
       </div>
     </div>
@@ -16,7 +17,8 @@
         <h2>Floodings</h2>
         <div
           class="description"
-        >The percentage of wildfires will increase of 50% in the next 30 years due to temperature increasing.</div>
+        >Discover how different regions will be impacted by <span class="dotted">
+          floodings</span> in the next 100 years.</div>
         <div class="readbutton">GO TO HEART</div>
       </div>
     </div>
@@ -26,8 +28,10 @@
         <h2>Wildfires</h2>
         <div
           class="description"
-        >The percentage of wildfires will increase of 50% in the next 30 years due to temperature increasing.</div>
+        >Discover how different regions will be impacted by <span class="dotted">
+          wildfires</span> in the next 100 years.</div>
         <div class="readbutton">GO TO HEART</div>
+      </div>
       </div>
     </div>
   </div>
@@ -67,7 +71,7 @@ export default {
   line-height: 26px;
   letter-spacing: 0.555803px;
   color: #524DFF;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .earthsvg {
