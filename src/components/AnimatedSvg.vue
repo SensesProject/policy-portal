@@ -36,8 +36,6 @@ export default {
   justify-content: center;
   height: 100vh;
   pointer-events: none;
-}
-svg {
   max-width: 1000px;
 }
 svg text {

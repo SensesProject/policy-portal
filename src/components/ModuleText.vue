@@ -54,8 +54,8 @@ export default {
 
 .microModule {
   position: absolute;
-  left: 60%;
-  top: 50%;
+  left: 50%;
+  top: 30%;
 }
 
 .header {

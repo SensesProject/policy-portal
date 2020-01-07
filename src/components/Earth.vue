@@ -4,10 +4,10 @@
       <img src="desktop/earth-1.svg" alt="Earth" class="earthsvg" />
       <div class="text">
         <h2>Crops</h2>
-        <div
-          class="description"
-        >Discover how different regions will be impacted by <span class="dotted">
-          crop failures</span> in the next 100 years.</div>
+        <div class="description">
+          Discover how different regions will be impacted by
+          <span class="dotted">crop failures</span> in the next 100 years.
+        </div>
         <div class="readbutton">GO TO HEART</div>
       </div>
     </div>
@@ -15,10 +15,10 @@
       <img src="desktop/earth-2.svg" alt="Earth" class="earthsvg" />
       <div class="text">
         <h2>Floodings</h2>
-        <div
-          class="description"
-        >Discover how different regions will be impacted by <span class="dotted">
-          floodings</span> in the next 100 years.</div>
+        <div class="description">
+          Discover how different regions will be impacted by
+          <span class="dotted">floodings</span> in the next 100 years.
+        </div>
         <div class="readbutton">GO TO HEART</div>
       </div>
     </div>
@@ -26,12 +26,11 @@
       <img src="desktop/earth-3.svg" alt="Earth" class="earthsvg" />
       <div class="text">
         <h2>Wildfires</h2>
-        <div
-          class="description"
-        >Discover how different regions will be impacted by <span class="dotted">
-          wildfires</span> in the next 100 years.</div>
+        <div class="description">
+          Discover how different regions will be impacted by
+          <span class="dotted">wildfires</span> in the next 100 years.
+        </div>
         <div class="readbutton">GO TO HEART</div>
-      </div>
       </div>
     </div>
   </div>
