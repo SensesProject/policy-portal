@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   position: fixed;
-  top: 100px;
+  top: 131px;
   padding: 20px;
   padding-left: 40px;
   border: 1px solid #0bbfb0;
