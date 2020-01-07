@@ -20,7 +20,7 @@
         <div class="readbutton">GO TO HEART</div>
       </div>
     </div>
-    <div class="item" :class="{visible: ratio > 0.8}">
+    <div class="item" :class="{visible: ratio > 0.6}">
       <img src="desktop/earth-3.svg" alt="Earth" class="earthsvg" />
       <div class="text">
         <h2>Wildfires</h2>
