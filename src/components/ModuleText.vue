@@ -15,6 +15,7 @@
         <div class="content">{{ data.tags.join(", ") }}</div>
       </div>
     </div>
+    <div class="circle"></div>
     <div class="text">
       <h2 :style="{ left: ratio * 20 + 'px' }">{{ data.title }}</h2>
       <div
@@ -80,7 +81,7 @@ export default {
   .stocktake-1 &,
   .transition-path-1 & {
     color: #0bbfb0;
-    border-bottom: 1px solid #0bbfb0;
+    border-bottom: 1px dotted #0bbfb0;
     background: none;
   }
 }
@@ -88,8 +89,8 @@ export default {
 .circle {
   position: absolute;
   border-radius: 500px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   mix-blend-mode: soft-light;
   border: 2px solid #e6fffe;
   transition: background 1s;
@@ -120,6 +121,9 @@ export default {
 
   .stocktake-2 & {
     left: 20%;
+    .description {
+      width: 500px;
+    }
   }
 
   .primary-energy & {
@@ -148,10 +152,24 @@ export default {
     h2 {
       width: 500px;
     }
+    .description {
+      width: 450px;
+    }
+  }
+
+  .primary-energy & {
+    left: 25%;
+    top: 30%;
+    h2 {
+      width: 300px;
+    }
+    .description {
+      width: 300px;
+    }
   }
 
   .land-affected & {
-    left: 55%;
+    left: 25%;
     top: 50%;
 
     h2 {
@@ -168,6 +186,9 @@ export default {
 
     h2 {
       width: 600px;
+    }
+    .description {
+      width: 550px;
     }
   }
 
@@ -198,7 +219,7 @@ export default {
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.555803px;
-    color: #1a1a1a;
+    color: #5263ff;
     margin-top: 40px;
   }
 }

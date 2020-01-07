@@ -88,4 +88,8 @@ export default {
 #app {
   font-family: "IBM Plex Sans", sans-serif;
 }
+
+svg text {
+  font-size: 0.6em;
+}
 </style>

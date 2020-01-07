@@ -48,16 +48,16 @@
             <circle id="Oval-5-Copy-20" cx="401.5" cy="139.5" r="5.5"></circle>
             <circle id="Oval-5-Copy-41" cx="401.5" cy="334.5" r="5.5"></circle>
         </g>
-        <line x1="625.75" y1="92.75" x2="757.5" y2="60.5" id="line1" stroke="#524DFF" stroke-width="0.5"></line>
-        <line x1="119.5" y1="382.5" x2="228.5" y2="285.5" id="line2" stroke="#524DFF" stroke-width="0.5"></line>
-        <line x1="629.5" y1="351.5" x2="705.5" y2="388.5" id="line3" stroke="#524DFF" stroke-width="0.5"></line>
-        <text id="Yearly-energy-demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+        <line x1="625.75" y1="92.75" x2="757.5" y2="60.5" id="line1" stroke="#8d88ff" stroke-width="0.5"></line>
+        <line x1="119.5" y1="382.5" x2="228.5" y2="285.5" id="line2" stroke="#8d88ff" stroke-width="0.5"></line>
+        <line x1="629.5" y1="351.5" x2="705.5" y2="388.5" id="line3" stroke="#8d88ff" stroke-width="0.5"></line>
+        <text id="Yearly-energy-demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
             <tspan x="53.441968" y="399">Yearly energy demand</tspan>
         </text>
-        <text id="Energy-produced-in-o" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+        <text id="Energy-produced-in-o" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
             <tspan x="692.274558" y="46">Energy produced in one day</tspan>
         </text>
-        <text id="Exceeding-Demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
+        <text id="Exceeding-Demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
             <tspan x="672.053574" y="409">Exceeding Demand</tspan>
         </text>
     </g>
