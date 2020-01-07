@@ -64,8 +64,8 @@ export default {
     transform: translate3d(0, 0, 0);
     /* background-color: #8a8a8a; */
     z-index: 0;
-    height: 90vh;
-    top: 10px;
+    height: calc(100vh);
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
