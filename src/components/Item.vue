@@ -16,9 +16,11 @@ export default {
   },
   computed: {
     ratio: function() {
-      return (
-        Math.min(Math.max(this.scrollY - this.offsetTop, 0), this.height) /
-        this.height
+      return Math.min(
+        (Math.min(Math.max(this.scrollY - this.offsetTop, 0), this.height) /
+          this.height) *
+          1.5,
+        1
       );
     },
     ...mapState(["scrollY", "screenHeight", "reflowTime"])
