@@ -1,8 +1,6 @@
 <template>
-  <div class="containter" :class="[data.path]">
-    <div class="header">
-      {{ data.mainTopic }}
-    </div>
+  <div class="container" :class="[data.path]">
+    <div class="header">{{ data.mainTopic }}</div>
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
@@ -23,9 +21,7 @@
         class="description"
         :style="{ left: ratio * 7 + 'px' }"
         v-show="ratio > 0.3"
-      >
-        {{ data.description }}
-      </div>
+      >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio > 0.5">READ</div>
     </div>
     <div class="circle"></div>
@@ -38,16 +34,48 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+
+  &.primary-energy {
+    background: #9be8c7;
+    height: 60vh;
+    left: 0;
+    top: 20vh;
+  }
+}
 
 .header {
   top: 0px;
-  position absolute;
-  color: #0BBFB0;
-  border-bottom: 1px solid #0BBFB0;
-  width 100%;
-  left:0px;
-  padding-left 10px;
+  position: absolute;
+
+  width: 100%;
+  left: 0px;
+  padding-left: 10px;
+  background: #fff;
+  padding-top: 5px;
+  // border-bottom: 1px dashed #979797;
+  background-image: linear-gradient(
+    to right,
+    #979797 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: transparent;
+
+  .stocktake-1 &,
+  .transition-path-1 & {
+    color: #0bbfb0;
+    border-bottom: 1px solid #0bbfb0;
+    background: none;
+  }
 }
 
 .circle {
@@ -55,16 +83,16 @@ export default {
   border-radius: 500px;
   width: 300px;
   height: 300px;
-  mix-blend-mode: overlay;
-  border: 2px solid #E6FFFE;
+  mix-blend-mode: soft-light;
+  border: 2px solid #e6fffe;
   transition: background 1s;
   pointer-events: none;
   left: calc(50% - 150px);
   top: 34%;
   cursor: pointer;
 
-  .containter:hover & {
-    background: #E6FFFE;
+  .container:hover & {
+    background: #e6fffe;
   }
 
   .stocktake-2 & {
@@ -120,6 +148,7 @@ export default {
   .land-transitions & {
     left: 15%;
     top: 50%;
+
     h2 {
       width: 600px;
     }
@@ -127,12 +156,12 @@ export default {
 
   h2 {
     font-size: 40px;
-    font-family: 'IBM Plex Mono', serif;
+    font-family: "IBM Plex Mono", serif;
     line-height: 1.1em;
     width: 300px;
     position: relative;
 
-    .containter:hover & {
+    .container:hover & {
       font-style: italic;
       font-weigh: 700;
     }
@@ -152,7 +181,7 @@ export default {
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.555803px;
-    color: #1A1A1A;
+    color: #1a1a1a;
     margin-top: 40px;
   }
 }

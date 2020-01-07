@@ -27,7 +27,14 @@ export default {
 <style scoped>
 .svg {
   /* position: absolute; */
-  max-width: 1000px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 svg text {
   font-size: inherit;

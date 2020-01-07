@@ -3,9 +3,9 @@ import Vuex from "vuex";
 import modulesJson from "../assets/modules.json";
 
 const additionalItems = [
-  { path: "intro", title: "Introduction", portalNum: -1, simple: true },
-  { path: "earth", title: "Earth", mainTopic: "Extreme Events", portalNum: 7 },
-  { path: "end", title: "Continue", portalNum: 100 }
+  { path: "intro", mainTopic: "Introduction", portalNum: -1, simple: true },
+  { path: "earth", mainTopic: "Extreme Events", portalNum: 7 },
+  { path: "end", mainTopic: "Continue", portalNum: 100 }
 ];
 
 Vue.use(Vuex);
