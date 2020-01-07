@@ -35,6 +35,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  pointer-events: none;
 }
 svg text {
   font-size: inherit;

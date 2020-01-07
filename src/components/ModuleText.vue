@@ -25,6 +25,7 @@
       <div class="readbutton" v-show="ratio > 0.5">READ</div>
     </div>
     <div class="circle"></div>
+    <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" />
   </div>
 </template>
 
@@ -48,6 +49,12 @@ export default {
     left: 0;
     top: 20vh;
   }
+}
+
+.microModule {
+  position: absolute;
+  left: 60%;
+  top: 50%;
 }
 
 .header {
@@ -115,6 +122,13 @@ export default {
     left: 20%;
   }
 
+  .primary-energy & {
+    left: 20%;
+    h2 {
+      width: 500px;
+    }
+  }
+
   .transition-path-2 & {
     left: 15%;
 
@@ -170,6 +184,10 @@ export default {
   font-size: 12px;
   text-transform: uppercase;
   top: 100px;
+
+  .primary-energy & {
+    top: 75%;
+  }
 
   > div {
     clear: both;
