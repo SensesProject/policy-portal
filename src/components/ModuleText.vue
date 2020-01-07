@@ -113,6 +113,9 @@ export default {
 
   .stocktake-2 & {
     left: 20%;
+    .description {
+      width: 500px;
+    }
   }
 
   .transition-path-1 & {
@@ -131,10 +134,24 @@ export default {
     h2 {
       width: 500px;
     }
+    .description {
+      width: 450px;
+    }
+  }
+
+  .primary-energy & {
+    left: 25%;
+    top: 30%;
+    h2 {
+      width: 300px;
+    }
+    .description {
+      width: 300px;
+    }
   }
 
   .land-affected & {
-    left: 10%;
+    left: 25%;
     top: 50%;
 
     h2 {
@@ -151,6 +168,9 @@ export default {
 
     h2 {
       width: 600px;
+    }
+    .description {
+      width: 550px;
     }
   }
 

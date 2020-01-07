@@ -8,8 +8,8 @@
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" />
         <End v-else-if="props.data.path === 'end'" />
         <div v-else>
-          <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
           <ModuleText :data="props.data" :ratio="props.ratio" />
+          <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
         </div>
       </template>
     </Item>
