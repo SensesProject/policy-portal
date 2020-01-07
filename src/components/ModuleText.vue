@@ -87,16 +87,38 @@ export default {
     left: 20%;
   }
 
+  .transition-path-1 & {
+    left: 35%;
+    top: 30%;
+    h2 {
+      width: 400px;
+    }
+    .description {
+      width: 500px;
+    }
+  }
+
   .transition-path-2 & {
     left: 15%;
-
     h2 {
       width: 500px;
     }
   }
 
+  .land-affected & {
+    left: 55%;
+    top: 50%;
+
+    h2 {
+      width: 500px;
+    }
+    .description {
+      width: 550px;
+    }
+  }
+
   .land-transitions & {
-    left: 20%;
+    left: 15%;
     top: 50%;
     h2 {
       width: 600px;

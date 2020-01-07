@@ -1,13 +1,22 @@
 <template>
   <div class="container">
     <div class="inner">
-      <h1>Discover Policy related scenarios.</h1>
+      <h1>Welcome to the Senses Policy Portal.</h1>
       <div class="text">
-        Here some introductory text for the portal. How the portal will work and
-        how to access and use it. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
+        Here you can explore a curated sets of learning module regarding
+        Policy related aspects of Climate Change.</br>
+        You can scroll three different chapters:
+        <span class="dotted">Budgets</span>,
+        <span class="dotted">Transitions</span>
+        and <span class="dotted">Extreme Events</span>.</br>
+        In the <span class="dotted">Budgets</span> chapter you will be introduced
+        to the near and long-term plans to reach Net Zero emissions in the next
+        century. The <span class="dotted">Transitions</span> section is dedicated
+        to different kind of transitions that might occur. From energetic transitisions
+        to land transitions, you will be provided with a complete overview of how
+        our future will look like.
+        The <span class="dotted">Extreme Events</span> chapter is dedicated to the extent
+        and impact of Climate Change according to the predictions.
       </div>
     </div>
     <img src="desktop/home.svg" class="plan" />
