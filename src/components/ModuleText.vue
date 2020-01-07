@@ -50,13 +50,29 @@ export default {
 .header {
   top: 0px;
   position: absolute;
-  color: #0bbfb0;
-  border-bottom: 1px solid #0bbfb0;
+
   width: 100%;
   left: 0px;
   padding-left: 10px;
   background: #fff;
   padding-top: 5px;
+  // border-bottom: 1px dashed #979797;
+  background-image: linear-gradient(
+    to right,
+    #979797 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: transparent;
+
+  .stocktake-1 &,
+  .transition-path-1 & {
+    color: #0bbfb0;
+    border-bottom: 1px solid #0bbfb0;
+    background: none;
+  }
 }
 
 .circle {
