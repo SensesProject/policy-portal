@@ -118,6 +118,7 @@ export default {
   left: 52%;
   top: 33%;
   cursor: pointer;
+  z-index: 1000;
 
   .stocktake-2 & {
     left: 20%;
@@ -230,6 +231,7 @@ export default {
   font-size: 12px;
   text-transform: uppercase;
   top: 100px;
+  z-index: 1000;
 
   .primary-energy & {
     top: 75%;
