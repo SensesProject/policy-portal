@@ -23,7 +23,7 @@ export default {
         1
       );
     },
-    ...mapState(["scrollY", "screenHeight", "reflowTime"])
+    ...mapState(["scrollY", "screenHeight", "loaded"])
   },
   methods: {
     reflow: function() {
@@ -37,7 +37,7 @@ export default {
         this.$store.state.activePortalPath = this.data.path;
       }
     },
-    reflowTime: function() {
+    loaded: function() {
       this.reflow();
     }
   },

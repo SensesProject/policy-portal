@@ -2,7 +2,8 @@
   <div
     class="container"
     @click="click"
-    :class="[{navigationOpen}, activePortal && activePortal.path]"
+    :class="[{open}, activePortal && activePortal.path]"
+    v-if="loaded"
   >
     <div class="info">{{activePortal && activePortal.mainTopic}}</div>
     <div class="content">
@@ -22,11 +23,23 @@ import { mapGetters, mapState } from "vuex";
 export default {
   computed: {
     ...mapGetters(["activePortal"]),
-    ...mapState(["navigationOpen"])
+    ...mapState(["navigationOpen", "loaded"]),
+    open: function(){
+      return this.activePortal && this.activePortal.path !== "intro"
+    }
   },
+  // watch: {
+  //   activePortal: function(n,o){
+  //     if(o.path === "intro" && n.path === "stocktake-1") {
+  //       this.$store.state.navigationOpen = true;
+  //     } else if(n.path === "intro") {
+  //       this.$store.state.navigationOpen = false;
+  //     }
+  //   }
+  // },
   methods: {
     click: function() {
-      this.$store.state.navigationOpen = !this.navigationOpen;
+      //this.$store.state.navigationOpen = !this.navigationOpen;
     }
   }
 };
@@ -51,7 +64,7 @@ export default {
   z-index: 100;
   cursor: pointer;
 
-  &.navigationOpen {
+  &.open {
     height: 400px;
   }
 }
@@ -59,7 +72,7 @@ export default {
 .content {
   display: none;
 
-  .navigationOpen & {
+  .open & {
     display: block;
   }
 }

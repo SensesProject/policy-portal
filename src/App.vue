@@ -59,8 +59,11 @@ export default {
         ticking = true;
       }
     },
-    reflow: function() {
-      this.$store.state.reflowTime = Date.now();
+    reflow: function(e) {
+      this.$store.state.loaded = true;
+      if(e.type === 'load'){
+        this.$store.state.activePortalPath = "intro"
+      }
     }
   },
   mounted: function() {
