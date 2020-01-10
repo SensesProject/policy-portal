@@ -17,10 +17,10 @@
     </div>
     <div class="circle"></div>
     <div class="text">
-      <h2 :style="{ left: ratio * 20 + 'px' }">{{ data.title }}</h2>
+      <h2 :style="{ left: ratio * 40 + 'px' }">{{ data.title }}</h2>
       <div
         class="description"
-        :style="{ left: ratio * 7 + 'px' }"
+        :style="{ left: ratio * 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio > 0.5">READ</div>
