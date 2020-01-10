@@ -4,11 +4,11 @@
       <h1>Welcome to the Senses Policy Portal.</h1>
       <div class="text">
         Here you can explore a curated sets of learning module regarding
-        Policy related aspects of Climate Change.</br>
+        Policy related aspects of Climate Change.<br>
         You can scroll three different chapters:
         <span class="dotted">Budgets</span>,
         <span class="dotted">Transitions</span>
-        and <span class="dotted">Extreme Events</span>.</br>
+        and <span class="dotted">Extreme Events</span>.<br>
         In the <span class="dotted">Budgets</span> chapter you will be introduced
         to the near and long-term plans to reach Net Zero emissions in the next
         century. The <span class="dotted">Transitions</span> section is dedicated
