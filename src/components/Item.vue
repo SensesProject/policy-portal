@@ -77,7 +77,7 @@ export default {
     position: relative;
     padding: 0;
     width: 10px;
-    height: 300vh;
+    height: 200vh;
     margin: 0 auto;
     top: -90vh;
     // background: #7fffd43d;
