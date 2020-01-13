@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="inner">
-      <h1>Continue on the Finance Portal.</h1>
+      <h1>Continue on the Finance Portal.<span class="right_arrow">→</span>
+</h1>
     </div>
-    <img src="desktop/arrow.svg" class="arrow" />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {};
   flex-flow: column;
 }
 .inner {
-  width: 500px;
+  width: 600px;
 }
 
 h1 {
@@ -35,7 +35,11 @@ h1 {
   margin-top: 60px;
 }
 
-.plan {
-  margin-top: 40px;
+.right_arrow {
+  font-weight: normal;
+  color: #b035c9;
+  font-size: 50px;
+  padding-left: 30px;
 }
+
 </style>

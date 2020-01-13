@@ -12,7 +12,7 @@
       </div>
       <div class="tags">
         <div class="icon"></div>
-        <div class="content">{{ data.tags.join(", ") }}</div>
+        <div class="content">{{ data.scenariofinder }}, {{ data.data }}</div>
       </div>
     </div>
     <div class="circle"></div>
@@ -23,10 +23,10 @@
         :style="{ left: ratio * 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
-      <div class="readbutton" v-show="ratio > 0.5">READ</div>
+      <div class="readbutton" v-show="ratio > 0.5"><span class="readspan">READ</span></div>
     </div>
     <div class="circle"></div>
-    <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" />
+    <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
 </template>
 
@@ -91,7 +91,6 @@ export default {
   border-radius: 500px;
   width: 400px;
   height: 400px;
-  mix-blend-mode: soft-light;
   border: 2px solid #e6fffe;
   transition: background 1s;
   pointer-events: none;
@@ -109,6 +108,11 @@ export default {
 
   .transition-path-2 & {
     left: 40%;
+  }
+
+  .primary-energy & {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -138,7 +142,7 @@ export default {
   }
 
   .transition-path-1 & {
-    left: 35%;
+    left: 45%;
     top: 30%;
     h2 {
       width: 400px;
@@ -149,7 +153,7 @@ export default {
   }
 
   .transition-path-2 & {
-    left: 15%;
+    left: 25%;
     h2 {
       width: 500px;
     }
@@ -215,13 +219,23 @@ export default {
 
   .readbutton {
     font-family: IBM Plex Mono;
-    font-style: italic;
+    transition: background 1s;
+    border-radius: 500px;
+    width: 75px;
+    height: 75px;
+    border: 0.5px solid #5263ff;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.555803px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
     color: #5263ff;
     margin-top: 40px;
+    line-height: 73px;
+    -webkit-transform: rotate(-10deg);
+    text-align: center;
+    .container:hover & {
+      background: #5263ff;
+      color: white;
+    }
   }
 }
 

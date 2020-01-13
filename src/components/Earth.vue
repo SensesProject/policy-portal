@@ -8,7 +8,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">crop failures</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO HEART</div>
+        <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.4}">
@@ -19,7 +19,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">floodings</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO HEART</div>
+        <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
@@ -30,7 +30,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">wildfires</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO HEART</div>
+        <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
   </div>
@@ -67,6 +67,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
+  text-align: right;
   line-height: 26px;
   letter-spacing: 0.555803px;
   color: #524DFF;

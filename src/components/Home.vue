@@ -19,6 +19,7 @@
         and impact of Climate Change according to the predictions.
       </div>
     </div>
+    <div class="down_arrow">↓</div>
     <img src="desktop/home.svg" class="plan" />
     <img src="desktop/primer.svg" class="plan" />
   </div>
@@ -43,14 +44,25 @@ export default {};
 
 h1 {
   font-weight: 700;
-  /* text-shadow: -1px 0 #0bbfb0, 0 1px #0bbfb0, 1px 0 #0bbfb0, 0 -1px #0bbfb0; */
-  color: #fff;
-  font-size: 60px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #0bbfb0;
+  /* text-shadow: -1px 0 #003733, 0 1px #003733, 1px 0 #003733, 0 -1px #003733; */
+  color: #0bbfb0;
+  font-size: 100px;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #003733; */
   line-height: 1em;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: 60px;
+}
+
+.senses {
+  color: #5263FF;
+}
+
+.down_arrow {
+  color: #0bbfb0;
+  font-size: 50px;
+  margin-top: 55px;
+  margin-bottom: 20px;
 }
 
 .plan {
