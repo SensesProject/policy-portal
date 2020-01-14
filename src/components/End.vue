@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <div class="inner">
+<!-- <Dot class="dot"/> -->
+<div class="dot"></div>
+<div class="inner">
       <h1>Continue on the Finance Portal.<span class="right_arrow">→</span>
 </h1>
     </div>
@@ -8,7 +10,13 @@
 </template>
 
 <script>
-export default {};
+// import Dot from "./Dot.vue";
+
+export default {
+  // components: {
+  //   Dot
+  // }
+};
 </script>
 
 <style scoped>
@@ -21,6 +29,15 @@ export default {};
 }
 .inner {
   width: 600px;
+}
+
+.dot {
+  top: 35%;
+  position: absolute;
+  border-radius: 500px;
+  width: 15px;
+  height: 15px;
+  background-color: #b035c9;
 }
 
 h1 {
@@ -41,5 +58,4 @@ h1 {
   font-size: 50px;
   padding-left: 30px;
 }
-
 </style>

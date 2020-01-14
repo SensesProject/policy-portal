@@ -23,7 +23,7 @@
         :style="{ left: ratio * 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
-      <div class="readbutton" v-show="ratio > 0.5"><span class="readspan">READ</span></div>
+      <div class="readbutton" v-show="ratio> 0.5"><span class="readspan">READ</span></div>
     </div>
     <div class="circle"></div>
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
@@ -102,17 +102,42 @@ export default {
     background: #e6fffe;
   }
 
+  .stocktake-1 & {
+    left: 53%;
+    top: 23%;
+  }
+
   .stocktake-2 & {
-    left: 55%;
+    left: 20%;
+    top: 22%;
+  }
+
+  .transition-path-1 & {
+    left: 33%;
+    top: 20%;
   }
 
   .transition-path-2 & {
-    left: 40%;
+    left: 25%;
+    top: 25%;
   }
 
   .primary-energy & {
-    width: 200px;
-    height: 200px;
+    left: 25%;
+    top: 28%;
+
+    width: 280px;
+    height: 280px;
+  }
+
+  .land-transitions & {
+    left: 25%;
+    top: 40%;
+  }
+
+  .land-affected & {
+    left: 35%;
+    top: 25%;
   }
 }
 
@@ -142,7 +167,7 @@ export default {
   }
 
   .transition-path-1 & {
-    left: 45%;
+    left: 35%;
     top: 30%;
     h2 {
       width: 400px;
@@ -155,7 +180,7 @@ export default {
   .transition-path-2 & {
     left: 25%;
     h2 {
-      width: 500px;
+      width: 550px;
     }
     .description {
       width: 450px;
@@ -174,8 +199,8 @@ export default {
   }
 
   .land-affected & {
-    left: 25%;
-    top: 50%;
+    left: 35%;
+    top: 40%;
 
     h2 {
       width: 500px;
@@ -186,7 +211,7 @@ export default {
   }
 
   .land-transitions & {
-    left: 15%;
+    left: 25%;
     top: 50%;
 
     h2 {
