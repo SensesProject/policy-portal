@@ -61,8 +61,10 @@ export default {
     },
     reflow: function(e) {
       this.$store.state.loaded = true;
-      if(e.type === 'load'){
-        this.$store.state.activePortalPath = "intro"
+      if (e.type === "load") {
+        setTimeout(() => {
+          this.$store.state.activePortalPath = "intro";
+        }, 1);
       }
     }
   },
