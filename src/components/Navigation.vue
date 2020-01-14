@@ -92,6 +92,7 @@ export default {
 .naviImage {
   position: absolute;
   top: 90px;
+  left: 10px;
 }
 
 .position {
@@ -102,47 +103,47 @@ export default {
 
   .stocktake-1 & {
     top: 123px;
-    left: 114px;
+    left: 81px;
   }
 
   .stocktake-2 & {
     top: 154px;
-    left: 95px;
+    left: 62px;
   }
 
   .transition-path-1 & {
     top: 179px;
-    left: 114px;
+    left: 81px;
   }
 
   .transition-path-2 & {
     top: 205px;
-    left: 95px;
+    left: 62px;
   }
 
   .primary-energy & {
     top: 220px;
-    left: 74px;
+    left: 53px;
   }
 
   .land-transitions & {
     top: 235px;
-    left: 95px;
+    left: 62px;
   }
 
   .land-affected & {
     top: 260px;
-    left: 114px;
+    left: 81px;
   }
 
   .earth & {
     top: 280px;
-    left: 130px;
+    left: 97px;
   }
 
   .end & {
     top: 320px;
-    left: 114px;
+    left: 81px;
   }
 }
 
