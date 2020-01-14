@@ -1,35 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>stocktake-2</title>
-    <desc>Created with Sketch.</desc>
     <g id="stocktake-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-24" transform="translate(512.000000, 63.000000)">
-          <polyline id="Path-4" stroke="#0BBFB0" points="7 4 42.9411765 141.169118 78 78 113.882353 227.636029 147 201 186 291 221 104 256 212"></polyline>
-            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" stroke-width="1" x="37" y="141" width="12" height="191"></rect>
-            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" stroke-width="1" x="72" y="79" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" stroke-width="1" x="108" y="228" width="12" height="84"></rect>
-            <path d="M143,259 L143,375 L155,375 L155,259 L143,259 Z" id="Rectangle-11-Copy-4" stroke="#368161" stroke-width="1"></path>
-            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" stroke-width="1" x="179" y="291" width="12" height="53"></rect>
-            <rect id="Rectangle-11-Copy-6" stroke="#6DB697" stroke-width="1" x="214" y="104" width="12" height="213"></rect>
-            <path d="M250,211 L250,375 L262,375 L262,211 L250,211 Z" id="Rectangle-11-Copy-7" stroke="#427660" stroke-width="1"></path>
-            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" stroke-width="1" x="320" y="138" width="12" height="210"></rect>
-            <rect id="Rectangle-11-Copy-10" stroke="#63B290" stroke-width="1" x="355" y="86" width="12" height="219"></rect>
-            <path d="M285,105 L285,269 L297,269 L297,105 L285,105 Z" id="Rectangle-11-Copy-8" stroke="#427660" stroke-width="1"></path>
-            <rect id="Rectangle-11" stroke="#6DB697" stroke-width="1" x="1" y="5" width="12" height="280"></rect>
-            <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="7" cy="4" r="4"></circle>
-            <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="146" cy="202" r="4"></circle>
-            <circle id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="43" cy="141" r="4"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="114" cy="227" r="4"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="185" cy="290" r="4"></circle>
+        <g id="Group-24" transform="translate(515.000000, 63.000000)">
+            <polyline id="Path-4" stroke="#0BBFB0" points="4 4 39.9411765 141.169118 75 78 122 278 144 201 182 348 218 104 253 212"></polyline>
+            <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="4" cy="4" r="4"></circle>
+            <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="143" cy="202" r="4"></circle>
+            <circle id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="40" cy="141" r="4"></circle>
+            <circle id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="121" cy="276" r="4"></circle>
+            <circle id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="182" cy="348" r="4"></circle>
+            <circle id="Oval-3-Copy-3" stroke="#E7FFFE" fill="#9BE8C7" cx="217" cy="105" r="4"></circle>
+            <circle id="Oval-3-Copy-4" stroke="#E7FFFE" fill="#9BE8C7" cx="253" cy="210" r="4"></circle>
         </g>
-        <line x1="535" y1="130" x2="593.5" y2="89.5" id="line1" stroke="#8d88ff" stroke-width="0.5"></line>
-        <line x1="807" y1="468" x2="775" y2="436" id="line2" stroke="#8d88ff" stroke-width="0.5"></line>
-        <text id="Global-Trend" font-family="IBMPlexMono, IBM Plex Mono" font-size="5em" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="587.165181" y="78">Global Trends</tspan>
-        </text>
-        <text id="Current-Co2-budget" font-family="IBMPlexMono, IBM Plex Mono" font-size="8" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="814.497771" y="471">Current Co2 budget</tspan>
-        </text>
+        <polyline id="Path-21" stroke="#20C4B6" points="794 191 830 299 843 271 891 399"></polyline>
+        <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="795" cy="194" r="4"></circle>
+        <circle id="Oval-3-Copy-5" stroke="#E7FFFE" fill="#00BF6D" cx="891" cy="399" r="4"></circle>
     </g>
 </svg>

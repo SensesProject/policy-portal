@@ -26,13 +26,5 @@
             <line x1="181.25" y1="2" x2="181.25" y2="99" id="Path-44-Copy-13" stroke="#9BE8C7"></line>
             <line x1="157.25" y1="2" x2="157.25" y2="99" id="Path-44-Copy-11" stroke="#9BE8C7"></line>
         </g>
-        <line x1="228.5" y1="74.5" x2="323.5" y2="171.5" id="line1" stroke="#8d88ff" stroke-width="0.5"></line>
-        <line x1="762" y1="345" x2="806" y2="440" id="line2" stroke="#8d88ff" stroke-width="0.5"></line>
-        <text id="Change-in-agricultur" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="135.496657" y="61">Change in agricultural land</tspan>
-        </text>
-        <text id="Regional-crop-failur" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="717.774558" y="454">Regional crop failure rate</tspan>
-        </text>
     </g>
 </svg>

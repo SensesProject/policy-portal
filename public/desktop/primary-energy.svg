@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="254px" viewBox="0 0 1024 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>primary-energy</title>
-    <desc>Created with Sketch.</desc>
     <g id="primary-energy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <circle id="Oval-6" stroke="#066840" cx="731" cy="141" r="51"></circle>
         <circle id="Oval-6-Copy" stroke="#066840" cx="815.5" cy="141.5" r="32.5"></circle>
         <circle id="Oval-6" stroke="#066840" cx="757" cy="141" r="25"></circle>
         <circle id="Oval-6-Copy" stroke="#066840" cx="809" cy="142" r="26"></circle>
-        <line x1="613" y1="193.5" x2="680" y2="142.5" id="line1" stroke="#524DFF" stroke-width="0.5"></line>
-        <text id="Change-in-primary-en" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#524DFF">
-            <tspan x="547.330362" y="218">Change in primary energy</tspan>
-        </text>
     </g>
 </svg>

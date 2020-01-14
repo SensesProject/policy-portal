@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>transition-path-2</title>
-    <desc>Created with Sketch.</desc>
     <g id="transition-path-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-28" transform="translate(222.000000, 84.000000)" stroke="#025F58">
             <circle id="Oval-5" fill="#9BE8C7" cx="5.5" cy="9.5" r="5.5"></circle>
@@ -48,17 +45,5 @@
             <circle id="Oval-5-Copy-20" cx="401.5" cy="139.5" r="5.5"></circle>
             <circle id="Oval-5-Copy-41" cx="401.5" cy="334.5" r="5.5"></circle>
         </g>
-        <line x1="625.75" y1="92.75" x2="757.5" y2="60.5" id="line1" stroke="#8d88ff" stroke-width="0.5"></line>
-        <line x1="119.5" y1="382.5" x2="228.5" y2="285.5" id="line2" stroke="#8d88ff" stroke-width="0.5"></line>
-        <line x1="629.5" y1="351.5" x2="705.5" y2="388.5" id="line3" stroke="#8d88ff" stroke-width="0.5"></line>
-        <text id="Yearly-energy-demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="53.441968" y="399">Yearly energy demand</tspan>
-        </text>
-        <text id="Energy-produced-in-o" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="692.274558" y="46">Energy produced in one day</tspan>
-        </text>
-        <text id="Exceeding-Demand" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" letter-spacing="0.5558032" fill="#8d88ff">
-            <tspan x="672.053574" y="409">Exceeding Demand</tspan>
-        </text>
     </g>
 </svg>

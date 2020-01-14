@@ -69,6 +69,10 @@ export default {
   }
 }
 
+.title {
+  font-size: 9px;
+}
+
 .content {
   display: none;
 
