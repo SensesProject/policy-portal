@@ -24,8 +24,8 @@ export default {
   computed: {
     ...mapGetters(["activePortal"]),
     ...mapState(["navigationOpen", "loaded"]),
-    open: function(){
-      return this.activePortal && this.activePortal.path !== "intro"
+    open: function() {
+      return this.activePortal && this.activePortal.path !== "intro";
     }
   },
   // watch: {
@@ -144,15 +144,15 @@ export default {
     top: 320px;
     left: 114px;
   }
-
 }
 
 .portal {
   position: absolute;
-  left: 35px;
+  left: 27px;
   transform: rotate(-45deg);
   width: 100px;
   font-size: 0.7em;
+  top: -16px;
 
   .end & {
     color: #b035c9;
