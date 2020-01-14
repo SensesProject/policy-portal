@@ -58,14 +58,14 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 
-  width: 230px;
+  width: 250px;
   overflow: hidden;
   background: #fff;
   z-index: 100;
   cursor: pointer;
 
   &.open {
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -101,57 +101,76 @@ export default {
   transition: top 1s, left 1s;
 
   .stocktake-1 & {
-    top: 93px;
-    left: 94px;
+    top: 123px;
+    left: 114px;
   }
 
   .stocktake-2 & {
-    top: 120px;
-    left: 74px;
+    top: 154px;
+    left: 95px;
   }
 
   .transition-path-1 & {
-    top: 140px;
-    left: 94px;
+    top: 179px;
+    left: 114px;
   }
 
   .transition-path-2 & {
-    top: 150px;
-    left: 94px;
-  }
-
-  .land-transitions & {
-    top: 170px;
-    left: 94px;
-  }
-
-  .land-affected & {
-    top: 190px;
-    left: 74px;
+    top: 205px;
+    left: 95px;
   }
 
   .primary-energy & {
     top: 220px;
-    left: 94px;
+    left: 74px;
   }
+
+  .land-transitions & {
+    top: 235px;
+    left: 95px;
+  }
+
+  .land-affected & {
+    top: 260px;
+    left: 114px;
+  }
+
+  .earth & {
+    top: 280px;
+    left: 130px;
+  }
+
+  .end & {
+    top: 320px;
+    left: 114px;
+  }
+
 }
 
 .portal {
   position: absolute;
-  left: 45px;
+  left: 35px;
   transform: rotate(-45deg);
   width: 100px;
   font-size: 0.7em;
+
+  .end & {
+    color: #b035c9;
+  }
 }
 
 .circle {
   background: #9be8c7;
   opacity: 0.5;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   top: 22px;
   left: 0;
   position: absolute;
+
+  .end & {
+    background: #f3baff;
+  }
 }
 </style>
