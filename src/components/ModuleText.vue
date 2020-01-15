@@ -23,9 +23,13 @@
         :style="{ left: ratio * 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
-      <div class="readbutton" v-show="ratio> 0.5"><span class="readspan">READ</span></div>
+      <div class="readbutton" v-show="ratio> 0.5">
+        <span class="readspan">READ</span>
+      </div>
     </div>
     <div class="circle"></div>
+    <img class="background" :src="'desktop/background/' + data.path + '.svg'" />
+
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
 </template>
@@ -52,6 +56,14 @@ export default {
   }
 }
 
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
 .microModule {
   position: absolute;
   left: 50%;
@@ -65,7 +77,7 @@ export default {
   width: 100%;
   left: 0px;
   padding-left: 10px;
-  background: #fff;
+  // background: #fff;
   padding-top: 5px;
   // border-bottom: 1px dashed #979797;
   background-image: linear-gradient(
@@ -243,7 +255,7 @@ export default {
   }
 
   .readbutton {
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", serif;
     transition: background 1s;
     border-radius: 500px;
     width: 75px;

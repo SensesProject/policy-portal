@@ -2,6 +2,7 @@
   <div id="app" ref="app">
     <SensesMenu />
     <Navigation />
+    <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path" :data="data">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" />
@@ -22,6 +23,7 @@ import Item from "./components/Item.vue";
 import Home from "./components/Home.vue";
 import Navigation from "./components/Navigation.vue";
 import End from "./components/End.vue";
+import BackgroundLine from "./components/BackgroundLine.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
 import Earth from "./components/Earth.vue";
@@ -39,6 +41,7 @@ export default {
     AnimatedSvg,
     ModuleText,
     Earth,
+    BackgroundLine,
     SensesMenu
   },
   computed: {
@@ -70,6 +73,7 @@ export default {
   },
   mounted: function() {
     console.log(this.modulesData);
+    this.modulesData.forEach(d => console.log(d.path));
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
     window.addEventListener("resize", this.reflow);
