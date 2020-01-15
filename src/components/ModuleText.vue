@@ -50,7 +50,6 @@ export default {
   top: 0;
 }
 
-
 .background {
   position: absolute;
   width: 100%;
@@ -58,9 +57,9 @@ export default {
   height: 60vh;
   left: 0;
   top: 20vh;
-  display:none;
+  display: none;
   .primary-energy & {
-    display:block;
+    display: block;
   }
 }
 
@@ -70,6 +69,7 @@ export default {
   height: 100vh;
   left: 0;
   top: 0;
+  pointer-events: none;
 }
 
 .microModule {
@@ -117,7 +117,7 @@ export default {
   left: calc(50% - 150px);
   top: 34%;
   cursor: pointer;
-  z-index:1;
+  z-index: 1;
 
   .container:hover & {
     background: #e6fffe;
