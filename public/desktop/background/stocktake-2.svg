@@ -1,13 +1,13 @@
-<svg width="1023" height="541" viewBox="0 0 1023 541" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="-1844" width="1024" height="6213" fill="white"/>
-<path d="M248 -534V-303.749C248 -285.07 263.069 -269.888 281.748 -269.75L484.051 -268.25C502.73 -268.112 517.799 -252.93 517.799 -234.251V126C517.799 144.778 533.022 160 551.799 160H734C752.778 160 768 175.222 768 194V548.5C768 567.278 752.778 582.5 734 582.5H551.799C533.022 582.5 517.799 597.722 517.799 616.5V1008C517.799 1026.78 502.577 1042 483.799 1042H134C115.222 1042 100 1057.22 100 1076V1606V2399.32C100 2417.97 115.025 2433.14 133.674 2433.32L484.486 2436.68C502.993 2436.86 517.959 2451.81 518.158 2470.31L521.625 2792.2V3222.5V3611.5V3787.5V4154" stroke="url(#paint0_linear)" stroke-width="5"/>
-<defs>
-<linearGradient id="paint0_linear" x1="226.479" y1="1189.14" x2="266.746" y2="3979.41" gradientUnits="userSpaceOnUse">
-<stop stop-color="#CBF5E5"/>
-<stop offset="0.268825" stop-color="#00643B"/>
-<stop offset="0.339653" stop-color="#8BDEBB"/>
-<stop offset="0.929892" stop-color="#97E6C4"/>
-<stop offset="1" stop-color="#B035C9"/>
-</linearGradient>
-</defs>
+<svg width="1023" height="541" viewBox="0 0 1023 541" fill="none" 
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M517.799 -415V126C517.799 144.778 533.022 160 551.799 160H734C752.778 160 768 175.222 768 194V994M517.799 1042H134C115.222 1042 100 1057.22 100 1076V1606V2399.32C100 2417.97 115.025 2433.14 133.674 2433.32L484.486 2436.68C502.993 2436.86 517.959 2451.81 518.158 2470.31L521.625 2792.2V3222.5V3611.5V3787.5V4154" stroke="url(#paint0_linear)" stroke-width="5"/>
+    <defs>
+        <linearGradient id="paint0_linear" x1="226.479" y1="1189.14" x2="266.746" y2="3979.41" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#CBF5E5"/>
+            <stop offset="0.268825" stop-color="#00643B"/>
+            <stop offset="0.339653" stop-color="#8BDEBB"/>
+            <stop offset="0.929892" stop-color="#97E6C4"/>
+            <stop offset="1" stop-color="#B035C9"/>
+        </linearGradient>
+    </defs>
 </svg>
