@@ -58,7 +58,7 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 
-  width: 250px;
+  width: 190px;
   overflow: hidden;
   background: #fff;
   z-index: 100;
