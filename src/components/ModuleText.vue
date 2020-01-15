@@ -28,7 +28,8 @@
       </div>
     </div>
     <div class="circle"></div>
-    <img class="background" :src="'desktop/background/' + data.path + '.svg'" />
+    <div class="background" />
+    <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
@@ -47,16 +48,23 @@ export default {
   height: 100vh;
   left: 0;
   top: 0;
+}
 
-  &.primary-energy {
-    background: #9be8c7;
-    height: 60vh;
-    left: 0;
-    top: 20vh;
+
+.background {
+  position: absolute;
+  width: 100%;
+  background: #9be8c7;
+  height: 60vh;
+  left: 0;
+  top: 20vh;
+  display:none;
+  .primary-energy & {
+    display:block;
   }
 }
 
-.background {
+.backgroundPath {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -109,6 +117,7 @@ export default {
   left: calc(50% - 150px);
   top: 34%;
   cursor: pointer;
+  z-index:1;
 
   .container:hover & {
     background: #e6fffe;
@@ -285,7 +294,7 @@ export default {
   z-index: 1000;
 
   .primary-energy & {
-    top: 75%;
+    top: 65%;
   }
 
   > div {
