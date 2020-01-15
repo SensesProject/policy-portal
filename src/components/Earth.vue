@@ -33,6 +33,7 @@
         <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
+    <img class="backgroundPath" src="desktop/background/earth.svg" />
   </div>
 </template>
 
@@ -46,10 +47,20 @@ export default {
   display: flex;
 }
 
+.backgroundPath {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
 .item {
   width: 341px;
   opacity: 0.1;
   transition: opacity 0.5s;
+  z-index: 1;
 }
 
 .visible {

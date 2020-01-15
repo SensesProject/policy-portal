@@ -1,11 +1,14 @@
 <template>
   <div class="container">
-<!-- <Dot class="dot"/> -->
-<div class="dot"></div>
-<div class="inner">
-      <h1>Continue on the Finance Portal.<span class="right_arrow">→</span>
-</h1>
+    <!-- <Dot class="dot"/> -->
+    <div class="dot"></div>
+    <div class="inner">
+      <h1>
+        Continue on the Finance Portal.
+        <span class="right_arrow">→</span>
+      </h1>
     </div>
+    <img class="backgroundPath" src="desktop/background/end.svg" />
   </div>
 </template>
 
@@ -29,6 +32,16 @@ export default {
 }
 .inner {
   width: 600px;
+  z-index: 1;
+}
+
+.backgroundPath {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  pointer-events: none;
 }
 
 .dot {
