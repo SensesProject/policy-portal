@@ -14,7 +14,7 @@ export default new Vuex.Store({
   state: {
     scrollY: 0,
     screenHeight: window.innerHeight,
-    isMobile: false,
+    isMobile: window.innerWidth < 700,
     activePortalPath: "intro",
     navigationOpen: false,
     reflowTime: null,
