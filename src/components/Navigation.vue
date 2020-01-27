@@ -58,7 +58,7 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 
-  width: 190px;
+  width: 110px;
   overflow: hidden;
   background: #fff;
   z-index: 100;
@@ -66,6 +66,7 @@ export default {
 
   &.open {
     height: 450px;
+    width: 190px;
   }
 }
 
