@@ -20,13 +20,19 @@
       </div>
     </div>
     <div class="down_arrow">↓</div>
-    <img src="desktop/home.svg" class="plan" />
-    <img src="desktop/primer.svg" class="plan" />
+    <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" />
+    <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
   </div>
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+
+export default {
+  computed: {
+    ...mapState(["isMobile"])
+  }
+};
 </script>
 
 <style scoped lang="scss">
@@ -39,6 +45,7 @@ export default {};
   margin-bottom: 100px;
   max-width: 815px;
   margin: 0 4em;
+  margin-bottom: 7em;
 }
 .inner {
   
