@@ -10,9 +10,11 @@
         <div class="icon"></div>
         <div class="content">{{ data.readingTime }}</div>
       </div>
-      <div class="tags">
+      <div class="tags" v-if="data.links">
         <div class="icon"></div>
-        <div class="content">{{ data.scenariofinder }}, {{ data.data }}</div>
+        <div class="content">
+          <a v-for="link in data.links" :href="link.href" :key="link.title">{{link.title}}</a>
+        </div>
       </div>
     </div>
     <div class="circle"></div>
@@ -78,6 +80,10 @@ export default {
   top: 30%;
 }
 
+.tags a {
+  margin-right: 0.3em;
+}
+
 .header {
   top: 0px;
   position: absolute;
@@ -118,6 +124,11 @@ export default {
   top: 34%;
   cursor: pointer;
   z-index: 1;
+
+  @media screen and (max-width: 700px)  {
+    width: 200px;
+    height: 200px;
+  }
 
   .container:hover & {
     background: #e6fffe;
@@ -243,6 +254,15 @@ export default {
     }
   }
 
+  @media screen and (max-width: 700px) {
+    width: 85%;
+    left: 0!important;
+    margin: 0 2em;
+    .description {
+      width: 100%!important;
+    }
+  }
+
   h2 {
     font-size: 40px;
     font-family: "IBM Plex Mono", serif;
@@ -307,6 +327,28 @@ export default {
     .content {
       padding: 0 10px 0 10px;
       float: left;
+    }
+
+
+  }
+
+  @media screen and (max-width: 700px) {
+    left: 0;
+    width: 100%;
+    bottom: 30px;
+    top: auto;
+    margin: 0 2em;
+
+    .icon {
+      display: none;
+    }
+
+    > div {
+      clear:none;
+
+      .content {
+        padding: 0 5px;
+      }
     }
   }
 

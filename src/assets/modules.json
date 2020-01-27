@@ -34,7 +34,8 @@
       "bg": "bg1",
       "alignRight": true,
       "tags": ["Policy"],
-      "dev": true
+      "dev": true,
+      "links": [{ "title": "data", "href": "http://..." }, { "title": "data2", "href": "http://..." }]
     },
     {
       "portal": "Policy",
@@ -111,7 +112,8 @@
       "bg": "bg3",
       "alignRight": false,
       "tags": ["Policy"],
-      "dev": true
+      "dev": true,
+      "links": [{ "title": "data", "href": "http://..." }, { "title": "data2", "href": "http://..." }]
     },
     {
       "portal": "Policy",
