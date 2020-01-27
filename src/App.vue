@@ -1,7 +1,7 @@
 <template>
   <div id="app" ref="app">
     <SensesMenu />
-    <Navigation />
+    <Navigation v-if="!isMobile" />
     <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data">
       <template v-slot:figure="props">
