@@ -45,6 +45,10 @@ export default {
 <style lang="stylus" scoped>
 .container {
   display: flex;
+  
+  @media screen and (max-width: 700px)  {
+    flex-flow: column;
+  }
 }
 
 .backgroundPath {
