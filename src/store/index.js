@@ -3,7 +3,7 @@ import Vuex from "vuex";
 import modulesJson from "../assets/modules.json";
 
 const additionalItems = [
-  { path: "intro", mainTopic: "Introduction", portalNum: -1, simple: true },
+  { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
   { path: "earth", mainTopic: "Extreme Events", portalNum: 7 },
   { path: "end", mainTopic: "Continue", portalNum: 100 }
 ];
@@ -14,7 +14,7 @@ export default new Vuex.Store({
   state: {
     scrollY: 0,
     screenHeight: window.innerHeight,
-    isMobile: false,
+    isMobile: window.innerWidth < 700,
     activePortalPath: "intro",
     navigationOpen: false,
     reflowTime: null,

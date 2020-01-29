@@ -20,16 +20,22 @@
       </div>
     </div>
     <div class="down_arrow">↓</div>
-    <img src="desktop/home.svg" class="plan" />
-    <img src="desktop/primer.svg" class="plan" />
+    <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" />
+    <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
   </div>
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+
+export default {
+  computed: {
+    ...mapState(["isMobile"])
+  }
+};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   justify-content: center;
   align-items: center;
@@ -37,9 +43,16 @@ export default {};
   /* height: 100vh; */
   flex-flow: column;
   margin-bottom: 100px;
+  max-width: 815px;
+  margin: 0 4em;
+  margin-bottom: 7em;
 }
 .inner {
-  width: 815px;
+  
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
@@ -52,6 +65,10 @@ h1 {
   line-height: 1em;
   margin-bottom: 60px;
   margin-top: 60px;
+
+  @media screen and (max-width: 700px)  {
+    font-size: 3em;
+  }
 }
 
 .senses {

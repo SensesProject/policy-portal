@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .svg {
   /* position: absolute; */
   position: absolute;
@@ -37,6 +37,14 @@ export default {
   height: 100vh;
   pointer-events: none;
   max-width: 1000px;
+
+  @media screen and (max-width: 700px) {
+    left: 0;
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1400px;
+  }
 }
 svg text {
   font-size: inherit;

@@ -1,15 +1,16 @@
 <template>
   <div id="app" ref="app">
     <SensesMenu />
-    <Navigation />
+    <Navigation v-if="!isMobile" />
     <!-- <BackgroundLine /> -->
-    <Item v-for="data in modulesData" v-bind:key="data.path" :data="data">
+    <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" />
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" />
         <End v-else-if="props.data.path === 'end'" />
         <div v-else>
           <ModuleText :data="props.data" :ratio="props.ratio" />
+          <!-- <ModuleTextMobile :data="props.data" :ratio="props.ratio" v-if="isMobile" /> -->
           <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
         </div>
       </template>
@@ -45,7 +46,7 @@ export default {
     SensesMenu
   },
   computed: {
-    ...mapState(["isMobile", "activePortal"]),
+    ...mapState(["isMobile", "activePortal", "reflowTime"]),
     ...mapGetters(["modulesData"])
   },
   methods: {
@@ -64,6 +65,8 @@ export default {
     },
     reflow: function(e) {
       this.$store.state.loaded = true;
+      this.$store.state.isMobile = window.innerWidth < 700;
+      this.$store.state.reflowTime = Date.now()
       if (e.type === "load") {
         setTimeout(() => {
           this.$store.state.activePortalPath = "intro";
@@ -73,7 +76,7 @@ export default {
   },
   mounted: function() {
     console.log(this.modulesData);
-    this.modulesData.forEach(d => console.log(d.path));
+    // this.modulesData.forEach(d => console.log(d.path));
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
     window.addEventListener("resize", this.reflow);

@@ -4,8 +4,10 @@
     <div class="dot"></div>
     <div class="inner">
       <h1>
+        <a href="#" target="_blank">
         Continue on the Finance Portal.
-        <span class="right_arrow">→</span>
+          <span class="right_arrow">→</span>
+        </a>
       </h1>
     </div>
     <img class="backgroundPath" src="desktop/background/end.svg" />
@@ -22,7 +24,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   justify-content: center;
   align-items: center;
@@ -53,6 +55,17 @@ export default {
   background-color: #b035c9;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+  background:none;
+  :hover & {
+    color: #fff;
+   text-decoration: none;
+   background:none;
+  }
+}
+
 h1 {
   font-weight: 700;
   /* text-shadow: -1px 0 #0bbfb0, 0 1px #0bbfb0, 1px 0 #0bbfb0, 0 -1px #0bbfb0; */
@@ -70,5 +83,10 @@ h1 {
   color: #b035c9;
   font-size: 50px;
   padding-left: 30px;
+  transition: padding-left 1s;
+
+  :hover & {
+    padding-left: 50px;
+  }
 }
 </style>
