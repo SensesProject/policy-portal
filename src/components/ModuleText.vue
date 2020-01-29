@@ -111,6 +111,7 @@ export default {
   border-radius: 500px;
   width: 400px;
   height: 400px;
+  mix-blend-mode: multiply;
   border: 2px solid #e6fffe;
   transition: background 1s;
   pointer-events: none;
