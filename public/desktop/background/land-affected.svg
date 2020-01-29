@@ -1,8 +1,8 @@
-<svg width="1023" height="541" viewBox="0 0 1023 541" fill="none" 
+<svg width="1023" height="541" viewBox="0 0 1023 541" fill="none"
     xmlns="http://www.w3.org/2000/svg">
-    <path d="M768 -2913.5V-2156.5C768 -2137.72 752.778 -2122.5 734 -2122.5H517.799M100 -2147.5L100 -1099M521.625 -553.5V87.2002V517.5V906.5V1082.5V1449" stroke="url(#paint0_linear)" stroke-width="5"/>
-    <path d="M520 400H819C844.405 400 865 420.595 865 446V1034.5" stroke="#94E3C1" stroke-width="5"/>
-    <path d="M519 469H215C192.356 469 174 487.356 174 510L174 976" stroke="#94E3C1" stroke-width="5"/>
+    <path d="M768 -2913.5V-2156.5C768 -2137.72 752.778 -2122.5 734 -2122.5H517.799M100 -2147.5L100 -1099M521.625 -553.5V87.2002V517.5V906.5V1082.5V1449" stroke="url(#paint0_linear)" stroke-width="3"/>
+    <path d="M520 400H819C844.405 400 865 420.595 865 446V1034.5" stroke="#94E3C1" stroke-width="3"/>
+    <path d="M519 469H215C192.356 469 174 487.356 174 510L174 976" stroke="#94E3C1" stroke-width="3"/>
     <defs>
         <linearGradient id="paint0_linear" x1="226.479" y1="-1515.86" x2="266.746" y2="1274.41" gradientUnits="userSpaceOnUse">
             <stop stop-color="#CBF5E5"/>

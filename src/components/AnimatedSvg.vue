@@ -28,7 +28,7 @@ export default {
 .svg {
   /* position: absolute; */
   position: absolute;
-  width: 100%;
+  width: 80%;
   left: 20%;
   top: 0;
   display: flex;
@@ -40,6 +40,7 @@ export default {
 
   @media screen and (max-width: 700px) {
     left: 0;
+    width: 100%;
   }
 
   @media screen and (min-width: 1400px) {
