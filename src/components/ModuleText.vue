@@ -63,6 +63,10 @@ export default {
   display: none;
   .primary-energy & {
     display: block;
+    background-image: linear-gradient(to right, #979797 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
   }
 }
 
@@ -105,6 +109,10 @@ export default {
   background-size: 10px 1px;
   background-repeat: repeat-x;
   color: transparent;
+
+  .primary-energy & {
+    background: none;
+  }
 
   .stocktake-1 &,
   .transition-path-1 & {
