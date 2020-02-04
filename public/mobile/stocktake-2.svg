@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="320px" height="350px" viewBox="0 0 320 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
-    <title>stocktake-2-MOB</title>
-    <desc>Created with Sketch.</desc>
     <g id="stocktake-2-MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-24" transform="translate(51.000000, 64.000000)">
-            <rect id="Rectangle-11-Copy" stroke="#9BE8C7" x="23.1382979" y="83.5" width="7" height="113"></rect>
-            <rect id="Rectangle-11-Copy-2" stroke="#40BB86" x="43.1382979" y="46.5" width="7" height="124"></rect>
-            <rect id="Rectangle-11-Copy-3" stroke="#6DB697" x="65.1382979" y="134.5" width="7" height="50"></rect>
-            <path d="M85.1382979,152.5 L85.1382979,221.5 L92.1382979,221.5 L92.1382979,152.5 L85.1382979,152.5 Z" id="Rectangle-11-Copy-4" stroke="#368161"></path>
-            <rect id="Rectangle-11-Copy-5" stroke="#9BE8C7" x="107.138298" y="171.5" width="7" height="31"></rect>
-            <rect id="Rectangle-11-Copy-6" stroke="#31D28D" x="127.138298" y="61.5" width="7" height="126"></rect>
-            <path d="M149.138298,124.5 L149.138298,221.5 L156.138298,221.5 L156.138298,124.5 L149.138298,124.5 Z" id="Rectangle-11-Copy-7" stroke="#427660"></path>
-            <rect id="Rectangle-11-Copy-9" stroke="#7FA897" x="190.138298" y="81.5" width="7" height="124"></rect>
-            <rect id="Rectangle-11-Copy-10" stroke="#63B290" x="211.138298" y="50.5" width="7" height="129"></rect>
-            <path d="M169.138298,61.5 L169.138298,158.5 L176.138298,158.5 L176.138298,61.5 L169.138298,61.5 Z" id="Rectangle-11-Copy-8" stroke="#427660"></path>
-            <rect id="Rectangle-11" stroke="#00BF6D" x="1.13829787" y="2.5" width="7" height="166"></rect>
-            <polyline id="Path-4" stroke="#0BBFB0" points="5.63829787 3 26.8565828 83.7720588 47.5539605 46.5749129 68.7375183 134.688115 88.2889003 119.003484 111.312997 172 131.975647 61.8850174 152.638298 125.480836"></polyline>
-            <circle id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="5.13829787" cy="2.5" r="2.5"></circle>
-            <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="87.1382979" cy="119.5" r="2.5"></circle>
-            <circle id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="26.1382979" cy="83.5" r="2.5"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="68.1382979" cy="134.5" r="2.5"></circle>
-            <circle id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="110.138298" cy="171.5" r="2.5"></circle>
+        <g id="Group-24" transform="translate(15.000000, 41.000000)">
+            <polyline id="Path-4" stroke="#0BBFB0" points="3.05058366 3.05681818 30.4609751 107.882081 57.1984436 59.6079545 93.0428016 212.448864 109.821012 153.605114 138.801556 265.943182 166.256809 79.4772727 192.949416 162.011364"></polyline>
+            <ellipse id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="3.05058366" cy="3.05681818" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="109.058366" cy="154.369318" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="30.5058366" cy="107.752841" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="92.2801556" cy="210.920455" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="138.801556" cy="265.943182" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy-3" stroke="#E7FFFE" fill="#9BE8C7" cx="165.494163" cy="80.2414773" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy-4" stroke="#E7FFFE" fill="#9BE8C7" cx="192.949416" cy="160.482955" rx="3.05058366" ry="3.05681818"></ellipse>
         </g>
+        <polyline id="Path-21" stroke="#20C4B6" points="228 139 255.463918 221.557692 265.381443 200.153846 302 298"></polyline>
+        <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="229" cy="141" r="3"></circle>
+        <circle id="Oval-3-Copy-5" stroke="#E7FFFE" fill="#00BF6D" cx="302" cy="298" r="3"></circle>
     </g>
 </svg>
