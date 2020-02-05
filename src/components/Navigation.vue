@@ -12,6 +12,18 @@
         <div class="portal">{{activePortal && activePortal.mainTopic}}</div>
         <div class="circle"></div>
       </div>
+      <ul class="link">
+        <li class="intro"></li>
+        <li class="stocktake-1"></li>
+        <li class="stocktake-2"></li>
+        <li class="transition-path-1"></li>
+        <li class="transition-path-2"></li>
+        <li class="primary-energy"></li>
+        <li class="land-transitions"></li>
+        <li class="land-affected"></li>
+        <li class="earth"></li>
+        <li class="end"></li>
+      </ul>
       <img src="desktop/navigation.svg" class="naviImage" />
     </div>
   </div>
@@ -62,7 +74,6 @@ export default {
   overflow: hidden;
   background: #fff;
   z-index: 100;
-  cursor: pointer;
 
   &.open {
     height: 450px;
@@ -94,6 +105,78 @@ export default {
   position: absolute;
   top: 90px;
   left: 10px;
+  pointer-events: none;
+}
+
+.link {
+  position: absolute;
+  margin:0;
+  padding:0;
+  top: 33px;
+  left: 10px;
+  
+  li {
+    cursor: pointer;
+    pointer-events: all;
+    margin:0;
+    padding:0;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+
+  }
+
+  .intro {
+    top: 50px;
+    left: 50px;
+  }
+
+  .stocktake-1 {
+    top: 123px;
+    left: 81px;
+  }
+
+  .stocktake-2 {
+    top: 154px;
+    left: 62px;
+  }
+
+  .transition-path-1 {
+    top: 179px;
+    left: 81px;
+  }
+
+  .transition-path-2 {
+    top: 205px;
+    left: 62px;
+  }
+
+  .primary-energy {
+    top: 220px;
+    left: 53px;
+  }
+
+  .land-transitions {
+    top: 235px;
+    left: 62px;
+  }
+
+  .land-affected {
+    top: 260px;
+    left: 81px;
+  }
+
+  .earth {
+    top: 280px;
+    left: 97px;
+  }
+
+  .end {
+    top: 320px;
+    left: 81px;
+  }
 }
 
 .position {
