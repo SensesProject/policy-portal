@@ -38,6 +38,7 @@ export default {
   pointer-events: none;
   max-width: 1000px;
 
+
   @media screen and (max-width: 700px) {
     left: 0;
     width: 100%;

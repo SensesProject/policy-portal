@@ -7,10 +7,9 @@
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" />
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" />
-        <End v-else-if="props.data.path === 'end'" />
+        <End v-else-if="props.data.path === 'end'" :mobile="isMobile" />
         <div v-else>
-          <ModuleText :data="props.data" :ratio="props.ratio" />
-          <!-- <ModuleTextMobile :data="props.data" :ratio="props.ratio" v-if="isMobile" /> -->
+          <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile" />
           <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)" />
         </div>
       </template>

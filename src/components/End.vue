@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :class="{mobile}">
     <!-- <Dot class="dot"/> -->
     <div class="dot"></div>
     <div class="inner">
@@ -15,12 +15,8 @@
 </template>
 
 <script>
-// import Dot from "./Dot.vue";
-
 export default {
-  // components: {
-  //   Dot
-  // }
+  props: ["mobile"]
 };
 </script>
 
@@ -35,6 +31,11 @@ export default {
 .inner {
   width: 600px;
   z-index: 1;
+  margin: 0 4em;
+
+  .mobile & {
+    width: auto;
+  }
 }
 
 .backgroundPath {
@@ -76,6 +77,11 @@ h1 {
   line-height: 1em;
   margin-bottom: 40px;
   margin-top: 60px;
+
+  .mobile & {
+    font-size: 30px;
+  }
+
 }
 
 .right_arrow {

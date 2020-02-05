@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="[data.path]">
+  <div class="container" :class="[data.path, {mobile}]">
     <div class="header">{{ data.mainTopic }}</div>
     <div class="info">
       <div class="credits">
@@ -31,7 +31,7 @@
     </div>
     <div class="circle"></div>
     <div class="background" />
-    <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
+    <!-- <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" /> -->
 
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  props: ["data", "ratio"]
+  props: ["data", "ratio", "mobile"]
 };
 </script>
 
@@ -50,6 +50,7 @@ export default {
   height: 100vh;
   left: 0;
   top: 0;
+  overflow: hidden;
 }
 
 .background {
@@ -126,10 +127,6 @@ export default {
   cursor: pointer;
   z-index: 1;
 
-  @media screen and (max-width: 700px)  {
-    width: 200px;
-    height: 200px;
-  }
 
   .container:hover & {
     background: #e6fffe;
@@ -171,6 +168,13 @@ export default {
   .land-affected & {
     left: 35%;
     top: 25%;
+  }
+
+  .mobile & {
+    width: 200px;
+    height: 200px;
+    left: 33%;
+    top: 23%;
   }
 }
 
@@ -255,12 +259,16 @@ export default {
     }
   }
 
-  @media screen and (max-width: 700px) {
+  .mobile & {
     width: 85%;
-    left: 0!important;
+    top: 20%;
+    left: 0;
     margin: 0 2em;
     .description {
-      width: 100%!important;
+      width: 100%;
+    }
+    h2 {
+      width: 100%;
     }
   }
 
@@ -333,9 +341,9 @@ export default {
 
   }
 
-  @media screen and (max-width: 700px) {
+  .mobile & {
     left: 0;
-    width: 100%;
+
     bottom: 30px;
     top: auto;
     margin: 0 2em;
