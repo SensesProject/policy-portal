@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="{mobile}">
+  <div class="container earth" :class="{mobile}">
     <div class="item" :class="{visible: true}">
       <img src="desktop/earth-1.svg" alt="Earth" class="earthsvg" />
       <div class="text">

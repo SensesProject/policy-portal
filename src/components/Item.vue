@@ -23,7 +23,7 @@ export default {
         1
       );
     },
-    ...mapState(["scrollY", "screenHeight", "loaded"])
+    ...mapState(["scrollY", "screenHeight"])
   },
   methods: {
     reflow: function() {
@@ -36,9 +36,6 @@ export default {
       if (this.$store.state.activePortalPath !== this.data.path) {
         this.$store.state.activePortalPath = this.data.path;
       }
-    },
-    loaded: function() {
-      this.reflow();
     }
   },
   mounted() {

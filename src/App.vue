@@ -3,7 +3,7 @@
     <SensesMenu />
     <Navigation v-if="!isMobile" />
     <!-- <BackgroundLine /> -->
-    <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data">
+    <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" />
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" />
@@ -63,14 +63,19 @@ export default {
       }
     },
     reflow: function(e) {
-      this.$store.state.loaded = true;
       this.$store.state.isMobile = window.innerWidth < 700;
       this.$store.state.reflowTime = Date.now()
       if (e.type === "load") {
         setTimeout(() => {
           this.$store.state.activePortalPath = "intro";
-        }, 1);
+        }, 100);
       }
+    },
+    hashchange: function(){
+      console.log(location.hash)
+      document
+        .getElementById(location.hash.replace("#", "to-"))
+        .scrollIntoView({ behavior: 'smooth' });
     }
   },
   mounted: function() {
@@ -79,11 +84,13 @@ export default {
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
     window.addEventListener("resize", this.reflow);
+    window.addEventListener("hashchange", this.hashchange);
   },
   beforeDestroy: function() {
     window.removeEventListener("scroll", this.onScroll);
     window.removeEventListener("load", this.reflow);
     window.removeEventListener("resize", this.reflow);
+    window.removeEventListener("hashchange", this.hashchange);
   }
 };
 </script>
@@ -94,6 +101,10 @@ export default {
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #app {

@@ -3,7 +3,6 @@
     class="container"
     @click="click"
     :class="[{open}, activePortal && activePortal.path]"
-    v-if="loaded"
   >
     <div class="info">{{activePortal && activePortal.mainTopic}}</div>
     <div class="content">
@@ -12,18 +11,18 @@
         <div class="portal">{{activePortal && activePortal.mainTopic}}</div>
         <div class="circle"></div>
       </div>
-      <ul class="link">
-        <li class="intro"></li>
-        <li class="stocktake-1"></li>
-        <li class="stocktake-2"></li>
-        <li class="transition-path-1"></li>
-        <li class="transition-path-2"></li>
-        <li class="primary-energy"></li>
-        <li class="land-transitions"></li>
-        <li class="land-affected"></li>
-        <li class="earth"></li>
-        <li class="end"></li>
-      </ul>
+      <div class="link">
+        <a class="intro" href="#intro"></a>
+        <a class="stocktake-1" href="#stocktake-1"></a>
+        <a class="stocktake-2" href="#stocktake-2"></a>
+        <a class="transition-path-1" href="#transition-path-1"></a>
+        <a class="transition-path-2" href="#transition-path-2"></a>
+        <a class="primary-energy" href="#primary-energy"></a>
+        <a class="land-transitions" href="#land-transitions"></a>
+        <a class="land-affected" href="#land-affected"></a>
+        <a class="earth" href="#earth"></a>
+        <a class="end" href="#end"></a>
+      </div>
       <img src="desktop/navigation.svg" class="naviImage" />
     </div>
   </div>
@@ -35,7 +34,7 @@ import { mapGetters, mapState } from "vuex";
 export default {
   computed: {
     ...mapGetters(["activePortal"]),
-    ...mapState(["navigationOpen", "loaded"]),
+    ...mapState(["navigationOpen", "reflowTime"]),
     open: function() {
       return this.activePortal && this.activePortal.path !== "intro";
     }
@@ -115,7 +114,7 @@ export default {
   top: 33px;
   left: 10px;
   
-  li {
+  a {
     cursor: pointer;
     pointer-events: all;
     margin:0;
@@ -123,9 +122,9 @@ export default {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: red;
+    text-decoration: none;
     position: absolute;
-
+    background:none;
   }
 
   .intro {
