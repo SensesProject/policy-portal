@@ -31,7 +31,7 @@
     </div>
     <div class="circle"></div>
     <div class="background" />
-    <!-- <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" /> -->
+    <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
@@ -73,6 +73,7 @@ export default {
   left: 0;
   top: 0;
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
 }
 
 .microModule {
