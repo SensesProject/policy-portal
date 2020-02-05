@@ -2,12 +2,6 @@ import Vue from "vue";
 import Vuex from "vuex";
 import modulesJson from "../assets/modules.json";
 
-const additionalItems = [
-  { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
-  { path: "earth", mainTopic: "Extreme Events", portalNum: 7 },
-  { path: "end", mainTopic: "Continue", portalNum: 100 }
-];
-
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -21,7 +15,13 @@ export default new Vuex.Store({
     loaded: false
   },
   getters: {
-    modulesData: () => {
+    modulesData: (state) => {
+      const additionalItems = [
+        { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
+        { path: "earth", mainTopic: "Extreme Events", portalNum: 7, simple: state.isMobile },
+        { path: "end", mainTopic: "Continue", portalNum: 100 }
+      ];
+
       return modulesJson.modules
         .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
         .concat(...additionalItems)
