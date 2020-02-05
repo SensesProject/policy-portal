@@ -6,7 +6,7 @@
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" />
-        <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" />
+        <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" />
         <End v-else-if="props.data.path === 'end'" :mobile="isMobile" />
         <div v-else>
           <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :class="{mobile}">
     <div class="item" :class="{visible: true}">
       <img src="desktop/earth-1.svg" alt="Earth" class="earthsvg" />
       <div class="text">
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  props: ["ratio"]
+  props: ["ratio", "mobile"]
 };
 </script>
 <style lang="stylus" scoped>
@@ -65,6 +65,10 @@ export default {
   opacity: 0.1;
   transition: opacity 0.5s;
   z-index: 1;
+
+  .mobile & {
+    opacity 1;
+  }
 }
 
 .visible {
