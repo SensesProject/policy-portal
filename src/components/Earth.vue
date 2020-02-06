@@ -46,7 +46,7 @@ export default {
 .container {
   display: flex;
   
-  & .mobile {
+  &.mobile {
     flex-flow: column;
   }
 }
