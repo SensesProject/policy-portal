@@ -46,7 +46,7 @@ export default {
 .container {
   display: flex;
   
-  @media screen and (max-width: 700px)  {
+  & .mobile {
     flex-flow: column;
   }
 }
@@ -68,6 +68,16 @@ export default {
 
   .mobile & {
     opacity 1;
+  }
+  
+  @media screen and (min-width: 1000px)  {
+    margin: 1vw;
+  }
+  @media screen and (min-width: 1200px)  {
+    margin: 2vw;
+  }
+  @media screen and (min-width: 1300px)  {
+    margin: 3vw;
   }
 }
 
