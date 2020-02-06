@@ -72,10 +72,15 @@ export default {
       }
     },
     hashchange: function(){
-      console.log(location.hash)
-      document
-        .getElementById(location.hash.replace("#", "to-"))
-        .scrollIntoView({ behavior: 'smooth' });
+      // console.log(location.hash)
+      const top = document
+        .getElementById(location.hash.replace("#/", "to-"))
+        .offsetTop + 10
+
+      window.scrollTo({
+        top: top,
+        behavior: 'smooth',
+      })
     }
   },
   mounted: function() {

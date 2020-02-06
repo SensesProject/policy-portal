@@ -12,16 +12,16 @@
         <div class="circle"></div>
       </div>
       <div class="link">
-        <a class="intro" href="#intro"></a>
-        <a class="stocktake-1" href="#stocktake-1"></a>
-        <a class="stocktake-2" href="#stocktake-2"></a>
-        <a class="transition-path-1" href="#transition-path-1"></a>
-        <a class="transition-path-2" href="#transition-path-2"></a>
-        <a class="primary-energy" href="#primary-energy"></a>
-        <a class="land-transitions" href="#land-transitions"></a>
-        <a class="land-affected" href="#land-affected"></a>
-        <a class="earth" href="#earth"></a>
-        <a class="end" href="#end"></a>
+        <a class="intro" href="#/intro"></a>
+        <a class="stocktake-1" href="#/stocktake-1"></a>
+        <a class="stocktake-2" href="#/stocktake-2"></a>
+        <a class="transition-path-1" href="#/transition-path-1"></a>
+        <a class="transition-path-2" href="#/transition-path-2"></a>
+        <a class="primary-energy" href="#/primary-energy"></a>
+        <a class="land-transitions" href="#/land-transitions"></a>
+        <a class="land-affected" href="#/land-affected"></a>
+        <a class="earth" href="#/earth"></a>
+        <a class="end" href="#/end"></a>
       </div>
       <img src="desktop/navigation.svg" class="naviImage" />
     </div>
