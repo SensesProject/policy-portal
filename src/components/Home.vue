@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :class="isMobile ? 'mobile' : 'desktop'">
     <div class="inner">
       <h1>Welcome to the Senses Policy Portal.</h1>
       <div class="text">
@@ -12,7 +12,7 @@
         In the <span class="dotted">Budgets</span> chapter you will be introduced
         to the near and long-term plans to reach Net Zero emissions in the next
         century. The <span class="dotted">Transitions</span> section is dedicated
-        to different kind of transitions that might occur. From energetic transitisions
+        to different kind of transitions that might occur. From energetic
         to land transitions, you will be provided with a complete overview of how
         our future will look like.
         The <span class="dotted">Extreme Events</span> chapter is dedicated to the extent
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="down_arrow">↓</div>
-    <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" />
+    <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" v-if="isMobile === false"/>
     <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
   margin-bottom: 7em;
 }
 .inner {
-  
+
 }
 
 img {
@@ -84,5 +84,16 @@ h1 {
 
 .plan {
   margin-top: 40px;
+}
+
+.mobile {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .plan & {
+    visibility: none;
+  }
 }
 </style>

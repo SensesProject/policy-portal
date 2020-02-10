@@ -5,12 +5,12 @@
     <div class="inner">
       <h1>
         <a href="#" target="_blank">
-        Continue on the Finance Portal.
+        Continue on the Finance Portal. <br v-if="{mobile} === true"/>
           <span class="right_arrow">→</span>
         </a>
       </h1>
     </div>
-    <img class="backgroundPath" src="desktop/background/end.svg" />
+    <img class="backgroundPath" src="desktop/background/end.svg" v-if="!{mobile}"/>
   </div>
 </template>
 
@@ -35,6 +35,9 @@ export default {
 
   .mobile & {
     width: auto;
+    margin: 0 6em;
+    line-height: 58px;
+
   }
 }
 
@@ -80,6 +83,7 @@ h1 {
 
   .mobile & {
     font-size: 30px;
+    margin-top: 100px;
   }
 
 }
@@ -90,6 +94,11 @@ h1 {
   font-size: 50px;
   padding-left: 30px;
   transition: padding-left 1s;
+
+  .mobile & {
+    margin-left: 150px;
+    transition: none;
+  }
 
   :hover & {
     padding-left: 50px;

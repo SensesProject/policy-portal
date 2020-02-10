@@ -19,10 +19,10 @@
     </div>
     <div class="circle"></div>
     <div class="text">
-      <h2 :style="{ left: ratio * 40 + 'px' }">{{ data.title }}</h2>
+      <h2 :style="!{mobile} ? { left: ratio * 40 + 'px' } : { left: 10 + 'px' }">{{ data.title }}</h2>
       <div
         class="description"
-        :style="{ left: ratio * 10 + 'px' }"
+        :style="!{mobile} ? { left: ratio * 10 + 'px' } : { left: 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio> 0.5">
@@ -78,6 +78,10 @@ export default {
   top: 0;
   pointer-events: none;
   vector-effect: non-scaling-stroke;
+
+  .mobile & {
+    display: none;
+  }
 }
 
 .microModule {
@@ -96,7 +100,7 @@ export default {
 
   width: 100%;
   left: 0px;
-  padding-left: 10px;
+  padding-right: 10px;
   // background: #fff;
   padding-top: 5px;
   // border-bottom: 1px dashed #979797;
@@ -110,12 +114,15 @@ export default {
   background-repeat: repeat-x;
   color: transparent;
 
+  text-align: right;
+
   .primary-energy & {
     background: none;
   }
 
   .stocktake-1 &,
-  .transition-path-1 & {
+  .transition-path-1 &,
+  .land-affected & {
     color: #0bbfb0;
     border-bottom: 1px dotted #0bbfb0;
     background: none;
@@ -135,7 +142,6 @@ export default {
   top: 34%;
   cursor: pointer;
   z-index: 1;
-
 
   .container:hover & {
     background: #e6fffe;
@@ -180,10 +186,12 @@ export default {
   }
 
   .mobile & {
-    width: 200px;
-    height: 200px;
-    left: 33%;
-    top: 23%;
+    width: 400px;
+    height: 400px;
+    left: 0%;
+    top: 20%;
+
+    background-color: #e6fffe;
   }
 }
 
@@ -242,6 +250,9 @@ export default {
     .description {
       width: 300px;
     }
+    .mobile {
+      top: 20%;
+    }
   }
 
   .land-affected & {
@@ -278,6 +289,7 @@ export default {
     }
     h2 {
       width: 100%;
+      font-size: 25px;
     }
   }
 
@@ -299,6 +311,11 @@ export default {
     line-height: 1.2em;
     position: relative;
     margin-top: 20px;
+    .mobile & {
+      width: 90%;
+      padding: 8px;
+      text-shadow: 0px 0px 20px white;
+    }
   }
 
   .readbutton {
@@ -320,6 +337,12 @@ export default {
       background: #5263ff;
       color: white;
     }
+    .mobile & {
+        margin-left: 38%;
+        margin-top: 70px;
+        background-color: #5263ff;
+        color: white;
+    }
   }
 }
 
@@ -333,6 +356,10 @@ export default {
 
   .primary-energy & {
     top: 65%;
+
+    .mobile & {
+      top: 5%;
+    }
   }
 
   > div {
@@ -355,7 +382,9 @@ export default {
 
     bottom: 30px;
     top: auto;
-    margin: 0 2em;
+    font-size: 10px;
+    display: grid;
+    width: 100%;
 
     .icon {
       display: none;
@@ -365,7 +394,10 @@ export default {
       clear:none;
 
       .content {
-        padding: 0 5px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 0;
       }
     }
   }
@@ -378,7 +410,5 @@ export default {
     float: left;
   }
 
-  .credits {
-  }
 }
 </style>

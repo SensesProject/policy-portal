@@ -33,7 +33,7 @@
         <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
-    <img class="backgroundPath" src="desktop/background/earth.svg" />
+    <img class="backgroundPath" src="desktop/background/earth.svg" v-if="!{mobile}"/>
   </div>
 </template>
 
@@ -45,7 +45,7 @@ export default {
 <style lang="stylus" scoped>
 .container {
   display: flex;
-  
+
   &.mobile {
     flex-flow: column;
   }
@@ -68,8 +68,9 @@ export default {
 
   .mobile & {
     opacity 1;
+    margin-top: 100px;
   }
-  
+
   @media screen and (min-width: 1000px)  {
     margin: 1vw;
   }
@@ -89,6 +90,12 @@ export default {
   padding-top: 250px;
   padding-left: 40px;
   padding-right: 40px;
+
+  .mobile & {
+    h2 {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .readbutton {
@@ -101,6 +108,10 @@ export default {
   letter-spacing: 0.555803px;
   color: #524DFF;
   margin-top: 30px;
+
+  .mobile & {
+    text-align: center;
+  }
 }
 
 .earthsvg {

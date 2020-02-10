@@ -21,7 +21,7 @@
     {
       "portal": "Policy",
       "portalNum": 1,
-      "mainTopic": "Budget",
+      "mainTopic": "1. Budget",
       "path": "stocktake-1",
       "title": "Global Stocktake I",
       "description": "This module explores how current decarbonization plans until 2030 relate to the long-term targets of the Paris Agreement.",
@@ -40,7 +40,7 @@
     {
       "portal": "Policy",
       "portalNum": 2,
-      "mainTopic": "Budget",
+      "mainTopic": "1. Budget",
       "path": "stocktake-2",
       "title": "Global Stocktake II",
       "description": "Placeholder Text TODO - We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like. In this module you will be introduced to the concept of Electrification and to the broad strategy to go Carbon Neutral by reducing emissions.",
@@ -59,7 +59,7 @@
     {
       "portal": "Policy",
       "portalNum": 3,
-      "mainTopic": "Transitions",
+      "mainTopic": "2. Transitions",
       "path": "transition-path-1",
       "title": "Towards an Electric Future",
       "description": "We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like. In this module you will be introduced to the concept of Electrification and to the broad strategy to go Carbon Neutral by reducing emissions.",
@@ -78,7 +78,7 @@
     {
       "portal": "Policy",
       "portalNum": 4,
-      "mainTopic": "Transitions",
+      "mainTopic": "2. Transitions",
       "path": "transition-path-2",
       "title": "Where will electricity come from?",
       "description": "Placeholder Text TODO - We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like. In this module you will be introduced to the concept of Electrification and to the broad strategy to go Carbon Neutral by reducing emissions.",
@@ -121,7 +121,7 @@
     {
       "portal": "Policy",
       "portalNum": 6,
-      "mainTopic": "Transitions",
+      "mainTopic": "2. Transitions",
       "path": "land-transitions",
       "title": "Land transitions",
       "description": "Placeholder Text TODO - We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like. In this module you will be introduced to the concept of Electrification and to the broad strategy to go Carbon Neutral by reducing emissions.",
@@ -140,7 +140,7 @@
     {
       "portal": "Policy",
       "portalNum": 7,
-      "mainTopic": "Transitions",
+      "mainTopic": "3. Extreme Events",
       "path": "land-affected",
       "title": "Extreme Events",
       "description": "The extent and impact of crop failures, river floods, tropical cyclones, heatwaves, wildfires, and droughts depend on the underlying meteorological, hydrological, or climatological events as well as on human factors such as land use, water and agricultural management, and population density. In this module you'll learn how climate change contributes to extreme events and who is most affected by those.",
@@ -214,7 +214,7 @@
     {
       "portal": "Policy",
       "portalNum": 5,
-      "mainTopic": "Transitions",
+      "mainTopic": "2. Transitions",
       "path": "primary-energy",
       "title": "Primary Energy",
       "description": "Placeholder Text TODO - We cannot predict the future, but we can create different plausible scenarios of how a future decarbonization pathway could look like.",
