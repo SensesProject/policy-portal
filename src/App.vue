@@ -2,7 +2,7 @@
   <div id="app" ref="app">
     <SensesMenu />
     <Navigation v-if="!isMobile" />
-    <!--<NavigationMobile v-if="isMobile" /> -->
+    <NavigationMobile v-if="isMobile" /> 
     <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
@@ -23,7 +23,7 @@ import SensesMenu from "library/src/components/SensesMenu.vue";
 import Item from "./components/Item.vue";
 import Home from "./components/Home.vue";
 import Navigation from "./components/Navigation.vue";
-//import NavigationMobile from "./components/NavigationMobile.vue";
+import NavigationMobile from "./components/NavigationMobile.vue";
 import End from "./components/End.vue";
 import BackgroundLine from "./components/BackgroundLine.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
@@ -45,7 +45,7 @@ export default {
     Earth,
     BackgroundLine,
     SensesMenu,
-    //NavigationMobile
+    NavigationMobile
   },
   computed: {
     ...mapState(["isMobile", "activePortal", "reflowTime"]),
