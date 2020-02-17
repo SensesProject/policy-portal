@@ -1,7 +1,22 @@
 <template>
   <div class="container earth" :class="{mobile}">
     <div class="item" :class="{visible: true}">
-      <img src="desktop/earth-1.svg" alt="Earth" class="earthsvg" />
+      <div class="earths" v-if="!mobile">
+        <img
+          v-for="i in 9"
+          :src="'desktop/earth/crops/' + i + '.png'"
+          v-show="earthVisible(i, [0, 0.3])"
+          :key="'crops'+i"
+          alt="Earth"
+         />
+      </div>
+      <div class="earths" v-if="mobile">
+        <img
+          src="mobile/earth/crops/1.png"
+          v-if="mobile"
+          alt="Earth"
+         />
+      </div>
       <div class="text">
         <h2>Crops</h2>
         <div class="description">
@@ -11,8 +26,23 @@
         <div class="readbutton">GO TO SENSES EARTH</div>
       </div>
     </div>
-    <div class="item" :class="{visible: ratio > 0.4}">
-      <img src="desktop/earth-2.svg" alt="Earth" class="earthsvg" />
+    <div class="item" :class="{visible: ratio > 0.3}">
+      <div class="earths" v-if="!mobile">
+        <img
+          v-for="i in 9"
+          :src="'desktop/earth/floodings/' + i + '.png'"
+          v-show="earthVisible(i, [0.3, 0.6])"
+          :key="'crops'+i"
+          alt="Earth"
+         />
+      </div>
+      <div class="earths" v-if="mobile">
+        <img
+          src="mobile/earth/floodings/1.png"
+          v-if="mobile"
+          alt="Earth"
+         />
+      </div>
       <div class="text">
         <h2>Floodings</h2>
         <div class="description">
@@ -23,7 +53,22 @@
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
-      <img src="desktop/earth-3.svg" alt="Earth" class="earthsvg" />
+      <div class="earths" v-if="!mobile">
+        <img
+          v-for="i in 9"
+          :src="'desktop/earth/wildfires/' + i + '.png'"
+          v-show="earthVisible(i, [0.6, 0.9])"
+          :key="'crops'+i"
+          alt="Earth"
+         />
+      </div>
+      <div class="earths" v-if="mobile">
+        <img
+          src="mobile/earth/wildfires/1.png"
+          v-if="mobile"
+          alt="Earth"
+         />
+      </div>
       <div class="text">
         <h2>Wildfires</h2>
         <div class="description">
@@ -39,15 +84,32 @@
 
 <script>
 export default {
-  props: ["ratio", "mobile"]
+  props: ["ratio", "mobile"],
+  methods: {
+    earthVisible: function (i, range) {
+      const domain = [1, 9]
+
+      const percent = (this.ratio - range[0]) / (range[1] - range[0])
+      const clamped = Math.min(Math.max(percent, 0), 1)
+      const id = Math.floor(domain[0] + (domain[1] - domain[0]) * clamped)
+
+      return i === id;
+    }
+  }
 };
 </script>
 <style lang="stylus" scoped>
 .container {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: calc(100% - 180px);
+  margin-left: 180px;
 
   &.mobile {
     flex-flow: column;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -61,25 +123,28 @@ export default {
 }
 
 .item {
-  width: 341px;
+  width: 250px;
   opacity: 0.1;
   transition: opacity 0.5s;
   z-index: 1;
+  padding: 1em;
 
   .mobile & {
     opacity 1;
-    margin-top: 100px;
+    margin-top: 2em;
+    padding: 3em;
+    width: 100%;
   }
 
-  @media screen and (min-width: 1000px)  {
-    margin: 1vw;
-  }
-  @media screen and (min-width: 1200px)  {
-    margin: 2vw;
-  }
-  @media screen and (min-width: 1300px)  {
-    margin: 3vw;
-  }
+  // @media screen and (min-width: 1000px)  {
+  //   margin: 1vw;
+  // }
+  // @media screen and (min-width: 1200px)  {
+  //   margin: 2vw;
+  // }
+  // @media screen and (min-width: 1300px)  {
+  //   margin: 3vw;
+  // }
 }
 
 .visible {
@@ -87,9 +152,7 @@ export default {
 }
 
 .text {
-  padding-top: 250px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 2em;
 
   .mobile & {
     h2 {
@@ -103,7 +166,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
-  text-align: right;
+  // text-align: right;
   line-height: 26px;
   letter-spacing: 0.555803px;
   color: #524DFF;
@@ -114,8 +177,13 @@ export default {
   }
 }
 
-.earthsvg {
-  position: absolute;
+.earths {
+  position: relative;
+  
+  img {
+    position: relative;
+    width: 100%;
+  }
 }
 
 h2 {
