@@ -279,6 +279,10 @@ export default {
     }
   }
 
+  .mobile.primary-energy & {
+      top: 22%;
+  }
+
   .mobile & {
     width: 85%;
     top: 20%;
@@ -356,10 +360,11 @@ export default {
 
   .primary-energy & {
     top: 65%;
+  }
 
-    .mobile & {
-      top: 5%;
-    }
+  .mobile.primary-energy & {
+      top: 72%;
+      bottom: auto;    
   }
 
   > div {
@@ -379,7 +384,6 @@ export default {
 
   .mobile & {
     left: 0;
-
     bottom: 30px;
     top: auto;
     font-size: 10px;
