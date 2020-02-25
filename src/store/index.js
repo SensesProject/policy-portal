@@ -16,15 +16,15 @@ export default new Vuex.Store({
   getters: {
     modulesData: (state) => {
       const additionalItems = [
-        { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
-        { path: "earth", mainTopic: "Extreme Events", portalNum: 7, simple: state.isMobile },
-        { path: "end", mainTopic: "Continue", portalNum: 100 }
+        { path: "intro", maintopic: "Intro", portalnum: -1, simple: true },
+        { path: "earth", maintopic: "Extreme Events", portalnum: 7, simple: state.isMobile },
+        { path: "end", maintopic: "Continue", portalnum: 100 }
       ];
 
-      return modulesJson.modules
-        .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
+      return modulesJson.generals
+        .filter(m => m.portal === "Policy" && Number.isInteger(m.portalnum))
         .concat(...additionalItems)
-        .sort((a, b) => a.portalNum - b.portalNum);
+        .sort((a, b) => a.portalnum - b.portalnum);
     },
     activePortal: (state, getters) => {
       return getters.modulesData.find(d => d.path === state.activePortalPath);

@@ -1,6 +1,6 @@
 <template>
   <div class="container" :class="[data.path, {mobile}]">
-    <div class="header">{{ data.mainTopic }}</div>
+    <div class="header">{{ data.maintopic }}</div>
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
@@ -8,13 +8,11 @@
       </div>
       <div class="read">
         <div class="icon"></div>
-        <div class="content">{{ data.readingTime }}</div>
+        <div class="content">{{ data.readingTime }} minutes</div>
       </div>
-      <div class="tags" v-if="data.links">
+      <div class="tags" v-if="data.downloadIDs">
         <div class="icon"></div>
-        <div class="content">
-          <a v-for="link in data.links" :href="link.href" :key="link.title">{{link.title}}</a>
-        </div>
+        <div class="content" v-on:click="onClick"><a>Download Extras</a></div>
       </div>
     </div>
     <div class="circle"></div>
@@ -26,7 +24,7 @@
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio> 0.5">
-        <span class="readspan">READ</span>
+        <a class="readspan" :href="data.link">READ</a>
       </div>
     </div>
     <div class="circle"></div>
@@ -39,7 +37,12 @@
 
 <script>
 export default {
-  props: ["data", "ratio", "mobile"]
+  props: ["data", "ratio", "mobile", "active"],
+  methods: {
+    onClick () {
+      this.$emit('update:active', this.data.id, this.data.downloadIDs, this.data.title)
+    }
+  }
 };
 </script>
 
@@ -97,10 +100,10 @@ export default {
 .header {
   top: 0px;
   position: absolute;
-
+  font-size: 25px;
   width: 100%;
   left: 0px;
-  padding-right: 10px;
+  padding-right: 20px;
   // background: #fff;
   padding-top: 5px;
   // border-bottom: 1px dashed #979797;
@@ -213,7 +216,7 @@ export default {
   .primary-energy & {
     left: 20%;
     h2 {
-      width: 400px;
+      width: 600px;
     }
     .description {
       width: 500px;
@@ -245,10 +248,10 @@ export default {
     left: 25%;
     top: 30%;
     h2 {
-      width: 300px;
+      width: 500px;
     }
     .description {
-      width: 300px;
+      width: 400px;
     }
     .mobile {
       top: 20%;
@@ -337,10 +340,16 @@ export default {
     line-height: 73px;
     -webkit-transform: rotate(-10deg);
     text-align: center;
-    .container:hover & {
-      background: #5263ff;
-      color: white;
+    & a{
+      color: #5263ff;
+      background: none !important;
     }
+
+    & a:hover {
+      color: #3bccb7;
+      background: none !important;
+    }
+
     .mobile & {
         margin-left: 38%;
         margin-top: 70px;
@@ -364,7 +373,7 @@ export default {
 
   .mobile.primary-energy & {
       top: 72%;
-      bottom: auto;    
+      bottom: auto;
   }
 
   > div {

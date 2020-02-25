@@ -2,7 +2,12 @@
   <div id="app" ref="app">
     <SensesMenu />
     <Navigation v-if="!isMobile" />
-    <NavigationMobile v-if="isMobile" /> 
+    <NavigationMobile v-if="isMobile" />
+    <SensesDownload
+      :selected="selected"
+      :ids="ids"
+      :title="title"
+      :close="close" />
     <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
@@ -10,7 +15,7 @@
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" />
         <End v-else-if="props.data.path === 'end'" :mobile="isMobile" />
         <div v-else>
-          <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile" />
+          <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile" :active="active" @update:active="updateActive"/>
           <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)"/>
         </div>
       </template>
@@ -20,6 +25,7 @@
 
 <script>
 import SensesMenu from "library/src/components/SensesMenu.vue";
+import SensesDownload from 'library/src/components/SensesDownload.vue'
 import Item from "./components/Item.vue";
 import Home from "./components/Home.vue";
 import Navigation from "./components/Navigation.vue";
@@ -45,7 +51,17 @@ export default {
     Earth,
     BackgroundLine,
     SensesMenu,
-    NavigationMobile
+    NavigationMobile,
+    SensesDownload
+  },
+  data () {
+    return {
+      active: false,
+      selected: '',
+      ids: [],
+      title: '',
+      close: ''
+    }
   },
   computed: {
     ...mapState(["isMobile", "activePortal", "reflowTime"]),
@@ -84,9 +100,16 @@ export default {
         top: top,
         behavior: 'smooth',
       })
+    },
+    updateActive (id, downloadIDs, title) {
+      console.log(id, downloadIDs, title)
+      this.selected = id
+      this.ids = downloadIDs
+      this.title = title
     }
   },
   mounted: function() {
+    console.log(this.updateActive)
     console.log(this.modulesData);
     // this.modulesData.forEach(d => console.log(d.path));
     window.addEventListener("scroll", this.onScroll);

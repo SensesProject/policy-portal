@@ -23,7 +23,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">crop failures</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO SENSES EARTH</div>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.3}">
@@ -49,7 +49,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">floodings</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO SENSES EARTH</div>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
@@ -75,7 +75,7 @@
           Discover how different regions will be impacted by
           <span class="dotted">wildfires</span> in the next 100 years.
         </div>
-        <div class="readbutton">GO TO SENSES EARTH</div>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
     </div>
     <img class="backgroundPath" src="desktop/background/earth.svg" v-if="!{mobile}"/>
@@ -165,12 +165,12 @@ export default {
   font-family: IBM Plex Mono;
   font-style: italic;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   // text-align: right;
   line-height: 26px;
   letter-spacing: 0.555803px;
   color: #524DFF;
-  margin-top: 30px;
+  margin-top: 30px !important;
 
   .mobile & {
     text-align: center;
@@ -179,7 +179,7 @@ export default {
 
 .earths {
   position: relative;
-  
+
   img {
     position: relative;
     width: 100%;

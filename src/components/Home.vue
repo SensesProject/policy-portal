@@ -21,7 +21,9 @@
     </div>
     <div class="down_arrow">↓</div>
     <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" v-if="isMobile === false"/>
+    <a id="primer" href="https://www.climatescenarios.org/primer/">
     <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
+    </a>
   </div>
 </template>
 
@@ -47,6 +49,11 @@ export default {
   margin: 0 4em;
   margin-bottom: 7em;
 }
+
+#primer {
+  background: none;
+}
+
 .inner {
 
 }
