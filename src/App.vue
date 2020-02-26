@@ -4,10 +4,10 @@
     <Navigation v-if="!isMobile" />
     <NavigationMobile v-if="isMobile" />
     <SensesDownload
-      :selected="selected"
-      :ids="ids"
-      :title="title"
-      :close="close" />
+      :visible="downloadOpen"
+      :ids="activePortal.downloadIDs || []"
+      :title="activePortal.title"
+      :close="downloadClose" />
     <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
@@ -15,7 +15,7 @@
         <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" />
         <End v-else-if="props.data.path === 'end'" :mobile="isMobile" />
         <div v-else>
-          <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile" :active="active" @update:active="updateActive"/>
+          <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile"/>
           <AnimatedSvg :ratio="props.ratio" :svg="getSvgPath(props.data.path)"/>
         </div>
       </template>
@@ -54,18 +54,9 @@ export default {
     NavigationMobile,
     SensesDownload
   },
-  data () {
-    return {
-      active: false,
-      selected: '',
-      ids: [],
-      title: '',
-      close: ''
-    }
-  },
   computed: {
-    ...mapState(["isMobile", "activePortal", "reflowTime"]),
-    ...mapGetters(["modulesData"])
+    ...mapState(["isMobile", "downloadOpen", "reflowTime"]),
+    ...mapGetters(["modulesData", "activePortal"])
   },
   methods: {
     getSvgPath: function(path) {
@@ -101,16 +92,21 @@ export default {
         behavior: 'smooth',
       })
     },
-    updateActive (id, downloadIDs, title) {
-      console.log(id, downloadIDs, title)
-      this.selected = id
-      this.ids = downloadIDs
-      this.title = title
+    downloadClose (id, downloadIDs, title) {
+      this.$store.state.downloadOpen = false
+    },
+    fetchModules(){
+      fetch('https://dev.climatescenarios.org/settings/modules.json')
+        .then(response => response.json())
+        .then((myJson) => {
+          console.log(myJson);
+        });
+      
     }
   },
   mounted: function() {
-    console.log(this.updateActive)
     console.log(this.modulesData);
+    this.fetchModules();
     // this.modulesData.forEach(d => console.log(d.path));
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
@@ -127,7 +123,6 @@ export default {
 </script>
 
 <style lang="scss">
-// @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700i|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap");
 @import "library/src/style/base.scss";
 
 * {

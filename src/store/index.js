@@ -11,7 +11,8 @@ export default new Vuex.Store({
     isMobile: window.innerWidth < 700,
     activePortalPath: "intro",
     navigationOpen: false,
-    reflowTime: null
+    reflowTime: null,
+    downloadOpen: false
   },
   getters: {
     modulesData: (state) => {

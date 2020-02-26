@@ -12,7 +12,7 @@
       </div>
       <div class="tags" v-if="data.downloadIDs">
         <div class="icon"></div>
-        <div class="content" v-on:click="onClick"><a>Download Extras</a></div>
+        <div class="content"><a v-on:click="onClick">Download Extras</a></div>
       </div>
     </div>
     <div class="circle"></div>
@@ -40,7 +40,8 @@ export default {
   props: ["data", "ratio", "mobile", "active"],
   methods: {
     onClick () {
-      this.$emit('update:active', this.data.id, this.data.downloadIDs, this.data.title)
+      this.$store.state.downloadOpen = true
+      return false;
     }
   }
 };
