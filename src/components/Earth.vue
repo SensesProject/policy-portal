@@ -21,7 +21,7 @@
         <h2>Crops</h2>
         <div class="description">
           Discover how different regions will be impacted by
-          <span class="dotted">crop failures</span> in the next 100 years.
+          <span class="dotted">crop failures</span> in 100 years.
         </div>
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
@@ -47,7 +47,7 @@
         <h2>Floodings</h2>
         <div class="description">
           Discover how different regions will be impacted by
-          <span class="dotted">floodings</span> in the next 100 years.
+          <span class="dotted">floodings</span> in 100 years.
         </div>
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
@@ -73,7 +73,7 @@
         <h2>Wildfires</h2>
         <div class="description">
           Discover how different regions will be impacted by
-          <span class="dotted">wildfires</span> in the next 100 years.
+          <span class="dotted">wildfires</span> in 100 years.
         </div>
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
       </div>
