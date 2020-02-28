@@ -15,19 +15,21 @@
         <div class="content"><a v-on:click="onClick">Download Extras</a></div>
       </div>
     </div>
+    <a :href="data.link" class="link-title">
     <div class="circle"></div>
     <div class="text">
-      <h2 :style="!{mobile} ? { left: ratio * 40 + 'px' } : { left: 10 + 'px' }">{{ data.title }}</h2>
+      <h2 :style="{ left: ratio * 30 + 'px' }">{{ data.title }}</h2>
       <div
         class="description"
         :style="!{mobile} ? { left: ratio * 10 + 'px' } : { left: 10 + 'px' }"
         v-show="ratio > 0.3"
       >{{ data.description }}</div>
       <div class="readbutton" v-show="ratio> 0.5">
-        <a class="readspan" :href="data.link">READ</a>
+        <div class="readspan">READ</div>
       </div>
     </div>
     <div class="circle"></div>
+  </a>
     <div class="background" />
     <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
@@ -55,6 +57,14 @@ export default {
   left: 0;
   top: 0;
   overflow: hidden;
+}
+
+.link-title {
+    color: black;
+}
+
+.link-title:hover {
+    color: #5263ff;
 }
 
 .background {
@@ -326,6 +336,11 @@ export default {
     }
   }
 
+  .readbutton:hover {
+    background-color: #5263ff;
+      color: white;
+  }
+
   .readbutton {
     font-family: "IBM Plex Mono", serif;
     transition: background 1s;
@@ -343,11 +358,6 @@ export default {
     text-align: center;
     & a{
       color: #5263ff;
-      background: none !important;
-    }
-
-    & a:hover {
-      color: #3bccb7;
       background: none !important;
     }
 

@@ -28,7 +28,7 @@ export default {
   methods: {
     reflow: function() {
       this.offsetTop = this.$el.offsetTop;
-      this.height = this.$el.getBoundingClientRect().height;
+      this.height = this.$el.getBoundingClientRect().height / 2.5;
     }
   },
   watch: {
