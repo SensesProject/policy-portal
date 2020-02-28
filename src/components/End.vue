@@ -10,7 +10,7 @@
         </a>
       </h1>
     </div>
-    <img class="backgroundPath" src="desktop/background/end.svg" v-if="!{mobile}"/>
+    <img class="backgroundPath" src="desktop/background/end.svg"/>
   </div>
 </template>
 

@@ -104,6 +104,12 @@ export default {
   top: 30%;
 }
 
+.land-transitions {
+  .header {
+    background-image: none;
+  }
+}
+
 .tags a {
   margin-right: 0.3em;
 }
