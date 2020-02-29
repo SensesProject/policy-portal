@@ -12,7 +12,7 @@
           and <span class="dotted">Extreme Events</span>.
         </span><br>
         <span><a>If you are interested in all the Senses Project material refer to the Toolkit.</a></span>
-        <span><br>
+        <span><br /><br />
           In the <span class="dotted">Budgets</span> chapter you will be introduced
           to the near and long-term plans to reach Net Zero emissions in the next
           century. The <span class="dotted">Transitions</span> section is dedicated
@@ -25,7 +25,8 @@
       </div>
     </div>
     <div class="down_arrow">↓</div>
-    <img :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan" v-if="isMobile === false"/>
+    <HomeMap v-if="isMobile === false"/>
+    <img v-if="mobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
     <a id="primer" href="https://www.climatescenarios.org/primer/">
     <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
     </a>
@@ -34,8 +35,12 @@
 
 <script>
 import { mapState } from "vuex";
+import HomeMap from "./HomeMap.vue";
 
 export default {
+  components: {
+    HomeMap
+  },
   computed: {
     ...mapState(["isMobile"])
   }

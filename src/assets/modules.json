@@ -35,6 +35,7 @@
       "authors": ["Christoph Bertram", "Jonas Parnow"],
       "readingTime": 15,
       "downloadIDs": [1],
+      "gems": [{ "title": "Risk factor pathways", "url": "https://gems-gilt.now.sh/#/finance-wyman-indicators" }],
       "bg": "bg1",
       "alignRight": true,
       "tags": ["Policy"],

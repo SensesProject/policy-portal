@@ -10,9 +10,10 @@
         <div class="icon"></div>
         <div class="content">{{ data.readingTime }} minutes</div>
       </div>
-      <div class="tags" v-if="data.downloadIDs">
+      <div class="tags">
         <div class="icon"></div>
-        <div class="content"><a v-on:click="onClick">Download Extras</a></div>
+        <div class="content" v-if="data.downloadIDs"><a v-on:click="onClick">Download Extras</a></div>
+        <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
       </div>
     </div>
     <a :href="data.link" class="link-title">
@@ -401,10 +402,13 @@ export default {
     margin: 5px 0 0 0;
 
     .content {
-      padding: 0 10px 0 10px;
+      padding: 0 5px 0 10px;
       float: left;
     }
 
+    .gems {
+      padding: 0;
+    }
 
   }
 
