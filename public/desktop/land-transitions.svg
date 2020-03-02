@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>land-transitions</title>
+    <desc>Created with Sketch.</desc>
     <g id="land-transitions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="bar1" transform="translate(324.000000, 295.000000)">
-            <rect id="Rectangle-12-Copy" stroke="#0BBFB0" x="0.5" y="0.5" width="552" height="98"></rect>
-            <line x1="377" y1="1" x2="377" y2="98" id="Path-45" stroke="#9BE8C7"></line>
-            <line x1="395" y1="1" x2="395" y2="98" id="Path-45-Copy" stroke="#9BE8C7"></line>
-            <line x1="386" y1="1" x2="386" y2="98" id="Path-45-Copy-2" stroke="#9BE8C7"></line>
-            <line x1="406" y1="1" x2="406" y2="98" id="Path-45-Copy-3" stroke="#9BE8C7"></line>
-            <line x1="437" y1="1" x2="437" y2="98" id="Path-45-Copy-4" stroke="#9BE8C7"></line>
+        <g id="Group" transform="translate(137.000000, 85.000000)" stroke="#00A47C">
+            <polygon id="Triangle" fill="#9BE8C7" points="29 34 57 90 1 90"></polygon>
+            <polygon id="Triangle-Copy" points="96 0 124 90 68 90"></polygon>
+            <polygon id="Triangle-Copy-2" transform="translate(159.000000, 144.000000) scale(1, -1) translate(-159.000000, -144.000000) " points="159 99 187 189 131 189"></polygon>
+            <polygon id="Triangle-Copy-3" transform="translate(222.000000, 110.500000) scale(1, -1) translate(-222.000000, -110.500000) " points="222 99 250 122 194 122"></polygon>
+            <polygon id="Triangle-Copy-4" transform="translate(290.000000, 124.500000) scale(1, -1) translate(-290.000000, -124.500000) " points="290 98 318 151 262 151"></polygon>
+            <line x1="0" y1="94.5" x2="56" y2="94.5" id="Path-2"></line>
+            <line x1="68" y1="94.5" x2="124" y2="94.5" id="Path-2-Copy"></line>
+            <line x1="131" y1="94.5" x2="187" y2="94.5" id="Path-2-Copy-2"></line>
+            <line x1="194" y1="94.5" x2="250" y2="94.5" id="Path-2-Copy-3"></line>
+            <line x1="262" y1="94.5" x2="318" y2="94.5" id="Path-2-Copy-4"></line>
         </g>
-        <g id="bar2" transform="translate(324.000000, 171.000000)">
-            <rect id="Rectangle-12" stroke="#0BBFB0" x="0.5" y="0.5" width="552" height="98"></rect>
-            <line x1="400" y1="2" x2="400" y2="99" id="Path-44" stroke="#9BE8C7"></line>
-            <line x1="427.25" y1="2" x2="427.25" y2="99" id="Path-44-Copy" stroke="#9BE8C7"></line>
-            <line x1="365.25" y1="2" x2="365.25" y2="99" id="Path-44-Copy-2" stroke="#9BE8C7"></line>
-            <line x1="264.25" y1="2" x2="264.25" y2="99" id="Path-44-Copy-3" stroke="#9BE8C7"></line>
-            <line x1="41.25" y1="2" x2="41.25" y2="99" id="Path-44-Copy-4" stroke="#9BE8C7"></line>
-            <line x1="50.25" y1="2" x2="50.25" y2="99" id="Path-44-Copy-5" stroke="#9BE8C7"></line>
-            <line x1="73.25" y1="2" x2="73.25" y2="99" id="Path-44-Copy-6" stroke="#9BE8C7"></line>
-            <line x1="112.25" y1="2" x2="112.25" y2="99" id="Path-44-Copy-7" stroke="#9BE8C7"></line>
-            <line x1="145.25" y1="2" x2="145.25" y2="99" id="Path-44-Copy-8" stroke="#9BE8C7"></line>
-            <line x1="171.25" y1="2" x2="171.25" y2="99" id="Path-44-Copy-9" stroke="#9BE8C7"></line>
-            <line x1="166.25" y1="2" x2="166.25" y2="99" id="Path-44-Copy-10" stroke="#9BE8C7"></line>
-            <line x1="176.25" y1="2" x2="176.25" y2="99" id="Path-44-Copy-12" stroke="#9BE8C7"></line>
-            <line x1="181.25" y1="2" x2="181.25" y2="99" id="Path-44-Copy-13" stroke="#9BE8C7"></line>
-            <line x1="157.25" y1="2" x2="157.25" y2="99" id="Path-44-Copy-11" stroke="#9BE8C7"></line>
+        <g id="Group-Copy" transform="translate(570.000000, 82.000000)" stroke="#00A47C">
+            <polygon id="Triangle" points="29 37 57 93 1 93"></polygon>
+            <polygon id="Triangle-Copy" points="96 79 124 93 68 93"></polygon>
+            <polygon id="Triangle-Copy-2" fill="#9BE8C7" transform="translate(159.000000, 118.000000) scale(1, -1) translate(-159.000000, -118.000000) " points="159 101 187 135 131 135"></polygon>
+            <polygon id="Triangle-Copy-3" points="222 0 250 93 194 93"></polygon>
+            <polygon id="Triangle-Copy-4" fill="#9BE8C7" transform="translate(290.000000, 146.000000) scale(1, -1) translate(-290.000000, -146.000000) " points="290 101 318 191 262 191"></polygon>
+            <line x1="0" y1="97.5" x2="56" y2="97.5" id="Path-2"></line>
+            <line x1="68" y1="97.5" x2="124" y2="97.5" id="Path-2-Copy"></line>
+            <line x1="131" y1="97.5" x2="187" y2="97.5" id="Path-2-Copy-2"></line>
+            <line x1="194" y1="97.5" x2="250" y2="97.5" id="Path-2-Copy-3"></line>
+            <line x1="262" y1="97.5" x2="318" y2="97.5" id="Path-2-Copy-4"></line>
+        </g>
+        <g id="Group-Copy-2" transform="translate(353.000000, 301.000000)" stroke="#00A47C">
+            <polygon id="Triangle" transform="translate(29.000000, 95.000000) scale(1, -1) translate(-29.000000, -95.000000) " points="29 67 57 123 1 123"></polygon>
+            <polygon id="Triangle-Copy" points="96 0 124 58 68 58"></polygon>
+            <polygon id="Triangle-Copy-4" fill="#9BE8C7" transform="translate(290.000000, 78.500000) scale(1, -1) translate(-290.000000, -78.500000) " points="290 66 318 91 262 91"></polygon>
+            <line x1="0" y1="62.5" x2="56" y2="62.5" id="Path-2"></line>
+            <line x1="68" y1="62.5" x2="124" y2="62.5" id="Path-2-Copy"></line>
+            <line x1="131" y1="62.5" x2="187" y2="62.5" id="Path-2-Copy-2"></line>
+            <line x1="194" y1="62.5" x2="250" y2="62.5" id="Path-2-Copy-3"></line>
+            <line x1="262" y1="62.5" x2="318" y2="62.5" id="Path-2-Copy-4"></line>
         </g>
     </g>
 </svg>
