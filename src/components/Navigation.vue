@@ -4,11 +4,11 @@
     @click="click"
     :class="[{open}, activePortal && activePortal.path]"
   >
-    <div class="info">{{activePortal && activePortal.maintopic}}</div>
+    <div class="info">{{activePortal && activePortal.mainTopic}}</div>
     <div class="content">
       <div class="title">Policy Portal</div>
       <div class="position">
-        <div class="portal">{{activePortal && activePortal.maintopic}}</div>
+        <div class="portal">{{activePortal && activePortal.mainTopic}}</div>
         <div class="circle"></div>
       </div>
       <div class="link">

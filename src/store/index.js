@@ -18,16 +18,16 @@ export default new Vuex.Store({
   getters: {
     modulesData: (state) => {
       const additionalItems = [
-        { path: "intro", maintopic: "Intro", portalnum: -1, simple: true },
-        { path: "earth", maintopic: "Extreme Events", portalnum: 7, simple: state.isMobile },
-        { path: "end", maintopic: "Continue", portalnum: 100 }
+        { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
+        { path: "earth", mainTopic: "Extreme Events", portalNum: 7, simple: state.isMobile },
+        { path: "end", mainTopic: "Continue", portalNum: 100 }
       ];
 
       if (state.modulesJson.length) {
         return state.modulesJson
-          .filter(m => m.portal === "Policy" && Number.isInteger(m.portalnum))
+          .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
           .concat(...additionalItems)
-          .sort((a, b) => a.portalnum - b.portalnum);
+          .sort((a, b) => a.portalNum - b.portalNum);
       } else {
         return []
       }

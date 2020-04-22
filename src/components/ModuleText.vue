@@ -1,6 +1,6 @@
 <template>
   <div class="container" :class="[data.path, {mobile}]">
-    <div class="header">{{ data.maintopic }}</div>
+    <div class="header">{{ data.mainTopic }}</div>
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
