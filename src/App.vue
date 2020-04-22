@@ -4,6 +4,7 @@
     <Navigation v-if="!isMobile" />
     <NavigationMobile v-if="isMobile" />
     <SensesDownload
+      v-if="activePortal"
       :visible="downloadOpen"
       :ids="activePortal.downloadIDs || []"
       :title="activePortal.title"
@@ -35,7 +36,7 @@ import BackgroundLine from "./components/BackgroundLine.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
 import Earth from "./components/Earth.vue";
-import { mapState, mapGetters } from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
 
 let ticking = false;
 
@@ -59,11 +60,14 @@ export default {
     ...mapGetters(["modulesData", "activePortal"])
   },
   methods: {
-    getSvgPath: function(path) {
+    ...mapActions([
+      'loadModules'
+    ]),
+    getSvgPath (path) {
       const p = this.isMobile ? "mobile/" : "desktop/";
       return p + path + ".svg";
     },
-    onScroll: function(e) {
+    onScroll (e) {
       if (!ticking) {
         window.requestAnimationFrame(() => {
           this.$store.state.scrollY = window.scrollY;
@@ -72,7 +76,7 @@ export default {
         ticking = true;
       }
     },
-    reflow: function(e) {
+    reflow (e) {
       this.$store.state.isMobile = window.innerWidth < 700;
       this.$store.state.reflowTime = Date.now()
       if (e.type === "load") {
@@ -81,7 +85,7 @@ export default {
         }, 100);
       }
     },
-    hashchange: function(){
+    hashchange () {
       // console.log(location.hash)
       const top = document
         .getElementById(location.hash.replace("#/", "to-"))
@@ -94,26 +98,16 @@ export default {
     },
     downloadClose (id, downloadIDs, title) {
       this.$store.state.downloadOpen = false
-    },
-    fetchModules(){
-      fetch('https://dev.climatescenarios.org/settings/modules.json')
-        .then(response => response.json())
-        .then((myJson) => {
-          console.log(myJson);
-        });
-      
     }
   },
-  mounted: function() {
-    console.log(this.modulesData);
-    this.fetchModules();
-    // this.modulesData.forEach(d => console.log(d.path));
+  mounted () {
+    this.loadModules();
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
     window.addEventListener("resize", this.reflow);
     window.addEventListener("hashchange", this.hashchange);
   },
-  beforeDestroy: function() {
+  beforeDestroy () {
     window.removeEventListener("scroll", this.onScroll);
     window.removeEventListener("load", this.reflow);
     window.removeEventListener("resize", this.reflow);
