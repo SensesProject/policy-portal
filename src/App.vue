@@ -86,7 +86,7 @@ export default {
       }
     },
     hashchange () {
-      // console.log(location.hash)
+      console.log(location.hash)
       const top = document
         .getElementById(location.hash.replace("#/", "to-"))
         .offsetTop + 10
