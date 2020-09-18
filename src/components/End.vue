@@ -1,12 +1,12 @@
 <template>
   <div class="container" :class="{mobile}">
     <!-- <Dot class="dot"/> -->
-    <div class="dot"></div>
+    <!-- <div class="dot"></div> -->
     <div class="inner">
       <h1>
         <a href="#" target="_blank">
         Continue on the Finance Portal. <br v-if="{mobile} === true"/>
-          <span class="right_arrow">→</span>
+          <!-- <span class="right_arrow">→</span> -->
         </a>
       </h1>
     </div>
@@ -29,15 +29,21 @@ export default {
   flex-flow: column;
 }
 .inner {
-  width: 600px;
+  width: 1100px;
   z-index: 1;
-  margin: 0 4em;
+  margin: 0 6em;
 
   .mobile & {
     width: auto;
-    margin: 0 6em;
-    line-height: 58px;
+    margin: 0 2em;
+    line-height: 140px;
 
+  }
+}
+
+.inner:hover {
+  a {
+    color: #b035c9;
   }
 }
 
@@ -74,7 +80,7 @@ h1 {
   font-weight: 700;
   /* text-shadow: -1px 0 #0bbfb0, 0 1px #0bbfb0, 1px 0 #0bbfb0, 0 -1px #0bbfb0; */
   color: #fff;
-  font-size: 60px;
+  font-size: 140px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #b035c9;
   line-height: 1em;

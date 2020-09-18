@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="560px" viewBox="0 0 2000 560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="countries-pathways" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(615.000000, 72.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="335.6" width="22" height="29"></rect>
+            <line x1="0" y1="335.6" x2="22" y2="335.6" id="Path" fill="#9BE8C7"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="335.49" width="22" height="1"></rect>
+            <line x1="0" y1="335.6" x2="22" y2="335.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="240.6" width="22" height="95"></rect>
+            <line x1="0" y1="240.6" x2="22" y2="240.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+            <rect id="Rectangle" stroke="#21978D" x="0" y="225.6" width="22" height="15"></rect>
+            <line x1="0" y1="225.6" x2="22" y2="225.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+            <rect id="Rectangle" stroke="#21978D" x="0" y="67.6" width="22" height="158"></rect>
+            <line x1="0" y1="67.6" x2="22" y2="67.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+            <rect id="Rectangle" stroke="#21978D" x="0" y="56.6" width="22" height="11"></rect>
+            <line x1="0" y1="56.6" x2="22" y2="56.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+            <rect id="Rectangle" stroke="#21978D" x="0" y="1.6" width="22" height="55"></rect>
+            <line x1="0" y1="1.6" x2="22" y2="1.6" id="Path" stroke="#21978D" stroke-width="5" fill="#9BE8C7"></line>
+        </g>
+        <rect id="Rectangle" fill="#9BE8C7" fill-rule="nonzero" x="979" y="371" width="22" height="13"></rect>
+        <rect id="Rectangle" fill="#9BE8C7" fill-rule="nonzero" x="979" y="313" width="22" height="57"></rect>
+        <rect id="Rectangle" fill="#9BE8C7" fill-rule="nonzero" x="979" y="51" width="22" height="93"></rect>
+        <rect id="Rectangle" fill="#9BE8C7" fill-rule="nonzero" x="979" y="282" width="22" height="31"></rect>
+        <rect id="Rectangle" fill="#9BE8C7" fill-rule="nonzero" x="979" y="144" width="22" height="15"></rect>
+        <line x1="252" y1="313.5" x2="1132" y2="313.5" id="Path-24" stroke="#21978D" stroke-dasharray="10"></line>
+        <g id="Group-2" transform="translate(706.000000, 242.000000)" fill="#9BE8C7" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="131" width="22" height="137"></rect>
+            <line x1="0" y1="131" x2="22" y2="131" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="122" width="22" height="9"></rect>
+            <line x1="0" y1="122" x2="22" y2="122" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="72" width="22" height="53"></rect>
+            <line x1="0" y1="72" x2="22" y2="72" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="56" width="22" height="15"></rect>
+            <line x1="0" y1="56" x2="22" y2="56" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="47" width="22" height="9"></rect>
+            <line x1="0" y1="47" x2="22" y2="47" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="43" width="22" height="4"></rect>
+            <line x1="0" y1="43" x2="22" y2="43" id="Path" stroke="#21978D" stroke-width="3"></line>
+            <rect id="Rectangle" x="0" y="1" width="22" height="42"></rect>
+            <line x1="0" y1="1" x2="22" y2="1" id="Path" stroke="#21978D" stroke-width="3"></line>
+        </g>
+        <g id="Group-11" transform="translate(797.000000, 81.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" stroke="#21978D" x="0" y="360" width="22" height="53"></rect>
+            <line x1="0" y1="360" x2="22" y2="360" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="359.889894" width="22" height="1"></rect>
+            <line x1="0" y1="360" x2="22" y2="360" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" stroke="#21978D" x="0" y="232" width="22" height="128"></rect>
+            <line x1="0" y1="232" x2="22" y2="232" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="197" width="22" height="35"></rect>
+            <line x1="0" y1="197" x2="22" y2="197" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="69" width="22" height="128"></rect>
+            <line x1="0" y1="69" x2="22" y2="69" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="60" width="22" height="9"></rect>
+            <line x1="0" y1="61" x2="22" y2="61" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="1" width="22" height="59"></rect>
+            <line x1="0" y1="1" x2="22" y2="1" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+        </g>
+        <g id="Group-12" transform="translate(899.000000, 361.000000) scale(-1, 1) translate(-899.000000, -361.000000) translate(888.000000, 274.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="115" width="22" height="59"></rect>
+            <line x1="0" y1="116" x2="22" y2="116" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="82" width="22" height="33"></rect>
+            <line x1="0" y1="83" x2="22" y2="83" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="38" width="22" height="44"></rect>
+            <line x1="0" y1="39" x2="22" y2="39" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="29" width="22" height="9"></rect>
+            <line x1="0" y1="30" x2="22" y2="30" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="21" width="22" height="9"></rect>
+            <line x1="0" y1="21" x2="22" y2="21" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="19" width="22" height="2"></rect>
+            <line x1="0" y1="19" x2="22" y2="19" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="1" width="22" height="17"></rect>
+            <line x1="0" y1="1" x2="22" y2="1" id="Path" fill="#9BE8C7"></line>
+        </g>
+        <g id="Group-13" transform="translate(979.000000, 50.000000)" fill-rule="nonzero">
+            <line x1="0" y1="323" x2="22" y2="323" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="322.889869" width="22" height="1"></rect>
+            <line x1="0" y1="321" x2="22" y2="321" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <line x1="0" y1="263" x2="22" y2="263" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <line x1="0" y1="232" x2="22" y2="232" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="101" width="22" height="132"></rect>
+            <line x1="0" y1="110" x2="22" y2="110" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <line x1="0" y1="94" x2="22" y2="94" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <line x1="0" y1="1" x2="22" y2="1" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+        </g>
+        <g id="Group-14" transform="translate(1070.000000, 261.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="89" width="22" height="22"></rect>
+            <line x1="0" y1="89" x2="22" y2="89" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="52" width="22" height="37"></rect>
+            <line x1="0" y1="52" x2="22" y2="52" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="36" width="22" height="15"></rect>
+            <line x1="0" y1="36" x2="22" y2="36" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="27" width="22" height="9"></rect>
+            <line x1="0" y1="27" x2="22" y2="27" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="21" width="22" height="4"></rect>
+            <line x1="0" y1="21" x2="22" y2="21" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="16" width="22" height="7"></rect>
+            <line x1="0" y1="16" x2="22" y2="16" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+            <rect id="Rectangle" fill="#9BE8C7" x="0" y="1" width="22" height="15"></rect>
+            <line x1="0" y1="1" x2="22" y2="1" id="Path" stroke="#21978D" stroke-width="3" fill="#21978D"></line>
+        </g>
+    </g>
+</svg>

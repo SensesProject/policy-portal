@@ -4,7 +4,11 @@
     <div class="info">
       <div class="credits">
         <div class="icon"></div>
-        <div class="content">{{ data.authors.join(" / ") }}</div>
+        <div class="content">
+          <span v-for="(author, a) in authors" :key="`${a}-author`">
+            <span v-if="a !== 0">/</span> {{author}}
+          </span>
+        </div>
       </div>
       <div class="read">
         <div class="icon"></div>
@@ -41,6 +45,20 @@
 <script>
 export default {
   props: ["data", "ratio", "mobile", "active"],
+  computed: {
+    authors () {
+      const authors = this.data.authors
+      return authors.map((a, i) => {
+        const name = a.slice(0, 1)
+        const whitespace = a.indexOf(' ')
+        let surname = ''
+        if (a.indexOf(' ') >= 0) {
+          surname = a.slice(whitespace, a.length)
+        }
+        return name + '.' + surname
+      })
+    }
+  },
   methods: {
     onClick () {
       this.$store.state.downloadOpen = true
@@ -142,6 +160,7 @@ export default {
   }
 
   .stocktake-1 &,
+  .film &,
   .transition-path-1 &,
   .land-affected & {
     color: #0bbfb0;
@@ -168,8 +187,13 @@ export default {
     background: #e6fffe;
   }
 
-  .stocktake-1 & {
-    left: 53%;
+  .film & {
+    left: 33%;
+    top: 33%;
+  }
+
+  .emissions-gap & {
+    left: 28%;
     top: 23%;
   }
 
@@ -196,7 +220,7 @@ export default {
     height: 280px;
   }
 
-  .land-transitions & {
+  .land-use & {
     left: 25%;
     top: 40%;
   }
@@ -224,8 +248,23 @@ export default {
   cursor: pointer;
   z-index: 1000;
 
-  .stocktake-2 & {
-    left: 20%;
+  .film & {
+    left: 40%;
+    top: 40%;
+
+    h2 {
+      width: 500px;
+    }
+    .description {
+      width: 500px;
+    }
+  }
+
+  .emissions-gap & {
+    left: 30%;
+    h2 {
+      width: 600px;
+    }
     .description {
       width: 500px;
     }
@@ -252,10 +291,11 @@ export default {
     }
   }
 
-  .transition-path-2 & {
-    left: 25%;
+  .countries-pathways & {
+    left: 35%;
+    top: 45%;
     h2 {
-      width: 550px;
+      width: 600px;
     }
     .description {
       width: 450px;
@@ -276,7 +316,7 @@ export default {
     }
   }
 
-  .land-affected & {
+  .land-use & {
     left: 35%;
     top: 40%;
 

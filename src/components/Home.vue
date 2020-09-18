@@ -1,35 +1,23 @@
 <template>
   <div class="container" :class="isMobile ? 'mobile' : 'desktop'">
     <div class="inner">
-      <h1>Welcome to the Senses Policy Portal.</h1>
+      <a id="primer" href="https://www.climatescenarios.org/primer/">
+      <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan primer" />
+      </a>
+      <h1>This is the Policy Portal.</h1>
       <div class="text">
         <span>
-          Here you can explore a curated sets of learning modules regarding
-          Policy related aspects of Climate Change.<br>
-          You can scroll three different chapters:
-          <span class="dotted">Budgets</span>,
-          <span class="dotted">Transitions</span>
-          and <span class="dotted">Extreme Events</span>.
-        </span><br>
-        <span><a>If you are interested in all the Senses Project material refer to the Toolkit.</a></span>
-        <span><br /><br />
-          In the <span class="dotted">Budgets</span> chapter you will be introduced
-          to the near and long-term plans to reach Net Zero emissions in the next
-          century. The <span class="dotted">Transitions</span> section is dedicated
-          to different kind of transitions that might occur. From energetic
-          to land transitions, you will be provided with a complete overview of how
-          our future will look like.
-          The <span class="dotted">Extreme Events</span> chapter is dedicated to the extent
-          and impact of Climate Change according to the predictions.
+          Climate change scenarios can inform policy makers about the risks of
+          human-induced climate change, how to mitigate it and limit global
+          warming and how to adapt to residual warming. Strategies include a
+          transformation to climate neutral economies and measures to increase
+          resilience and adaptive capacity to climate change.
         </span>
       </div>
     </div>
     <div class="down_arrow">↓</div>
-    <HomeMap v-if="isMobile === false"/>
+    <!-- <HomeMap v-if="isMobile === false"/> -->
     <img v-if="mobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
-    <a id="primer" href="https://www.climatescenarios.org/primer/">
-    <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
-    </a>
   </div>
 </template>
 
@@ -55,7 +43,7 @@ export default {
   /* height: 100vh; */
   flex-flow: column;
   margin-bottom: 100px;
-  max-width: 815px;
+  max-width: 1050px;
   margin: 0 4em;
   margin-bottom: 7em;
 }
@@ -73,13 +61,10 @@ img {
 }
 
 h1 {
-  font-weight: 700;
-  /* text-shadow: -1px 0 #003733, 0 1px #003733, 1px 0 #003733, 0 -1px #003733; */
+  // font-weight: 700;
   color: #0bbfb0;
-  font-size: 100px;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #003733; */
-  line-height: 1em;
+  font-size: 140px;
+  line-height: 1.1em;
   margin-bottom: 60px;
   margin-top: 60px;
 
@@ -88,19 +73,43 @@ h1 {
   }
 }
 
+.text {
+  width: 100%;
+  font-size: 25px;
+  // width: 60%;
+  color: #037c72;
+  // display: inline-flex;
+
+  // span {
+  //   width: 80%;
+  // }
+}
+
 .senses {
   color: #5263FF;
 }
 
 .down_arrow {
-  color: #0bbfb0;
+  color: #037c72;
   font-size: 50px;
-  margin-top: 55px;
+  margin-top: 60px;
   margin-bottom: 20px;
+  // align-self: baseline;
 }
 
 .plan {
-  margin-top: 40px;
+  // margin-top: 40px;
+
+  &.primer {
+    width: 40%;
+    position: absolute;
+    padding-left: 30px;
+    right: 10px;
+    top: 20%;
+    // align-content: end;
+    // -ms-transform: translateY(20%);
+    // transform: translateY(20%);
+  }
 }
 
 .mobile {

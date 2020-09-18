@@ -1,6 +1,17 @@
 <template>
   <div class="container earth" :class="{mobile}">
-    <div class="item" :class="{visible: true}">
+    <div class="introduction">
+      The warming of the atmosphere has a multitude of effects on social and
+      natural systems such as agriculture, forests and rivers. These effects
+      are known as climate impacts. In order to investigate climate impacts,
+      scientists use computer models of these systems (“climate impact models”)
+      and drive them with a warming climate. An important category of climate
+      impacts are changes in the frequency and severity of extreme events like
+      heatwaves, floods, droughts, and storms.  The following module
+      shows scenarios of extreme events under climate change, as projected by impact models.
+    </div>
+    <div class="items-container">
+    <div class="item first-item" :class="{visible: true}">
       <div class="earths" v-if="!mobile">
         <img
           v-for="i in 9"
@@ -18,12 +29,12 @@
          />
       </div>
       <div class="text">
-        <h2>Crops</h2>
-        <div class="description">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Crops</h2></a>
+        <!-- <div class="description">
           Discover how different regions will be impacted by
           <span class="dotted">crop failures</span> in 100 years.
         </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a> -->
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.3}">
@@ -44,12 +55,12 @@
          />
       </div>
       <div class="text">
-        <h2>Floodings</h2>
-        <div class="description">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Floods</h2></a>
+        <!-- <div class="description">
           Discover how different regions will be impacted by
           <span class="dotted">floodings</span> in 100 years.
         </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a> -->
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
@@ -70,15 +81,16 @@
          />
       </div>
       <div class="text">
-        <h2>Wildfires</h2>
-        <div class="description">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Wildfires</h2></a>
+        <!-- <div class="description">
           Discover how different regions will be impacted by
           <span class="dotted">wildfires</span> in 100 years.
         </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a> -->
       </div>
     </div>
-    <img class="backgroundPath" src="desktop/background/earth.svg" v-if="!{mobile}"/>
+  </div>
+  <img class="backgroundPath" src="desktop/background/earth-ok.svg" v-if="{mobile}"/>
   </div>
 </template>
 
@@ -100,11 +112,31 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .container {
-  display: flex;
+  .backgroundPath {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 40px;
+    pointer-events: none;
+    vector-effect: non-scaling-stroke;
+    z-index: 0;
+
+    .mobile & {
+      display: none;
+    }
+  }
+
   align-items: center;
   justify-content: space-evenly;
-  width: calc(100% - 180px);
-  margin-left: 180px;
+  width: 60%;
+
+  .introduction {
+    font-size: 14px;
+    margin-left: 0 auto;
+    padding-bottom: 30px;
+    z-index: 2;
+  }
 
   &.mobile {
     flex-flow: column;
@@ -113,21 +145,31 @@ export default {
   }
 }
 
-.backgroundPath {
+/* .backgroundPath {
   position: absolute;
   width: 100%;
   height: 100vh;
   left: 0;
   top: 0;
   pointer-events: none;
+} */
+
+.items-container {
+  display: flex;
 }
 
 .item {
-  width: 250px;
+  min-width: 250px;
+  height: auto;
   opacity: 0.1;
   transition: opacity 0.5s;
   z-index: 1;
-  padding: 1em;
+  padding: 2em;
+  text-align: center;
+
+  &.first-item {
+    padding-left: 0;
+  }
 
   .mobile & {
     opacity 1;
@@ -152,7 +194,10 @@ export default {
 }
 
 .text {
-  padding-top: 2em;
+  h2 {
+    font-size: 1em;
+  }
+  padding-top: 10px;
 
   .mobile & {
     h2 {

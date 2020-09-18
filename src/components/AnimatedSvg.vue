@@ -14,6 +14,7 @@ export default {
   },
   props: ["ratio", "svg"],
   mounted: function() {
+    console.log(this.svg)
     this.vivus = new vivus(this.$refs.svg, {
       type: "oneByOne",
       start: "manual",
@@ -29,7 +30,7 @@ export default {
   /* position: absolute; */
   position: absolute;
   width: 80%;
-  left: 20%;
+  left: 10%;
   top: 0;
   display: flex;
   align-items: center;

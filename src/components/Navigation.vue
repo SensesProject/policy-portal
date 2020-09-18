@@ -62,8 +62,8 @@ export default {
   top: 131px;
   padding: 20px;
   padding-left: 40px;
-  border: 1px solid #0bbfb0;
-  border-radius: 20px;
+  border-top: 1px solid #0bbfb0;
+  // border-radius: 20px;
   left: -20px;
   color: #0bbfb0;
   text-transform: uppercase;
@@ -129,7 +129,7 @@ export default {
 
   .intro {
     top: 50px;
-    left: 50px;
+    left: 0px;
   }
 
   .stocktake-1 {

@@ -18,8 +18,8 @@ export default new Vuex.Store({
   getters: {
     modulesData: (state) => {
       const additionalItems = [
-        { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
-        { path: "earth", mainTopic: "Extreme Events", portalNum: 7, simple: state.isMobile },
+        { path: "intro", mainTopic: "Welcome", portalNum: -1, simple: true },
+        { path: "earth", mainTopic: "Extreme Events", portalNum: 1, simple: state.isMobile },
         { path: "end", mainTopic: "Continue", portalNum: 100 }
       ];
 
