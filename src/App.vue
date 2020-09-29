@@ -9,7 +9,6 @@
       :ids="activePortal.downloadIDs || []"
       :title="activePortal.title"
       :close="downloadClose" />
-    <!-- <BackgroundLine /> -->
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" :mobile="isMobile"  />

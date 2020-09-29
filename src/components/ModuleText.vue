@@ -1,25 +1,7 @@
 <template>
   <div class="container" :class="[data.path, {mobile}]">
     <div class="header">{{ data.mainTopic }}</div>
-    <div class="info">
-      <div class="credits">
-        <div class="icon"></div>
-        <div class="content">
-          <span v-for="(author, a) in authors" :key="`${a}-author`">
-            <span v-if="a !== 0">/</span> {{author}}
-          </span>
-        </div>
-      </div>
-      <div class="read">
-        <div class="icon"></div>
-        <div class="content">{{ data.readingTime }} minutes</div>
-      </div>
-      <div class="tags">
-        <div class="icon"></div>
-        <div class="content" v-if="data.downloadIDs"><a v-on:click="onClick">Download Extras</a></div>
-        <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
-      </div>
-    </div>
+    <div class="description-par" v-if="data.portalDescription">{{ data.portalDescription }}</div>
     <a :href="data.link" class="link-title">
     <div class="circle"></div>
     <div class="text">
@@ -35,6 +17,25 @@
     </div>
     <div class="circle"></div>
   </a>
+  <div class="info">
+    <div class="credits">
+      <div class="icon"></div>
+      <div class="content">
+        <span v-for="(author, a) in authors" :key="`${a}-author`">
+          <span v-if="a !== 0">/</span> {{author}}
+        </span>
+      </div>
+    </div>
+    <div class="read">
+      <div class="icon"></div>
+      <div class="content">{{ data.readingTime }} minutes</div>
+    </div>
+    <div class="tags">
+      <div class="icon"></div>
+      <div class="content" v-if="data.downloadIDs"><a v-on:click="onClick">Download Extras</a></div>
+      <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
+    </div>
+  </div>
     <div class="background" />
     <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
@@ -169,6 +170,31 @@ export default {
   }
 }
 
+.description-par {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  font-size: 14px;
+  color: #0bbfb0;
+
+  .transition-path-1 & {
+    width: 300px;
+    left: 68%;
+  }
+
+  .emissions-gap & {
+    width: 300px;
+    left: 44%;
+    text-align: right;
+  }
+
+  .countries-pathways & {
+    width: 300px;
+    left: 70%;
+  }
+}
+
 .circle {
   position: absolute;
   border-radius: 500px;
@@ -193,8 +219,8 @@ export default {
   }
 
   .emissions-gap & {
-    left: 28%;
-    top: 23%;
+    left: 47%;
+    top: 43%;
   }
 
   .stocktake-2 & {
@@ -261,12 +287,13 @@ export default {
   }
 
   .emissions-gap & {
-    left: 30%;
+    left: 55%;
+    top: 50%;
     h2 {
-      width: 600px;
+      width: 500px;
     }
     .description {
-      width: 500px;
+      width: 400px;
     }
   }
 
@@ -419,11 +446,15 @@ export default {
 
 .info {
   position: absolute;
-  left: 52%;
+  left: 5%;
   font-size: 12px;
   text-transform: uppercase;
-  top: 100px;
+  bottom: 50px;
   z-index: 1000;
+
+  // .film & {
+  //   left: 65%;
+  // }
 
   .primary-energy & {
     top: 65%;

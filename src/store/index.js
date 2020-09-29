@@ -24,9 +24,12 @@ export default new Vuex.Store({
       ];
 
       if (state.modulesJson.length) {
+        const element = state.modulesJson
+          .filter(m => m.id === "emissions-gap")
         return state.modulesJson
           .filter(m => m.portal === "Policy" && Number.isInteger(m.portalNum))
           .concat(...additionalItems)
+          .concat(element)
           .sort((a, b) => a.portalNum - b.portalNum);
       } else {
         return []

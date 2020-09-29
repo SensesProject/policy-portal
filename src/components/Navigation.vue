@@ -13,14 +13,13 @@
       </div>
       <div class="link">
         <a class="intro" href="#/intro"></a>
-        <a class="stocktake-1" href="#/stocktake-1"></a>
+        <a class="earth" href="#/earth"></a>
+        <a class="film" href="#/film"></a>
+        <a class="emissions-gap" href="#/emissions-gap"></a>
         <a class="stocktake-2" href="#/stocktake-2"></a>
         <a class="transition-path-1" href="#/transition-path-1"></a>
-        <a class="transition-path-2" href="#/transition-path-2"></a>
-        <a class="primary-energy" href="#/primary-energy"></a>
-        <a class="land-transitions" href="#/land-transitions"></a>
-        <a class="land-affected" href="#/land-affected"></a>
-        <a class="earth" href="#/earth"></a>
+        <a class="land-use" href="#/land-use"></a>
+        <a class="countries-pathways" href="#/countries-pathways"></a>
         <a class="end" href="#/end"></a>
       </div>
       <img src="desktop/navigation.svg" class="naviImage" />
@@ -36,7 +35,7 @@ export default {
     ...mapGetters(["activePortal"]),
     ...mapState(["navigationOpen", "reflowTime"]),
     open: function() {
-      return this.activePortal && this.activePortal.path !== "intro";
+      return this.activePortal && this.activePortal.path !== "intro" && this.activePortal.path !== "end";
     }
   },
   // watch: {
@@ -63,6 +62,7 @@ export default {
   padding: 20px;
   padding-left: 40px;
   border-top: 1px solid #0bbfb0;
+  box-shadow: 2px 2px 10px 1px rgba(11, 191, 176, 0.1);
   // border-radius: 20px;
   left: -20px;
   color: #0bbfb0;
@@ -103,7 +103,7 @@ export default {
 .naviImage {
   position: absolute;
   top: 90px;
-  left: 10px;
+  left: 50px;
   pointer-events: none;
 }
 
@@ -128,53 +128,44 @@ export default {
   }
 
   .intro {
-    top: 50px;
-    left: 0px;
-  }
-
-  .stocktake-1 {
-    top: 123px;
-    left: 81px;
-  }
-
-  .stocktake-2 {
-    top: 154px;
-    left: 62px;
-  }
-
-  .transition-path-1 {
-    top: 179px;
-    left: 81px;
-  }
-
-  .transition-path-2 {
-    top: 205px;
-    left: 62px;
-  }
-
-  .primary-energy {
-    top: 220px;
-    left: 53px;
-  }
-
-  .land-transitions {
-    top: 235px;
-    left: 62px;
-  }
-
-  .land-affected {
-    top: 260px;
-    left: 81px;
+    top: -10px;
+    left: 20px;
   }
 
   .earth {
-    top: 280px;
-    left: 97px;
+    top: 100px;
+    left: 57px;
+  }
+
+  .film {
+    top: 140px;
+    left: 62px;
+  }
+
+
+  .emissions-gap {
+    top: 173px;
+    left: 88px;
+  }
+
+  .transition-path-1 {
+    top: 210px;
+    left: 61px;
+  }
+
+  .land-use {
+    top: 235px;
+    left: 75px;
+  }
+
+  .countries-pathways {
+    top: 285px;
+    left: 63px;
   }
 
   .end {
-    top: 320px;
-    left: 81px;
+    top: 350px;
+    left: 85px;
   }
 }
 
@@ -184,9 +175,20 @@ export default {
   left: 67px;
   transition: top 1s, left 1s;
 
-  .stocktake-1 & {
-    top: 123px;
-    left: 81px;
+  .earth & {
+    top: 100px;
+    left: 57px;
+  }
+
+  .film & {
+    top: 140px;
+    left: 62px;
+  }
+
+
+  .emissions-gap & {
+    top: 173px;
+    left: 88px;
   }
 
   .stocktake-2 & {
@@ -195,33 +197,18 @@ export default {
   }
 
   .transition-path-1 & {
-    top: 179px;
-    left: 81px;
+    top: 210px;
+    left: 61px;
   }
 
-  .transition-path-2 & {
-    top: 205px;
-    left: 62px;
-  }
-
-  .primary-energy & {
-    top: 220px;
-    left: 53px;
-  }
-
-  .land-transitions & {
+  .land-use & {
     top: 235px;
-    left: 62px;
+    left: 75px;
   }
 
-  .land-affected & {
-    top: 260px;
-    left: 81px;
-  }
-
-  .earth & {
-    top: 280px;
-    left: 97px;
+  .countries-pathways & {
+    top: 285px;
+    left: 63px;
   }
 
   .end & {

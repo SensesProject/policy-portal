@@ -17,7 +17,7 @@
     </div>
     <div class="down_arrow">↓</div>
     <!-- <HomeMap v-if="isMobile === false"/> -->
-    <img v-if="mobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
+    <img v-if="isMobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
   </div>
 </template>
 
@@ -61,7 +61,6 @@ img {
 }
 
 h1 {
-  // font-weight: 700;
   color: #0bbfb0;
   font-size: 140px;
   line-height: 1.1em;
@@ -76,13 +75,7 @@ h1 {
 .text {
   width: 100%;
   font-size: 25px;
-  // width: 60%;
   color: #037c72;
-  // display: inline-flex;
-
-  // span {
-  //   width: 80%;
-  // }
 }
 
 .senses {
@@ -94,21 +87,16 @@ h1 {
   font-size: 50px;
   margin-top: 60px;
   margin-bottom: 20px;
-  // align-self: baseline;
 }
 
 .plan {
-  // margin-top: 40px;
 
   &.primer {
     width: 40%;
     position: absolute;
-    padding-left: 30px;
-    right: 10px;
+    padding-left: 20px;
+    right: 15px;
     top: 20%;
-    // align-content: end;
-    // -ms-transform: translateY(20%);
-    // transform: translateY(20%);
   }
 }
 
