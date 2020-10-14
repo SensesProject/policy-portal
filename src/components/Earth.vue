@@ -12,7 +12,7 @@
     </div>
     <!-- <div class="items-container"> -->
     <div class="item first-item" :class="{visible: true}">
-      <div class="earths" v-if="!mobile">
+      <!-- <div class="earths" v-if="!mobile">
         <img
           v-for="i in 9"
           :src="'desktop/earth/crops/' + i + '.png'"
@@ -27,48 +27,28 @@
           v-if="mobile"
           alt="Earth"
          />
+      </div> -->
+      <div class="earths">
+        <VisEarth :grid="grids[0][0]" :scale="{domain: [0, 100], range: [0, grids[0][1]]}"
+        :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
       </div>
       <div class="text">
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Crops</h2></a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.3}">
-      <div class="earths" v-if="!mobile">
-        <img
-          v-for="i in 9"
-          :src="'desktop/earth/floodings/' + i + '.png'"
-          v-show="earthVisible(i, [0.3, 0.6])"
-          :key="'crops'+i"
-          alt="Earth"
-         />
-      </div>
-      <div class="earths" v-if="mobile">
-        <img
-          src="mobile/earth/floodings/1.png"
-          v-if="mobile"
-          alt="Earth"
-         />
+      <div class="earths">
+        <VisEarth :grid="grids[1][0]" :scale="{domain: [0, 100], range: [0, grids[1][1]]}"
+        :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
       </div>
       <div class="text">
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Floods</h2></a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
-      <div class="earths" v-if="!mobile">
-        <img
-          v-for="i in 9"
-          :src="'desktop/earth/wildfires/' + i + '.png'"
-          v-show="earthVisible(i, [0.6, 0.9])"
-          :key="'crops'+i"
-          alt="Earth"
-         />
-      </div>
-      <div class="earths" v-if="mobile">
-        <img
-          src="mobile/earth/wildfires/1.png"
-          v-if="mobile"
-          alt="Earth"
-         />
+      <div class="earths">
+        <VisEarth :grid="grids[2][0]" :scale="{domain: [0, 100], range: [0, grids[2][1]]}"
+        :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
       </div>
       <div class="text">
         <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Wildfires</h2></a>
@@ -80,8 +60,37 @@
 </template>
 
 <script>
+import heatwave from 'raw-loader!earth/public/grids/heatwave_median_HWMId-humidex_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+import cropFailure from 'raw-loader!earth/public/grids/crop-failure_median_median_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+// import drought from 'raw-loader!earth/public/grids/drought_median_median_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+// import riverFlood from 'raw-loader!earth/public/grids/river-flood_median_median_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+// import wildfire from 'raw-loader!earth/public/grids/wildfire_median_median_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+import tropical from 'raw-loader!earth/public/grids/tropical-cyclone_median_KE-TG-meanfield_2.0.txt' // eslint-disable-line import/no-webpack-loader-syntax
+import VisEarth from 'earth/src/components/VisEarth.vue'
+
 export default {
   props: ["ratio", "mobile"],
+  components: {
+    VisEarth
+  },
+  data () {
+    return {
+      grids: [
+        [heatwave, 100],
+        // [drought, 20],
+        [tropical, 40],
+        [cropFailure, 20]
+        // [riverFlood, 40],
+        // [wildfire, 20]
+      ],
+      colors: {
+        background: '#FFFFFF',
+        text: '#48484c',
+        borderColor: '#D8D8EE',
+        colorScale: ['#F5FBFF', '#7B91E8', '#D13E9D']
+      }
+    }
+  },
   methods: {
     earthVisible: function (i, range) {
       const domain = [1, 9]
@@ -153,6 +162,20 @@ export default {
   display: flex;
 
   .earths {
+    width: 150px;
+    height 150px;
+
+    ::v-deep {
+      .VisEarth {
+        width: 150px;
+        height: 150px;
+        position relative;
+
+        .key {
+          display: none;
+        }
+      }
+    }
     img {
       width: 150px;
     }
