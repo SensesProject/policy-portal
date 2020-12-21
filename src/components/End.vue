@@ -29,9 +29,9 @@ export default {
   flex-flow: column;
 }
 .inner {
-  width: 1100px;
+  width: 1050px;
   z-index: 1;
-  margin: 0 6em;
+  margin: 0 auto;
 
   .mobile & {
     width: auto;

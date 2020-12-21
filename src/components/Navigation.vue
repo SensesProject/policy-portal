@@ -61,9 +61,8 @@ export default {
   top: 131px;
   padding: 20px;
   padding-left: 40px;
-  border-top: 1px solid #0bbfb0;
-  box-shadow: 2px 2px 10px 1px rgba(11, 191, 176, 0.1);
-  // border-radius: 20px;
+  border: 1px solid #0bbfb0;
+  border-radius: 20px;
   left: -20px;
   color: #0bbfb0;
   text-transform: uppercase;

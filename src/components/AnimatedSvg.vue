@@ -28,6 +28,7 @@ export default {
 <style scoped lang="scss">
 .svg {
   /* position: absolute; */
+  opacity: 0.6;
   position: absolute;
   width: 80%;
   left: 10%;
