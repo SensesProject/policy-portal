@@ -136,8 +136,14 @@ export default {
     left: 57px;
   }
 
-  .film {
+  .extreme-events {
     top: 140px;
+    left: 62px;
+  }
+
+
+  .film {
+    top: 160px;
     left: 62px;
   }
 
@@ -179,9 +185,14 @@ export default {
     left: 57px;
   }
 
-  .film & {
+  .extreme-events & {
     top: 140px;
     left: 62px;
+  }
+
+  .film & {
+    top: 150px;
+    left: 68px;
   }
 
 

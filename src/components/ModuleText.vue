@@ -1,4 +1,4 @@
-<template>
+extreme-events<template>
   <div class="container" :class="[data.path, {mobile}]">
     <div class="header">{{ data.mainTopic }}</div>
     <div class="description-par" v-if="data.portalDescription">{{ data.portalDescription }}</div>
@@ -163,7 +163,7 @@ export default {
   .stocktake-1 &,
   .film &,
   .transition-path-1 &,
-  .land-affected & {
+  .extreme-events & {
     color: #0bbfb0;
     border-bottom: 1px dotted #0bbfb0;
     background: none;
@@ -251,7 +251,7 @@ export default {
     top: 40%;
   }
 
-  .land-affected & {
+  .extreme-events & {
     left: 35%;
     top: 25%;
   }
@@ -273,6 +273,17 @@ export default {
   top: 33%;
   cursor: pointer;
   z-index: 1000;
+
+  .extreme-events & {
+    left: 35%;
+    top: 30%;
+    h2 {
+      width: 400px;
+    }
+    .description {
+      // width: 500px;
+    }
+  }
 
   .film & {
     left: 40%;

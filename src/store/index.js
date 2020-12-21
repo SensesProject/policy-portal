@@ -25,7 +25,7 @@ export default new Vuex.Store({
 
       if (state.modulesJson.length) {
         let items = []
-
+        // Filtering modules with Policy as portal option
         state.modulesJson.map(m => {
           if(m.portal !== undefined && m.portal !== null && m.portal.includes("Policy")) {
             items.push(m)

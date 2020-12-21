@@ -1,15 +1,7 @@
-<svg width="1023" height="541" viewBox="0 0 1023 541" fill="none"
-    xmlns="http://www.w3.org/2000/svg">
-    <path d="M768 -2913.5V-2156.5C768 -2137.72 752.778 -2122.5 734 -2122.5H517.799M100 -2147.5L100 -1099M521.625 -553.5V87.2002V517.5V906.5V1082.5V1449" stroke="url(#paint0_linear)" stroke-width="3"/>
-    <path d="M520 400H819C844.405 400 865 420.595 865 446V1034.5" stroke="#94E3C1" stroke-width="3"/>
-    <path d="M519 469H215C192.356 469 174 487.356 174 510L174 976" stroke="#94E3C1" stroke-width="3"/>
-    <defs>
-        <linearGradient id="paint0_linear" x1="226.479" y1="-1515.86" x2="266.746" y2="1274.41" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#CBF5E5"/>
-            <stop offset="0.268825" stop-color="#00643B"/>
-            <stop offset="0.339653" stop-color="#8BDEBB"/>
-            <stop offset="0.929892" stop-color="#97E6C4"/>
-            <stop offset="1" stop-color="#B035C9"/>
-        </linearGradient>
-    </defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1023 541" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-257.454,-396.356)">
+        <path d="M721.051,272.75C739.73,272.888 754.799,288.07 754.799,306.749L754.799,991.5" style="fill:none;fill-rule:nonzero;stroke:rgb(197,238,230);stroke-opacity:0.85;stroke-width:3px;"/>
+    </g>
 </svg>
