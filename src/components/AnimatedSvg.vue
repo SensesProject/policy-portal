@@ -1,5 +1,5 @@
 <template>
-  <div class="svg" ref="svg"></div>
+<div class="svg" ref="svg"></div>
 </template>
 
 <script>
@@ -27,30 +27,29 @@ export default {
 
 <style scoped lang="scss">
 .svg {
-  /* position: absolute; */
-  opacity: 0.6;
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  pointer-events: none;
-  max-width: 1000px;
+    /* position: absolute; */
+    opacity: 0.6;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    pointer-events: none;
+    max-width: 1000px;
 
+    @media screen and (max-width: 700px) {
+        left: 0;
+        width: 100%;
+    }
 
-  @media screen and (max-width: 700px) {
-    left: 0;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1400px) {
-    max-width: 1400px;
-  }
+    @media screen and (min-width: 1400px) {
+        max-width: 1400px;
+    }
 }
 svg text {
-  font-size: inherit;
+    font-size: inherit;
 }
 </style>

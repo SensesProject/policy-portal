@@ -96,7 +96,7 @@ h1 {
     position: absolute;
     padding-left: 20px;
     right: 15px;
-    top: 20%;
+    top: 19%;
   }
 }
 
