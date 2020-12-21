@@ -38,7 +38,6 @@
   </div>
     <div class="background" />
     <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
-
     <!-- <img class="microModule" v-if="data.microModule" src="desktop/micromodule.svg" /> -->
   </div>
 </template>
@@ -81,6 +80,7 @@ export default {
 
 .link-title {
     color: black;
+    // text-shadow: 0px 2px 10px rgba(0,0,0, 0.4);
 }
 
 .link-title:hover {
@@ -290,7 +290,7 @@ export default {
     left: 55%;
     top: 50%;
     h2 {
-      width: 500px;
+      width: 400px;
     }
     .description {
       width: 400px;

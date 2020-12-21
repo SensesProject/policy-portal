@@ -10,48 +10,31 @@
       heatwaves, floods, droughts, and storms.  The following module
       shows scenarios of extreme events under climate change, as projected by impact models.
     </div>
-    <!-- <div class="items-container"> -->
-    <div class="item first-item" :class="{visible: true}">
-      <!-- <div class="earths" v-if="!mobile">
-        <img
-          v-for="i in 9"
-          :src="'desktop/earth/crops/' + i + '.png'"
-          v-show="earthVisible(i, [0, 0.3])"
-          :key="'crops'+i"
-          alt="Earth"
-         />
+    <div class="item" :class="{visible: true}">
+      <div class="text">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Crops</h2></a>
       </div>
-      <div class="earths" v-if="mobile">
-        <img
-          src="mobile/earth/crops/1.png"
-          v-if="mobile"
-          alt="Earth"
-         />
-      </div> -->
       <div class="earths">
         <VisEarth :grid="grids[0][0]" :scale="{domain: [0, 100], range: [0, grids[0][1]]}"
         :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
       </div>
-      <div class="text">
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Crops</h2></a>
-      </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.3}">
+      <div class="text">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Floods</h2></a>
+      </div>
       <div class="earths">
         <VisEarth :grid="grids[1][0]" :scale="{domain: [0, 100], range: [0, grids[1][1]]}"
         :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
       </div>
-      <div class="text">
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Floods</h2></a>
-      </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
+      <div class="text">
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Wildfires</h2></a>
+      </div>
       <div class="earths">
         <VisEarth :grid="grids[2][0]" :scale="{domain: [0, 100], range: [0, grids[2][1]]}"
         :colors="colors" prevent-interaction :yaw="ratio" x-pitch="camera.pitch" :zoom="1.25"/>
-      </div>
-      <div class="text">
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Wildfires</h2></a>
       </div>
     </div>
   <!-- </div> -->
@@ -86,8 +69,8 @@ export default {
       colors: {
         background: '#FFFFFF',
         text: '#48484c',
-        borderColor: '#D8D8EE',
-        colorScale: ['#F5FBFF', '#7B91E8', '#D13E9D']
+        borderColor: '#0bbfb0',
+        colorScale: ['#9be8c7', '#7B91E8', '#D13E9D']
       }
     }
   },
@@ -128,7 +111,7 @@ export default {
     width: 400px;
     position: absolute;
     font-size: 14px;
-    left: 50%;
+    left: 55%;
     top: 35%;
     z-index: 2;
     color: #0bbfb0;
@@ -171,6 +154,10 @@ export default {
         height: 150px;
         position relative;
 
+        .three-scene {
+          width: 300px !important;
+        }
+
         .key {
           display: none;
         }
@@ -187,16 +174,6 @@ export default {
     padding: 3em;
     width: 100%;
   }
-
-  // @media screen and (min-width: 1000px)  {
-  //   margin: 1vw;
-  // }
-  // @media screen and (min-width: 1200px)  {
-  //   margin: 2vw;
-  // }
-  // @media screen and (min-width: 1300px)  {
-  //   margin: 3vw;
-  // }
 }
 
 .visible {
@@ -233,8 +210,12 @@ export default {
 }
 
 .earths {
-  /* position: relative; */
   width: 300px;
+
+  .VisEarth {
+    .three-scene {
+    }
+  }
   img {
     position: relative;
     width: 100%;
