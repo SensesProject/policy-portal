@@ -4,7 +4,7 @@
     <!-- <div class="dot"></div> -->
     <div class="inner">
       <h1>
-        <a href="dev.climatescenarios.org/finance-portal" target="#/finance-portal">
+        <a href="/finance-portal">
         Continue on the Finance Portal. <br v-if="{mobile} === true"/>
           <!-- <span class="right_arrow">→</span> -->
         </a>
